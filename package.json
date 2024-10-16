@@ -1,0 +1,35 @@
+{
+  "name": "DRACO-MD",
+  "version": "1.0.0",
+  "description": "DRACO-MD WhatsApp bot created using Javascript and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name dracomd",
+    "stop": "pm2 stop dracomd",
+    "restart": "pm2 restart dracomd"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.7.7",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "pino": "^7.0.5",
+    "pm2": "^5.2.0",
+    "util": "^0.12.4",
+    "express": "latest",
+    "axios": "^1.2.5",
+    "file_size_url": "^1.0.4",
+    "fs-extra": "^11.1.0",
+    "path": "^0.12.7",
+    "node-fetch": "^2.6.1",
+    "megajs": "^1.1.0",
+    "vm": "^0.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "yt-search":"2.12.0",
+    "api-dylux":"1.8.5",
+    "mongoose":"8.5.4",
+    "google-img-scrap":"1.1.3",
+    "nayan-media-downloader":"2.5.7",
+    "rahad-media-downloader":"2.1.14",
+    "@xaviabot/fb-downloader":"1.0.14",
+    "btch-downloader":"2.3.2"
+  }
+}
