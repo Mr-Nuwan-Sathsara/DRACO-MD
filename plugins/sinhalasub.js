@@ -66,13 +66,15 @@ console.log(noresult)
     }
     await m.react("🎬")
     const alllinks = []
-    const allmovies = $("body > div.elementor.elementor-234293.elementor-location-archive > section.elementor-section.elementor-top-section.elementor-element.elementor-element-70cfc451.elementor-section-full_width.elementor-section-stretched.elementor-section-height-default.elementor-section-height-default > div > div.elementor-column.elementor-col-66.elementor-top-column.elementor-element.elementor-element-1c0cc75 > div > div > div > div.elementor-posts-container.elementor-posts.elementor-posts--skin-cards.elementor-grid.elementor-has-item-ratio")
+    
+    const allmovies = $(".elementor-widget-container")
     allmovies.each(function(){
         url2 = $(this).find("article .elementor-post__card .elementor-post__text .elementor-post__title a").attr('href')
 
         alllinks.push({url2})
     })
     console.log(alllinks)
+    
     /*const response2 = await axios.get(url2)
     const $$ = cheerio.load(response2.data)
     const subpageid = $$("#cm-primary > div.cm-posts.clearfix > article").attr('id')
