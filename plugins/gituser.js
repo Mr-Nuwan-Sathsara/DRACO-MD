@@ -30,14 +30,14 @@ const noresult = $("body > div.logged-out.env-production.page-responsive.min-hei
   const name = $("body > div.logged-in.env-production.page-responsive.page-profile > div.application-main > main > div > div > div.Layout-sidebar > div > div > div.clearfix.d-flex.d-md-block.flex-items-center.mb-4.mb-md-0 > div.vcard-names-container.float-left.js-profile-editable-names.col-12.py-3.js-sticky.js-user-profile-sticky-fields > h1 > span.p-name.vcard-fullname.d-block.overflow-hidden").text().trim()
   const username = $("body > div.logged-in.env-production.page-responsive.page-profile > div.application-main > main > div > div > div.Layout-sidebar > div > div > div.clearfix.d-flex.d-md-block.flex-items-center.mb-4.mb-md-0 > div.vcard-names-container.float-left.js-profile-editable-names.col-12.py-3.js-sticky.js-user-profile-sticky-fields > h1 > span.p-nickname.vcard-username.d-block").text().trim()
   const followers = $("body > div.logged-in.env-production.page-responsive.page-profile > div.application-main > main > div > div > div.Layout-sidebar > div > div > div.d-flex.flex-column > div.js-profile-editable-area.d-flex.flex-column.d-md-block > div.flex-order-1.flex-md-order-none.mt-2.mt-md-0 > div > a:nth-child(1) > span").text()
-  const url = `https://github.com/${q}/`
+  const uurl = `https://github.com/${q}/`
   const prepos = $("#repositories-tab > span.Counter").text()
 
     console.log(img)
     console.log(name)
     console.log(username)
     console.log(followers)
-    console.log(url)
+    console.log(uurl)
     console.log(prepos)
   
 }catch(e){
