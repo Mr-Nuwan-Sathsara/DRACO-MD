@@ -28,7 +28,7 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
     const url2 = $("#contenedor > div.module > div.content.rigth.csearch > div.search-page > div:nth-child(2) > article > div.details > div.title > a").attr('href')
     const response2 = await axios.get(url2)
     const $$ = cheerio.load(response2.data)
-    const subpage = $$("#contenedor > div.module > div.content.rigth.csearch > div.search-page > div:nth-child(2) > article > div.details > div.title > a").attr('href')
+    const subpage = $$("#link-5095 > td:nth-child(1) > a").attr('href')
 
     const response3 = await axios.get(subpage)
     const $$$ = cheerio.load(response3.data)
