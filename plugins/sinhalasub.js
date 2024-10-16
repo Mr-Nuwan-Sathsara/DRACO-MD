@@ -31,7 +31,9 @@ const noresult = $("body > div.elementor.elementor-234293.elementor-location-arc
     const response2 = await axios.get(url2)
     const $$ = cheerio.load(response.data)
 
-    const sublink = $$("#post-115997 > div > div.cm-entry-summary > a").attr('href')
+    const postnb = $$("article").attr('id')
+	console.log(postnb)
+    const sublink = $$(`#${postnb} > div > div.cm-entry-summary > a`).attr('href')
     console.log(sublink)
     
 }catch(e){
