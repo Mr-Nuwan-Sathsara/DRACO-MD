@@ -43,11 +43,6 @@ reply(`${e}`)
 }
 })
 
-const {cmd , commands} = require('../command')
-const { botwatermark } = require('../botwatermark')
-const cheerio = require('cheerio')
-const axios = require('axios')
-
 cmd({
     pattern: "subdown2",
     desc: "Download movies sinhala subtitles from baiscope.lk.",
