@@ -24,7 +24,7 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
         await m.react("❌")
         return reply("*❗️ Subtitle not found!. ❗️*")
     }
-
+    await m.react("🎬")
     const url2 = $("#contenedor > div.module > div.content.rigth.csearch > div.search-page > div:nth-child(2) > article > div.details > div.title > a").attr('href')
     const response2 = await axios.get(url2)
     const $$ = cheerio.load(response2.data)
@@ -36,7 +36,6 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
     const sublink = $$$("#link").attr('href')
 
     await conn.sendMessage(from, {document: {url: sublink},fileName: subname,caption: botwatermark},{quoted: mek})
-    
 }catch(e){
 console.log(e)
 reply(`${e}`)
