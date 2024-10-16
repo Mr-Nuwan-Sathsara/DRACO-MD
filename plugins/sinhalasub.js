@@ -30,8 +30,7 @@ const noresult = $("body > div.elementor.elementor-234293.elementor-location-arc
     console.log(url2)
     const response2 = await axios.get(url2)
     const $$ = cheerio.load(response.data)
-
-    const postnb = $$("article").attr('id')
+    const postnb = $$("#cm-primary > div.cm-posts.clearfix > article").attr('id')
 	console.log(postnb)
     const sublink = $$(`#${postnb} > div > div.cm-entry-summary > a`).attr('href')
     console.log(sublink)
