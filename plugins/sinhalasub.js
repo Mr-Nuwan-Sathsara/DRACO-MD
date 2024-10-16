@@ -32,7 +32,7 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
 
     const response3 = await axios.get(subpage)
     const $$$ = cheerio.load(response3.data)
-    const subname = $$$("body > div > div > div > div.inside > small:nth-child(4) > a").attr('href')
+    const subname = $$$("body > div > div > div > div.inside > small:nth-child(4) > a").text().trim()
     const sublink = $$$("#link").attr('href')
 
     await conn.sendMessage(from, {document: {url: sublink},fileName: subname + ".zip",caption: botwatermark},{quoted: mek})
