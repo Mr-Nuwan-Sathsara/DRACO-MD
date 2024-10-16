@@ -4,7 +4,7 @@ const { cmd, commands } = require('../command');
 const { botwatermark } = require('../botwatermark')
 
 cmd({
-    pattern: "gituser",
+    pattern: "gituser2",
     desc: "Fetch detailed GitHub user profile including profile picture.",
     category: "other",
     filename: __filename
