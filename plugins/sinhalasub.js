@@ -66,7 +66,7 @@ const $ = cheerio.load(response.data)
     }*/
     
     await m.react("🎬")
-    const url2 = $("body > div:nth-child(2) > section > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > a").attr('href')
+    const url2 = $("body > div:nth-child(2) > section > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(1) > h5 > a").attr('href')
     console.log(url2)
     
     /*const response2 = await axios.get(url2)
