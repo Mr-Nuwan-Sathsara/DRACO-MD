@@ -28,11 +28,11 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
     const url2 = $("#contenedor > div.module > div.content.rigth.csearch > div.search-page > div:nth-child(2) > article > div.details > div.title > a").attr('href')
     const response2 = await axios.get(url2)
     const $$ = cheerio.load(response2.data)
-    const subname = $$("#single > div.content.right > div.sheader > div.data").text().trim()
+    const subpage = $$("#contenedor > div.module > div.content.rigth.csearch > div.search-page > div:nth-child(2) > article > div.details > div.title > a").attr('href')
 
     const response3 = await axios.get(subpage)
     const $$$ = cheerio.load(response3.data)
-    const subpage = $$$("body > div > div > div > div.inside > small:nth-child(4) > a").attr('href')
+    const subname = $$$("body > div > div > div > div.inside > small:nth-child(4) > a").attr('href')
     const sublink = $$$("#link").attr('href')
 
     await conn.sendMessage(from, {document: {url: sublink},fileName: subname + ".zip",caption: botwatermark},{quoted: mek})
