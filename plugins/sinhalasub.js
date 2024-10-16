@@ -35,7 +35,7 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
     const $$$ = cheerio.load(response3.data)
     const sublink = $$$("#link").attr('href')
 
-    await conn.sendMessage(from, {document: {url: sublink},fileName: subname,caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from, {document: {url: sublink},fileName: subname + ".zip",caption: botwatermark},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
