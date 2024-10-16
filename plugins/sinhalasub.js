@@ -22,7 +22,7 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
         return reply("*❗️ Give movie name to download subtitle. ❗️*")
     }else if(noresult == `No results to show with ${q}`) {
         await m.react("❌")
-        return reply("*❗️ Result not found!. ❗️*")
+        return reply("*❗️ Subtitle not found!. ❗️*")
     }
 
     const url2 = $("#contenedor > div.module > div.content.rigth.csearch > div.search-page > div:nth-child(2) > article > div.details > div.title > a").attr('href')
