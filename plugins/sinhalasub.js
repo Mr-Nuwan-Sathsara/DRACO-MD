@@ -69,7 +69,7 @@ console.log(noresult)
     
     const allmovies = $(".elementor-widget-container")
     allmovies.each(function(){
-        url2 = $(this).find("article .elementor-post__card .elementor-post__text .elementor-post__title a").attr('href')
+        url2 = $(this).find("article .elementor-post__card a").attr('href')
 
         alllinks.push({url2})
     })
