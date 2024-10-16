@@ -25,7 +25,13 @@ const noresult = $("#main-content > div.content > div.page-head > h2").text().tr
         return reply("*❗️ Result not found!. ❗️*")
     }
 
+    const movie = $("#main-content > div.content > div.post-listing.archive-box > article:nth-child(1) > h2 > a").attr('href')
+    const response2 = await axios.get(movie)
+    const $$ = cheerio.load(response.data)
 
+    const sublink = $$("#btn-download").attr('data-link')
+    console.log(sublink)
+    
 }catch(e){
 console.log(e)
 reply(`${e}`)
