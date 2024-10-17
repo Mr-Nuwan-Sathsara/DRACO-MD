@@ -36,7 +36,7 @@ const noresult = $("#contenedor > div.module > div.content.rigth.csearch > div >
     const subname = $$$("body > div > div > div > div.inside > small:nth-child(4) > a").text().trim()
     const sublink = $$$("#link").attr('href')
 
-    await conn.sendMessage(from, {document: {url: sublink},fileName: subname + ".zip",caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from, {document: {url: sublink},mimetype: "application/zip",fileName: subname + ".zip",caption: botwatermark},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
