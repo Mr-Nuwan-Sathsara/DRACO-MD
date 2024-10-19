@@ -45,7 +45,9 @@ if(mvdata[6]) movielist += `\n\n7. ${mvdata[6].title}`
 if(mvdata[7]) movielist += `\n\n8. ${mvdata[7].title}`
 if(mvdata[8]) movielist += `\n\n9. ${mvdata[8].title}`
     
-let desc = `surl : ${q}
+let desc = `*⬇️ Sinhalasub.lk Movie Database ⬇️*
+
+surl : ${q}
 
 ${movielist}
 
@@ -66,7 +68,7 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
-console.log(mek)
+
 const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("1. ")[1]
 const sq2 = sq1.split("2.")[0]
@@ -148,7 +150,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("2. ")[1]
 const sq2 = sq1.split("3.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -230,7 +232,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("3. ")[1]
 const sq2 = sq1.split("4.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -312,7 +314,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("4. ")[1]
 const sq2 = sq1.split("5.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -394,7 +396,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("5. ")[1]
 const sq2 = sq1.split("6.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -476,7 +478,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("6. ")[1]
 const sq2 = sq1.split("7.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -558,7 +560,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("7. ")[1]
 const sq2 = sq1.split("8.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -640,7 +642,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("8. ")[1]
 const sq2 = sq1.split("9.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -722,7 +724,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const omsg = m.quoted.caption
+const omsg = m.quoted.imageMessage.caption
 const sq1 = omsg.split("9. ")[1]
 const sq2 = sq1.split(botwatermark)[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
