@@ -37,7 +37,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-const movielist = `${mvdata[0].title} | ${mvdata[0].year}`
+let movielist = `${mvdata[0].title} | ${mvdata[0].year}`
 if(mvdata[1].title) movielist += `\n\n${mvdata[1].title} | ${mvdata[1].year}`
 if(mvdata[2].title) movielist += `\n\n${mvdata[2].title} | ${mvdata[2].year}`
 if(mvdata[3].title) movielist += `\n\n${mvdata[3].title} | ${mvdata[3].year}`
