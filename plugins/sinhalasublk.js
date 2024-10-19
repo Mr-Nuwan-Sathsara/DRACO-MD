@@ -76,9 +76,7 @@ const cmv = omsg.search("1. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*1. ")[1]
 const sq2 = sq1.split("*2.")[0]
-const sq3 = sq2.replaceAll("*", "")
-    console.log(sq2)
-        console.log(sq3)
+const sq3 = sq2.replaceAll("*","")
 const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -147,11 +145,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*2. ")
+const cmv = omsg.search("2. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*2. ")[1]
 const sq2 = sq1.split("*3.")[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
@@ -220,11 +219,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*3. ")
+const cmv = omsg.search("3. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*3. ")[1]
 const sq2 = sq1.split("*4.")[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
@@ -293,11 +293,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*4. ")
+const cmv = omsg.search("4. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*4. ")[1]
 const sq2 = sq1.split("*5.")[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
@@ -366,11 +367,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*5. ")
+const cmv = omsg.search("5. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*5. ")[1]
 const sq2 = sq1.split("*6.")[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
@@ -439,11 +441,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*6. ")
+const cmv = omsg.search("6. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*6. ")[1]
 const sq2 = sq1.split("*7.")[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
@@ -512,11 +515,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*7. ")
+const cmv = omsg.search("7. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*7. ")[1]
 const sq2 = sq1.split("*8.")[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
@@ -585,11 +589,12 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*8. ")
+const cmv = omsg.search("8. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*8. ")[1]
 const sq2 = sq1.split("*9.")[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
@@ -658,11 +663,11 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*9. ")
+const cmv = omsg.search("9. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*9. ")[1]
 const sq2 = sq1.split(botwatermark)[0]
-const url = `https://sinhalasub.lk/?s=${sq2}`
+const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
