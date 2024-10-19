@@ -4,8 +4,8 @@ const cheerio = require('cheerio')
 const axios = require('axios')
 
 cmd({
-    pattern: "s",
-    desc: "Search movies in sinhalasub.lk.",
+    pattern: "sinhalasublk",
+    desc: "Download movies from sinhalasub.lk.",
     category: "search",
     filename: __filename
 },
@@ -22,7 +22,7 @@ const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > di
         return reply("*❗️ Give movie name. ❗️*")
     }else if(resulterror == `No results to show with ${q}`) {
         await m.react("❌")
-        return reply("*❗️ Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ. ❗️*")
+        return reply("*❗️ Movie not found!. ❗️*")
     }
 await m.react("🎬")
 const mvdata = []
@@ -36,15 +36,15 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-let movielist = `1. ${mvdata[0].title}`
-if(mvdata[1]) movielist += `\n\n2. ${mvdata[1].title}`
-if(mvdata[2]) movielist += `\n\n3. ${mvdata[2].title}`
-if(mvdata[3]) movielist += `\n\n4. ${mvdata[3].title}`
-if(mvdata[4]) movielist += `\n\n5. ${mvdata[4].title}`
-if(mvdata[5]) movielist += `\n\n6. ${mvdata[5].title}`
-if(mvdata[6]) movielist += `\n\n7. ${mvdata[6].title}`
-if(mvdata[7]) movielist += `\n\n8. ${mvdata[7].title}`
-if(mvdata[8]) movielist += `\n\n9. ${mvdata[8].title}`
+let movielist = `*1. ${mvdata[0].title}*`
+if(mvdata[1]) movielist += `\n\n*2. ${mvdata[1].title}*`
+if(mvdata[2]) movielist += `\n\n*3. ${mvdata[2].title}*`
+if(mvdata[3]) movielist += `\n\n*4. ${mvdata[3].title}*`
+if(mvdata[4]) movielist += `\n\n*5. ${mvdata[4].title}*`
+if(mvdata[5]) movielist += `\n\n*6. ${mvdata[5].title}*`
+if(mvdata[6]) movielist += `\n\n*7. ${mvdata[6].title}*`
+if(mvdata[7]) movielist += `\n\n*8. ${mvdata[7].title}*`
+if(mvdata[8]) movielist += `\n\n*9. ${mvdata[8].title}*`
     
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -65,17 +65,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "1",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("1. ")
+const cmv = omsg.search("*1. ")
 if(cmv == -1) return
-const sq1 = omsg.split("1. ")[1]
-const sq2 = sq1.split("2.")[0]
+const sq1 = omsg.split("*1. ")[1]
+const sq2 = sq1.split("*2.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -137,17 +137,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "2",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("2. ")
+const cmv = omsg.search("*2. ")
 if(cmv == -1) return
-const sq1 = omsg.split("2. ")[1]
-const sq2 = sq1.split("3.")[0]
+const sq1 = omsg.split("*2. ")[1]
+const sq2 = sq1.split("*3.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -210,17 +210,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "3",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("3. ")
+const cmv = omsg.search("*3. ")
 if(cmv == -1) return
-const sq1 = omsg.split("3. ")[1]
-const sq2 = sq1.split("4.")[0]
+const sq1 = omsg.split("*3. ")[1]
+const sq2 = sq1.split("*4.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -283,17 +283,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "4",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("4. ")
+const cmv = omsg.search("*4. ")
 if(cmv == -1) return
-const sq1 = omsg.split("4. ")[1]
-const sq2 = sq1.split("5.")[0]
+const sq1 = omsg.split("*4. ")[1]
+const sq2 = sq1.split("*5.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -356,17 +356,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "5",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("5. ")
+const cmv = omsg.search("*5. ")
 if(cmv == -1) return
-const sq1 = omsg.split("5. ")[1]
-const sq2 = sq1.split("6.")[0]
+const sq1 = omsg.split("*5. ")[1]
+const sq2 = sq1.split("*6.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -429,17 +429,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "6",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("6. ")
+const cmv = omsg.search("*6. ")
 if(cmv == -1) return
-const sq1 = omsg.split("6. ")[1]
-const sq2 = sq1.split("7.")[0]
+const sq1 = omsg.split("*6. ")[1]
+const sq2 = sq1.split("*7.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -502,17 +502,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "7",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("7. ")
+const cmv = omsg.search("*7. ")
 if(cmv == -1) return
-const sq1 = omsg.split("7. ")[1]
-const sq2 = sq1.split("8.")[0]
+const sq1 = omsg.split("*7. ")[1]
+const sq2 = sq1.split("*8.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -575,17 +575,17 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "8",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("8. ")
+const cmv = omsg.search("*8. ")
 if(cmv == -1) return
-const sq1 = omsg.split("8. ")[1]
-const sq2 = sq1.split("9.")[0]
+const sq1 = omsg.split("*8. ")[1]
+const sq2 = sq1.split("*9.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
@@ -648,16 +648,16 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "9",
-    quoted_includes: "surl :",
+    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("9. ")
+const cmv = omsg.search("*9. ")
 if(cmv == -1) return
-const sq1 = omsg.split("9. ")[1]
+const sq1 = omsg.split("*9. ")[1]
 const sq2 = sq1.split(botwatermark)[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
