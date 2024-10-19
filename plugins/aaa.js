@@ -13,7 +13,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-await conn.sendMessage(from, {document: {url: `https://pixeldrain.com/u/dweL8D6g`},fileName: `Movie Ekah.mp4`,mimetype: "video/mp4",caption: botwatermark},{quoted: mek})
+await conn.sendMessage(from, {document: {url: `https://pixeldrain.com/api/file/dweL8D6g`},fileName: `Movie Ekah.mp4`,mimetype: "video/mp4",caption: botwatermark},{quoted: mek})
 
 }catch(e){
 console.log(e)
