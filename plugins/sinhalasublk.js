@@ -46,8 +46,7 @@ if(mvdata[6]) movielist += `\n\n*7. ${mvdata[6].title}*`
 if(mvdata[7]) movielist += `\n\n*8. ${mvdata[7].title}*`
 if(mvdata[8]) movielist += `\n\n*9. ${mvdata[8].title}*`
     
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *🗃️ Database :* Sinhalasub.lk
 *🔎 Search :* ${q}
 
@@ -115,8 +114,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -190,8 +188,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -265,8 +262,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -340,8 +336,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -415,8 +410,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -490,8 +484,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -565,8 +558,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -640,8 +632,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -714,8 +705,7 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
+let desc = `
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -738,7 +728,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "1",
-    quoted_includes: "「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」",
+    quoted_includes: "📥 Available Qualitys 📥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
@@ -773,7 +763,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "2",
-    quoted_includes: "「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」",
+    quoted_includes: "📥 Available Qualitys 📥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
@@ -808,7 +798,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "3",
-    quoted_includes: "「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」",
+    quoted_includes: "📥 Available Qualitys 📥",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
