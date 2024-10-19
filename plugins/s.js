@@ -810,13 +810,10 @@ try{
     const response = await axios.get(p1080)
     const $ = cheerio.load(response.data)
 
-    const dlurl = $("#link").attr('href')
+    const url1 = $("#link").attr('href')
+    const url2 = dlurl.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
     console.log(dlurl)
-    const response2 = await axios.get(dlurl)
-    const $$ = cheerio.load(response2.data)
-
-    const dlurl2 = $$("#body > div > div.file_preview_row.svelte-jngqwx > div.file_preview.svelte-jngqwx.checkers.toolbar_visible > div > div > video > source").attr('src')
-    console.log(dlurl2)
     
 }catch(e){
 console.log(e)
