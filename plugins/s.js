@@ -24,6 +24,7 @@ const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > di
         await m.react("❌")
         return reply("*❗️ Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ. ❗️*")
     }
+await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
