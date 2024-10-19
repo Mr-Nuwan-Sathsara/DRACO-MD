@@ -22,7 +22,7 @@ const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > di
         return reply("*❗️ Give movie name. ❗️*")
     }else if(resulterror == `No results to show with ${q}`) {
         await m.react("❌")
-        return reply("*❗️ Movie not found!. ❗️*")
+        return reply("*❗️ Movie not found! ❗️*")
     }
 await m.react("🎬")
 const mvdata = []
@@ -747,7 +747,7 @@ try{
     const url = urls[0]
     if(!url) {
         await m.react("❌")
-        return reply("*❗️ Can't download this movie. ❗️*")
+        return reply("*❗️ Can't download this movie! ❗️*")
     }
     await m.react("🔄")
     const response = await axios.get(url)
@@ -782,7 +782,7 @@ try{
     const url = urls[0]
     if(!url) {
         await m.react("❌")
-        return reply("*❗️ Can't download this movie. ❗️*")
+        return reply("*❗️ Can't download this movie! ❗️*")
     }
     await m.react("🔄")
     const response = await axios.get(url)
@@ -817,7 +817,7 @@ try{
     const url = urls[0]
     if(!url) {
         await m.react("❌")
-        return reply("*❗️ Can't download this movie. ❗️*")
+        return reply("*❗️ Can't download this movie! ❗️*")
     }
     await m.react("🔄")
     const response = await axios.get(url)
