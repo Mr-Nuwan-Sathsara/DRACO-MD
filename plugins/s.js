@@ -36,17 +36,16 @@ movies.each(function(){
 })
 
 let movielist = `1. ${mvdata[0].title} | ${mvdata[0].year}`
-if(mvdata[1]) movielist += `\n\n2. ${mvdata[1].title} | ${mvdata[1].year}`
-if(mvdata[2]) movielist += `\n\n3. ${mvdata[2].title} | ${mvdata[2].year}`
-if(mvdata[3]) movielist += `\n\n4. ${mvdata[3].title} | ${mvdata[3].year}`
-if(mvdata[4]) movielist += `\n\n5. ${mvdata[4].title} | ${mvdata[4].year}`
-if(mvdata[5]) movielist += `\n\n6. ${mvdata[5].title} | ${mvdata[5].year}`
-if(mvdata[6]) movielist += `\n\n7. ${mvdata[6].title} | ${mvdata[6].year}`
-if(mvdata[7]) movielist += `\n\n8. ${mvdata[7].title} | ${mvdata[7].year}`
-if(mvdata[8]) movielist += `\n\n9. ${mvdata[8].title} | ${mvdata[8].year}`
+if(mvdata[1]) movielist += `\n\n2. ${mvdata[1].title}`
+if(mvdata[2]) movielist += `\n\n3. ${mvdata[2].title}`
+if(mvdata[3]) movielist += `\n\n4. ${mvdata[3].title}`
+if(mvdata[4]) movielist += `\n\n5. ${mvdata[4].title}`
+if(mvdata[5]) movielist += `\n\n6. ${mvdata[5].title}`
+if(mvdata[6]) movielist += `\n\n7. ${mvdata[6].title}`
+if(mvdata[7]) movielist += `\n\n8. ${mvdata[7].title}`
+if(mvdata[8]) movielist += `\n\n9. ${mvdata[8].title}`
     
-let desc = `sh :
-${q}
+let desc = `sh : ${q}
 
 ${movielist}
 
@@ -68,7 +67,11 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-const url = urls[0]
+const omsg = m.quoted.msg
+const sq1 = omsg.split("sh : ")[1]
+const sq2 = sq1.split("1.")[0]
+console.log(sq2)
+const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const mvdata = []
