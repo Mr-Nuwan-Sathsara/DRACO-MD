@@ -793,7 +793,7 @@ try{
         await m.react("❌")
         return reply("*❗️ Can't download this movie. ❗️*")
     }
-    await m.react("🔁")
+    await m.react("🔄")
     const response = await axios.get(p1080)
     const $ = cheerio.load(response.data)
     const url1 = $("#link").attr('href')
@@ -825,7 +825,7 @@ try{
         await m.react("❌")
         return reply("*❗️ Can't download this movie. ❗️*")
     }
-    await m.react("🔁")
+    await m.react("🔄")
     const response = await axios.get(p720)
     const $ = cheerio.load(response.data)
     const url1 = $("#link").attr('href')
@@ -857,7 +857,7 @@ try{
         await m.react("❌")
         return reply("*❗️ Can't download this movie. ❗️*")
     }
-    await m.react("🔁")
+    await m.react("🔄")
     const response = await axios.get(p480)
     const $ = cheerio.load(response.data)
     const url1 = $("#link").attr('href')
