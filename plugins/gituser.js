@@ -22,14 +22,14 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗚𝗜𝗧𝗛𝗨𝗕 𝗨𝗦𝗘𝗥 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡𝗦 🐲 」*
 
-*👤 Uꜱᴇʀɴᴀᴍᴇ*: ${data.name || data.login}
-*🔗 Gɪᴛʜᴜʙ Uʀʟ*:(${data.html_url})
-*📝 Bɪᴏ*: ${data.bio || 'Not available'}
-*🏙️ Lᴏᴄᴀᴛɪᴏɴ*: ${data.location || 'Unknown'}
-*📊 Pᴜʙʟɪᴄ Rᴇᴘᴏꜱ*: ${data.public_repos}
-*👥 Fᴏʟʟᴏᴡᴇʀꜱ*: ${data.followers} | Following: ${data.following}
-*📅 Cʀᴇᴀᴛᴇᴅ Aᴛ*: ${new Date(data.created_at).toDateString()}
-*🔭 Pᴜʙʟɪᴄ Gɪꜱᴛꜱ*: ${data.public_gists}\n\n\n${botwatermark}`
+*👤 Username :* ${data.name || data.login}
+*🔗 Github Url :*(${data.html_url})
+*📝 Bio :* ${data.bio || 'Not available'}
+*🏙️ Location :* ${data.location || 'Unknown'}
+*📊 Public Repos :* ${data.public_repos}
+*👥 Followers :* ${data.followers} | Following: ${data.following}
+*📅 Created At :* ${new Date(data.created_at).toDateString()}
+*🔭 Public Gists :* ${data.public_gists}\n\n\n${botwatermark}`
 
         await conn.sendMessage(from, { image: { url: data.avatar_url }, caption: desc }, { quoted: mek });
       await m.react("✅")
