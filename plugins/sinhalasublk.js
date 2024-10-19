@@ -115,7 +115,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -189,7 +190,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -263,7 +265,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -337,7 +340,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -411,7 +415,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -485,7 +490,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -559,7 +565,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -633,7 +640,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -706,7 +714,8 @@ if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
