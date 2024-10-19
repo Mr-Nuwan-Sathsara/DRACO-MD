@@ -73,7 +73,6 @@ try{
 const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
-const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
 
 await m.react("🎬")
 const mvdata = []
@@ -165,7 +164,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-const url2 = mvdata[0].link
+const url2 = mvdata[1].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
