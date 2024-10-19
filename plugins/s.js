@@ -819,3 +819,69 @@ console.log(e)
 reply(`${e}`)
 }
 })
+
+cmd({
+    reply_pattern: "2",
+    quoted_includes: "*📥 Download Links 📥*",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const p720 = urls[2]
+    const response = await axios.get(p720)
+    const $ = cheerio.load(response.data)
+    const url1 = $("#link").attr('href')
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    console.log(dlurl)
+    
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "3",
+    quoted_includes: "*📥 Download Links 📥*",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const p480 = urls[3]
+    const response = await axios.get(p480)
+    const $ = cheerio.load(response.data)
+    const url1 = $("#link").attr('href')
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    console.log(dlurl)
+    
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "4",
+    quoted_includes: "*📥 Download Links 📥*",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const sinsub = urls[4]
+    const response = await axios.get(sinsub)
+    const $ = cheerio.load(response.data)
+    const url1 = $("#link").attr('href')
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    console.log(dlurl)
+    
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
