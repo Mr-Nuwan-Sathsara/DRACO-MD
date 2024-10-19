@@ -166,19 +166,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -195,15 +191,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -246,19 +239,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -275,15 +264,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -326,19 +312,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -355,15 +337,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -406,19 +385,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -435,15 +410,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -486,19 +458,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -515,15 +483,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -566,19 +531,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -595,15 +556,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -646,19 +604,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -675,15 +629,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -726,19 +677,15 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
-const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
-const p720 = $$("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
 const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
 const ms2720 = ms720.split(" ")[0]
 const ms3720 = ms720.search("MB")
-const p480 = $$("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
-const sub = $$("tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(1) > a").attr('href')
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
@@ -755,15 +702,12 @@ let desc = `
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
 
-*📥 Download Links 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080}) :*
-${p1080}
+*📥 Available Qualitys 📥*
+*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720}) :*
-${p720}
+*2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -775,21 +719,24 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "1",
-    quoted_includes: "*📥 Download Links 📥*",
+    quoted_includes: "*📥 Available Qualitys 📥*",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-    const p1080 = urls[1]
-    if(!p1080) {
+    const url = urls[0]
+    if(!url) {
         await m.react("❌")
         return reply("*❗️ Can't download this movie. ❗️*")
     }
     await m.react("🔄")
-    const response = await axios.get(p1080)
+    const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const url1 = $("#link").attr('href')
+    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const omsg = m.quoted.imageMessage.caption
@@ -807,53 +754,24 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "2",
-    quoted_includes: "*📥 Download Links 📥*",
+    quoted_includes: "*📥 Available Qualitys 📥*",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
-    const p720 = urls[2]
-    if(!p720) {
+    const url = urls[0]
+    if(!url) {
         await m.react("❌")
         return reply("*❗️ Can't download this movie. ❗️*")
     }
     await m.react("🔄")
-    const response = await axios.get(p720)
+    const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const url1 = $("#link").attr('href')
-    const url2 = url1.split("u/")[1]
-    const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    const omsg = m.quoted.imageMessage.caption
-    const makefilename = omsg.split("*📝 Title :* ")[1]
-    const filename = makefilename.split("*⭐️ Rating :*")[0]
-    let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: filename + ".mp4"},{quoted: mek})
-    await m.react("✅")
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-
-cmd({
-    reply_pattern: "3",
-    quoted_includes: "*📥 Download Links 📥*",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
-try{
-
-    const p480 = urls[3]
-    if(!p480) {
-        await m.react("❌")
-        return reply("*❗️ Can't download this movie. ❗️*")
-    }
-    await m.react("🔄")
-    const response = await axios.get(p480)
-    const $ = cheerio.load(response.data)
-    const url1 = $("#link").attr('href')
+    const p720 = $("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p720)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const omsg = m.quoted.imageMessage.caption
@@ -886,7 +804,6 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    console.log(p480)
     const response2 = await axios.get(p480)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
