@@ -13,12 +13,7 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-const url = `https://sinhalasub.lk/links/j85tvdsnxl/`
-const response = await axios.get(url)
-const $ = cheerio.load(response.data)
-const dlurl = $("#link").attr('href')
-console.log(dlurl)
-await conn.sendMessage(from, {video: {url: dlurl},caption: botwatermark},{quoted: mek})
+await conn.sendMessage(from, {document: {url: `https://pixeldrain.com/u/dweL8D6g`},fileName: `Movie Ekah`,mimetype: "video/mp4",caption: botwatermark},{quoted: mek})
 
 }catch(e){
 console.log(e)
