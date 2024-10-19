@@ -797,3 +797,27 @@ console.log(e)
 reply(`${e}`)
 }
 })
+
+cmd({
+    reply_pattern: "1",
+    quoted_includes: "*📥 Download Links 📥*",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const p1080 = urls[1]
+    const p720 = urls[2]
+    const p480 = urls[3]
+    const sinsub = urls[4]
+
+    console.log(p1080)
+    console.log(p720)
+    console.log(p480)
+    console.log(sinsub)
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
