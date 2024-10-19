@@ -886,8 +886,9 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    console.log(p480)
     const response2 = await axios.get(p480)
-    const $$ = cheerio.load(response.data)
+    const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
