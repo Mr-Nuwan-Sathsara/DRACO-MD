@@ -133,7 +133,6 @@ ${p480}
 ${sub}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
-console.log(m)
 
 }catch(e){
 console.log(e)
