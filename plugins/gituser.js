@@ -4,7 +4,7 @@ const { cmd, commands } = require('../command');
 const { botwatermark } = require('../botwatermark')
 
 cmd({
-    pattern: "gituser2",
+    pattern: "gituser",
     desc: "Fetch detailed GitHub user profile including profile picture.",
     category: "other",
     filename: __filename
@@ -12,12 +12,11 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
       await m.react("🔄")
-        const username = args[0];
-        if (!username) {
+        if (!q) {
             return reply("Please provide a GitHub username.");
         }
 
-        const apiUrl = `https://api.github.com/users/${username}`;
+        const apiUrl = `https://api.github.com/users/${q}`;
         const response = await axios.get(apiUrl);
         const data = response.data;
 
