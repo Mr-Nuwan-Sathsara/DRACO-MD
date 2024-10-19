@@ -75,14 +75,6 @@ const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
 
-    if(!q) {
-        await m.react("❌")
-        return reply("*❗️ Give movie name. ❗️*")
-    }else if(resulterror == `No results to show with ${q}`) {
-        await m.react("❌")
-        return reply("*❗️ Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ. ❗️*")
-    }
-
 await m.react("🎬")
 const mvdata = []
 const movies = $("article")
@@ -160,14 +152,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-    if(!q) {
-        await m.react("❌")
-        return reply("*❗️ Give movie name. ❗️*")
-    }else if(resulterror == `No results to show with ${q}`) {
-        await m.react("❌")
-        return reply("*❗️ Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ. ❗️*")
-    }
 
 await m.react("🎬")
 const mvdata = []
