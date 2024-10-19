@@ -37,15 +37,17 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
+console.log(mvdata)
+
 let movielist = `${mvdata[0].title} | ${mvdata[0].year}`
 if(mvdata[1].title) movielist += `\n\n${mvdata[1].title} | ${mvdata[1].year}`
-if(mvdata[2].title) movielist += `\n\n${mvdata[2].title} | ${mvdata[2].year}`
-if(mvdata[3].title) movielist += `\n\n${mvdata[3].title} | ${mvdata[3].year}`
-if(mvdata[4].title) movielist += `\n\n${mvdata[4].title} | ${mvdata[4].year}`
-if(mvdata[5].title) movielist += `\n\n${mvdata[5].title} | ${mvdata[5].year}`
-if(mvdata[6].title) movielist += `\n\n${mvdata[6].title} | ${mvdata[6].year}`
-if(mvdata[7].title) movielist += `\n\n${mvdata[7].title} | ${mvdata[7].year}`
-if(mvdata[8].title) movielist += `\n\n${mvdata[8].title} | ${mvdata[8].year}`
+if(mvdata[2]) movielist += `\n\n${mvdata[2].title} | ${mvdata[2].year}`
+if(mvdata[3]) movielist += `\n\n${mvdata[3].title} | ${mvdata[3].year}`
+if(mvdata[4]) movielist += `\n\n${mvdata[4].title} | ${mvdata[4].year}`
+if(mvdata[5]) movielist += `\n\n${mvdata[5].title} | ${mvdata[5].year}`
+if(mvdata[6]) movielist += `\n\n${mvdata[6].title} | ${mvdata[6].year}`
+if(mvdata[7]) movielist += `\n\n${mvdata[7].title} | ${mvdata[7].year}`
+if(mvdata[8]) movielist += `\n\n${mvdata[8].title} | ${mvdata[8].year}`
     
 let desc = `
 
