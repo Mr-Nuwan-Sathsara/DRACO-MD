@@ -742,8 +742,8 @@ try{
     const omsg = m.quoted.imageMessage.caption
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: filename + ".mp4"},{quoted: mek})
+    let desc = `*${filename}*\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
     
 }catch(e){
@@ -777,8 +777,8 @@ try{
     const omsg = m.quoted.imageMessage.caption
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: filename + ".mp4"},{quoted: mek})
+    let desc = `*${filename}*\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
 
 }catch(e){
@@ -812,8 +812,8 @@ try{
     const omsg = m.quoted.imageMessage.caption
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: filename + ".mp4"},{quoted: mek})
+    let desc = `*${filename}*\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
 
 }catch(e){
