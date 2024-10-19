@@ -65,7 +65,7 @@ cmd({
     quoted_includes: "surl :",
     filename: __filename
 },
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls, tdone}) => {
 try{
 
 const url = urls[0]
@@ -131,8 +131,7 @@ ${p480}
 ${sub}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
-const tdone = mek.quoted.msg
-console.log(tdone)
+console.log(m)
 reply(tdone)
 
 }catch(e){
