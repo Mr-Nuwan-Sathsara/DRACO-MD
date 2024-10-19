@@ -41,6 +41,8 @@ let desc = `
 
 surl :
 ${url}
+https://github.com/Mr-Nuwan-Sathsara/DRACO-MD
+https://github.com/Mr-Nuwan/DRACO-MD/edit/master
 
 mv1 = ${mvdata[0].title}
 
@@ -71,6 +73,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const url = urls[0]
+const urll = urls[1]
+const urlll = urls[2]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 
@@ -132,6 +136,10 @@ ${p480}
 ${sub}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+console.log(url)
+console.log(urll)
+console.log(urlll)
 
 }catch(e){
 console.log(e)
