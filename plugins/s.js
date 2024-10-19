@@ -166,10 +166,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[1]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[1].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -196,10 +196,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[1].title}
-*⭐️ Rating :* ${mvdata[1].rating}
-*📆 Year :* ${mvdata[1].year}
-*🔗 Url :* ${mvdata[1].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
@@ -248,10 +248,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[2]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[2].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -278,10 +278,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[2].title}
-*⭐️ Rating :* ${mvdata[2].rating}
-*📆 Year :* ${mvdata[2].year}
-*🔗 Url :* ${mvdata[2].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
@@ -330,10 +330,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[3]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[3].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -360,10 +360,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[3].title}
-*⭐️ Rating :* ${mvdata[3].rating}
-*📆 Year :* ${mvdata[3].year}
-*🔗 Url :* ${mvdata[3].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
@@ -412,10 +412,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[4]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[4].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -442,10 +442,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[4].title}
-*⭐️ Rating :* ${mvdata[4].rating}
-*📆 Year :* ${mvdata[4].year}
-*🔗 Url :* ${mvdata[4].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
@@ -494,10 +494,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[5]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[5].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -524,10 +524,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[5].title}
-*⭐️ Rating :* ${mvdata[5].rating}
-*📆 Year :* ${mvdata[5].year}
-*🔗 Url :* ${mvdata[5].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
@@ -576,10 +576,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[6]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[6].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -606,10 +606,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[6].title}
-*⭐️ Rating :* ${mvdata[6].rating}
-*📆 Year :* ${mvdata[6].year}
-*🔗 Url :* ${mvdata[6].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
@@ -658,10 +658,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[7]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[7].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -688,10 +688,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[7].title}
-*⭐️ Rating :* ${mvdata[7].rating}
-*📆 Year :* ${mvdata[7].year}
-*🔗 Url :* ${mvdata[7].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
@@ -740,10 +740,10 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[8]) return
+    if(!mvdata[0]) return
     await m.react("🎬")
 
-const url2 = mvdata[8].link
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const p1080 = $$("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
@@ -770,10 +770,10 @@ if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
 
 let desc = `
-*📝 Title :* ${mvdata[8].title}
-*⭐️ Rating :* ${mvdata[8].rating}
-*📆 Year :* ${mvdata[8].year}
-*🔗 Url :* ${mvdata[8].link}
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
 
 *📥 Download Links 📥*
 *1️⃣ 1080P(${ms21080}${gbormb1080}) :*
