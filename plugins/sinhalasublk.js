@@ -74,7 +74,7 @@ try{
 const omsg = m.quoted.imageMessage.caption
 const cmv = omsg.search("*1. ")
 if(cmv == -1) return
-const sq1 = omsg.split("*1. ")[1]
+const sq1 = omsg.split("1. ")[1]
 const sq2 = sq1.split("*2.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
