@@ -40,7 +40,7 @@ movies.each(function(){
 console.log(mvdata)
 
 let movielist = `${mvdata[0].title} | ${mvdata[0].year}`
-if(mvdata[1].title) movielist += `\n\n${mvdata[1].title} | ${mvdata[1].year}`
+if(mvdata[1]) movielist += `\n\n${mvdata[1].title} | ${mvdata[1].year}`
 if(mvdata[2]) movielist += `\n\n${mvdata[2].title} | ${mvdata[2].year}`
 if(mvdata[3]) movielist += `\n\n${mvdata[3].title} | ${mvdata[3].year}`
 if(mvdata[4]) movielist += `\n\n${mvdata[4].title} | ${mvdata[4].year}`
@@ -89,6 +89,8 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
+    
+    if(!mvdata[0]) return
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -168,6 +170,8 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
+    if(!mvdata[1]) return
+
 const url2 = mvdata[1].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
@@ -245,6 +249,8 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
+
+    if(!mvdata[2]) return
 
 const url2 = mvdata[2].link
 const response2 = await axios.get(url2)
@@ -324,6 +330,8 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
+    if(!mvdata[3]) return
+
 const url2 = mvdata[3].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
@@ -401,6 +409,8 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
+
+    if(!mvdata[4]) return
 
 const url2 = mvdata[4].link
 const response2 = await axios.get(url2)
@@ -480,6 +490,8 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
+    if(!mvdata[5]) return
+
 const url2 = mvdata[5].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
@@ -557,6 +569,8 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
+
+    if(!mvdata[6]) return
 
 const url2 = mvdata[6].link
 const response2 = await axios.get(url2)
@@ -636,6 +650,8 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
+    if(!mvdata[7]) return
+
 const url2 = mvdata[7].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
@@ -713,6 +729,8 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
+
+    if(!mvdata[8]) return
 
 const url2 = mvdata[8].link
 const response2 = await axios.get(url2)
