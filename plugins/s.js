@@ -45,9 +45,7 @@ if(mvdata[6]) movielist += `\n\n${mvdata[6].title} | ${mvdata[6].year}`
 if(mvdata[7]) movielist += `\n\n${mvdata[7].title} | ${mvdata[7].year}`
 if(mvdata[8]) movielist += `\n\n${mvdata[8].title} | ${mvdata[8].year}`
     
-let desc = `
-
-surl :
+let desc = `surl :
 ${url}
 
 ${movielist}
