@@ -45,7 +45,7 @@ if(mvdata[6]) movielist += `\n\n7. ${mvdata[6].title}`
 if(mvdata[7]) movielist += `\n\n8. ${mvdata[7].title}`
 if(mvdata[8]) movielist += `\n\n9. ${mvdata[8].title}`
     
-let desc = `sh : ${q}
+let desc = `surl : ${q}
 
 ${movielist}
 
@@ -68,8 +68,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.msg
-const sq1 = omsg.split("sh : ")[1]
-const sq2 = sq1.split("1.")[0]
+const sq1 = omsg.split("1. ")[1]
+const sq2 = sq1.split("2.")[0]
 console.log(sq2)
 const url = `https://sinhalasub.lk/?s=${sq2}`
 const response = await axios.get(url)
