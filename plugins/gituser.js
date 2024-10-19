@@ -23,7 +23,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗚𝗜𝗧𝗛𝗨𝗕 𝗨𝗦𝗘𝗥 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡𝗦 🐲 」*
 
 *👤 Username :* ${data.name || data.login}
-*🔗 Github Url :*(${data.html_url})
+*🔗 Github Url :* ${data.html_url}
 *📝 Bio :* ${data.bio || 'Not available'}
 *🏙️ Location :* ${data.location || 'Unknown'}
 *📊 Public Repos :* ${data.public_repos}
