@@ -70,6 +70,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("1. ")
+if(cmv == -1) return
 const sq1 = omsg.split("1. ")[1]
 const sq2 = sq1.split("2.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -86,8 +88,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
     
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -129,10 +130,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -151,6 +149,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("2. ")
+if(cmv == -1) return
 const sq1 = omsg.split("2. ")[1]
 const sq2 = sq1.split("3.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -168,8 +168,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -211,10 +210,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -233,6 +229,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("3. ")
+if(cmv == -1) return
 const sq1 = omsg.split("3. ")[1]
 const sq2 = sq1.split("4.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -250,8 +248,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -293,10 +290,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -315,6 +309,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("4. ")
+if(cmv == -1) return
 const sq1 = omsg.split("4. ")[1]
 const sq2 = sq1.split("5.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -332,8 +328,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -375,10 +370,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -397,6 +389,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("5. ")
+if(cmv == -1) return
 const sq1 = omsg.split("5. ")[1]
 const sq2 = sq1.split("6.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -414,8 +408,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -457,10 +450,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -479,6 +469,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("6. ")
+if(cmv == -1) return
 const sq1 = omsg.split("6. ")[1]
 const sq2 = sq1.split("7.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -496,8 +488,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -539,10 +530,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -561,6 +549,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("7. ")
+if(cmv == -1) return
 const sq1 = omsg.split("7. ")[1]
 const sq2 = sq1.split("8.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -578,8 +568,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -621,10 +610,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -643,6 +629,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("8. ")
+if(cmv == -1) return
 const sq1 = omsg.split("8. ")[1]
 const sq2 = sq1.split("9.")[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -660,8 +648,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -703,10 +690,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -725,6 +709,8 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("9. ")
+if(cmv == -1) return
 const sq1 = omsg.split("9. ")[1]
 const sq2 = sq1.split(botwatermark)[0]
 const url = `https://sinhalasub.lk/?s=${sq2}`
@@ -742,8 +728,7 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    if(!mvdata[0]) return
-    await m.react("🎬")
+await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -785,10 +770,7 @@ ${p1080}
 ${p720}
 
 *3️⃣ 480P(${ms2480}${gbormb480}) :*
-${p480}
-
-*4️⃣ Sinhala Subtitle :*
-${sub}\n\n\n${botwatermark}`
+${p480}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -807,12 +789,22 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const p1080 = urls[1]
+    if(!p1080) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie. ❗️*")
+    }
+    await m.react("🔁")
     const response = await axios.get(p1080)
     const $ = cheerio.load(response.data)
     const url1 = $("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    console.log(dlurl)
+    const omsg = m.quoted.imageMessage.caption
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
     
 }catch(e){
 console.log(e)
@@ -829,13 +821,23 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const p720 = urls[2]
+    if(!p720) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie. ❗️*")
+    }
+    await m.react("🔁")
     const response = await axios.get(p720)
     const $ = cheerio.load(response.data)
     const url1 = $("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    console.log(dlurl)
-    
+    const omsg = m.quoted.imageMessage.caption
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+
 }catch(e){
 console.log(e)
 reply(`${e}`)
@@ -851,35 +853,23 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const p480 = urls[3]
+    if(!p480) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie. ❗️*")
+    }
+    await m.react("🔁")
     const response = await axios.get(p480)
     const $ = cheerio.load(response.data)
     const url1 = $("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    console.log(dlurl)
-    
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
+    const omsg = m.quoted.imageMessage.caption
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
 
-cmd({
-    reply_pattern: "4",
-    quoted_includes: "*📥 Download Links 📥*",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
-try{
-
-    const sinsub = urls[4]
-    const response = await axios.get(sinsub)
-    const $ = cheerio.load(response.data)
-    const url1 = $("#link").attr('href')
-    const url2 = url1.split("u/")[1]
-    const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    console.log(dlurl)
-    
 }catch(e){
 console.log(e)
 reply(`${e}`)
