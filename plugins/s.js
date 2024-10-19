@@ -24,8 +24,6 @@ const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > di
         await m.react("❌")
         return reply("*❗️ Mᴏᴠɪᴇ Nᴏᴛ Fᴏᴜɴᴅ. ❗️*")
     }
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -77,8 +75,6 @@ try{
 const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -91,6 +87,7 @@ movies.each(function(){
 })
     
     if(!mvdata[0]) return
+    await m.react("🎬")
 
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
@@ -157,8 +154,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -171,6 +166,7 @@ movies.each(function(){
 })
 
     if(!mvdata[1]) return
+    await m.react("🎬")
 
 const url2 = mvdata[1].link
 const response2 = await axios.get(url2)
@@ -237,8 +233,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -251,6 +245,7 @@ movies.each(function(){
 })
 
     if(!mvdata[2]) return
+    await m.react("🎬")
 
 const url2 = mvdata[2].link
 const response2 = await axios.get(url2)
@@ -317,8 +312,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -331,6 +324,7 @@ movies.each(function(){
 })
 
     if(!mvdata[3]) return
+    await m.react("🎬")
 
 const url2 = mvdata[3].link
 const response2 = await axios.get(url2)
@@ -397,8 +391,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -411,6 +403,7 @@ movies.each(function(){
 })
 
     if(!mvdata[4]) return
+    await m.react("🎬")
 
 const url2 = mvdata[4].link
 const response2 = await axios.get(url2)
@@ -477,8 +470,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -491,6 +482,7 @@ movies.each(function(){
 })
 
     if(!mvdata[5]) return
+    await m.react("🎬")
 
 const url2 = mvdata[5].link
 const response2 = await axios.get(url2)
@@ -557,8 +549,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -571,6 +561,7 @@ movies.each(function(){
 })
 
     if(!mvdata[6]) return
+    await m.react("🎬")
 
 const url2 = mvdata[6].link
 const response2 = await axios.get(url2)
@@ -637,8 +628,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -651,6 +640,7 @@ movies.each(function(){
 })
 
     if(!mvdata[7]) return
+    await m.react("🎬")
 
 const url2 = mvdata[7].link
 const response2 = await axios.get(url2)
@@ -717,8 +707,6 @@ const url = urls[0]
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-
-await m.react("🎬")
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -731,6 +719,7 @@ movies.each(function(){
 })
 
     if(!mvdata[8]) return
+    await m.react("🎬")
 
 const url2 = mvdata[8].link
 const response2 = await axios.get(url2)
