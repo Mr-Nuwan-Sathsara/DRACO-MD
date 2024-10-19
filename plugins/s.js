@@ -46,9 +46,10 @@ if(mvdata[6]) movielist += `\n\n7. ${mvdata[6].title}`
 if(mvdata[7]) movielist += `\n\n8. ${mvdata[7].title}`
 if(mvdata[8]) movielist += `\n\n9. ${mvdata[8].title}`
     
-let desc = `*⬇️ Sinhalasub.lk Movie Database ⬇️*
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
-surl : ${q}
+*🗃️ Database :* Sinhalasub.lk
+*🔎 Search :* ${q}
 
 ${movielist}
 
