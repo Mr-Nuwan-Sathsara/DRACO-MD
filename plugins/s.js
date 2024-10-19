@@ -807,14 +807,11 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const p1080 = urls[1]
-    const p720 = urls[2]
-    const p480 = urls[3]
-    const sinsub = urls[4]
+    const response = await axios.get(p1080)
+    const $ = cheerio.load(response.data)
 
-    console.log(p1080)
-    console.log(p720)
-    console.log(p480)
-    console.log(sinsub)
+    const dlurl = $("#link").attr('href')
+    console.log(dlurl)
 
 }catch(e){
 console.log(e)
