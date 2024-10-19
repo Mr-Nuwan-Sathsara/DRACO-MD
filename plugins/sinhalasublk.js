@@ -72,7 +72,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
 const omsg = m.quoted.imageMessage.caption
-const cmv = omsg.search("*1. ")
+const cmv = omsg.search("1. ")
 if(cmv == -1) return
 const sq1 = omsg.split("*1. ")[1]
 const sq2 = sq1.split("*2.")[0]
