@@ -812,7 +812,12 @@ try{
 
     const dlurl = $("#link").attr('href')
     console.log(dlurl)
+    const response2 = await axios.get(dlurl)
+    const $$ = cheerio.load(response2.data)
 
+    const dlurl2 = $$("#body > div > div.file_preview_row.svelte-jngqwx > div.file_preview.svelte-jngqwx.checkers.toolbar_visible > div > div > video > source").attr('src')
+    console.log(dlurl2)
+    
 }catch(e){
 console.log(e)
 reply(`${e}`)
