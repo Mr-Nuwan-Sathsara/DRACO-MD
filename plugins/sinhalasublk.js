@@ -77,6 +77,8 @@ if(cmv == -1) return
 const sq1 = omsg.split("*1. ")[1]
 const sq2 = sq1.split("*2.")[0]
 const sq3 = sq2.replaceAll("*", "")
+    console.log(sq2)
+        console.log(sq3)
 const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
