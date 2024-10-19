@@ -68,7 +68,7 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
-
+console.log(mek)
 const omsg = m.quoted.msg
 const sq1 = omsg.split("1. ")[1]
 const sq2 = sq1.split("2.")[0]
