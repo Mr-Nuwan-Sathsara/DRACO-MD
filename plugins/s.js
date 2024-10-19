@@ -45,13 +45,15 @@ if(mvdata[6]) movielist += `\n\n7. ${mvdata[6].title}`
 if(mvdata[7]) movielist += `\n\n8. ${mvdata[7].title}`
 if(mvdata[8]) movielist += `\n\n9. ${mvdata[8].title}`
     
-let desc = `surl : ${q}
+let desc = `*⬇️ Sinhalasub.lk Movie Database ⬇️*
+
+surl : ${q}
 
 ${movielist}
 
 \n\n\n${botwatermark}`
 
-await conn.sendMessage(from, {text: desc},{quoted: mek})
+await conn.sendMessage(from, {image: {url: `https://sinhalasub.lk/wp-content/uploads/2023/08/icon.png`},caption: desc},{quoted: mek})
 
 }catch(e){
 console.log(e)
