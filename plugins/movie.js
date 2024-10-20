@@ -838,7 +838,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("1️⃣ 1080p")
+    const cq = omsg.search("1️⃣")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
@@ -849,7 +849,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const response2 = await axios.get(p1080)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -883,7 +883,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("2️⃣ 720p")
+    const cq = omsg.search("2️⃣")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
@@ -928,7 +928,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("3️⃣ 480p")
+    const cq = omsg.search("3️⃣")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
@@ -973,7 +973,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("4⃣ 360p")
+    const cq = omsg.search("4⃣")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
@@ -983,8 +983,8 @@ try{
     await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p480 = $("tr:nth-child(4) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const p360 = $("tr:nth-child(4) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p360)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
