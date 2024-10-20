@@ -89,10 +89,6 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
-if(!mvdata[0]) {
-    const url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
-    return console.log(url2)
-}
 
 await m.react("🎬")
 
