@@ -1095,8 +1095,8 @@ try{
     if(q) {
         const groups = await conn.groupFetchAllParticipating();
         const groupJids = Object.keys(groups)
-        let sjids = `${groupJids}`
-        const cpoq = sJids.search(q)
+        const sjids = `${groupJids}`
+        const cpoq = sjids.search(q)
         if(cpoq == -1) {
             await m.react("❌")
             return reply("*❗️ First join the group. ❗️*")
