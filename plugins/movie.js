@@ -181,13 +181,17 @@ const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const quality1 = $$("tr:nth-child(1) > td:nth-child(2) > strong").text()
+const mquality1 = quality1.split(" ")[1]
+const maquality1 = mquality1.replace("p","p ")
 const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text()
+const mquality2 = quality2.split(" ")[1]
+const maquality2 = mquality2.replace("p","p ")
 const quality3 = $$("tr:nth-child(3) > td:nth-child(2) > strong").text()
+const mquality3 = quality3.split(" ")[1]
+const maquality3 = mquality3.replace("p","p ")
 const quality4 = $$("tr:nth-child(4) > td:nth-child(2) > strong").text()
-    console.log(quality1)
-    console.log(quality2)
-    console.log(quality3)
-    console.log(quality4)
+const mquality4 = quality4.split(" ")[1]
+const maquality4 = mquality4.replace("p","p ")
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
@@ -213,10 +217,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
