@@ -4,8 +4,7 @@ const config = require('../config');
 const { botwatermark } = require('../botwatermark');
 
 cmd({
-    pattern: "movie",
-    alias: ["mv"],
+    pattern: "omdb",
     desc: "Fetch detailed information about a movie.",
     category: "search",
     filename: __filename
@@ -47,12 +46,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *╎* *🗃️ Iᴍᴅʙ Vᴏᴛᴇꜱ:* ${data.imdbVotes}
 *╰────────────────────◦•◦❥•*\n\n\n${botwatermark}`;
 
-        // Define the image URL
-        const moviePic = data.Poster && data.Poster !== 'N/A' ? data.Poster : config.ALIVE_IMG;
-
-        // Send the movie information along with the poster image
-        await conn.sendMessage(from,{image:{url: moviePic},caption: movieInfo},{quoted:mek})
-    }catch(e){
+const moviePic = data.Poster && data.Poster !== 'N/A' ? data.Poster : config.ALIVE_IMG;
+await conn.sendMessage(from,{image:{url: moviePic},caption: movieInfo},{quoted:mek})
+}catch(e){
 console.log(e)
 reply(`${e}`)
 }
