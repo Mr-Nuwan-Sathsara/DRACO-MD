@@ -183,6 +183,7 @@ const $$ = cheerio.load(response2.data)
 const quality1 = $$("tr:nth-child(1) > td:nth-child(2) > strong").text().trim()
 const mquality1 = quality1.split(" ")[1]
 const maquality1 = mquality1.replace("p","p ")
+    console.log(maquality1)
 const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text().trim()
 const mquality2 = quality2.split(" ")[1]
 const maquality2 = mquality2.replace("p","p ")
