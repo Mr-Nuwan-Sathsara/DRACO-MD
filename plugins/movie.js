@@ -1091,10 +1091,7 @@ try{
     const cq = omsg.search("3⃣")
     if(cq == -1) return
     const url = urls[0]
-    if(!url) {
-        await m.react("❌")
-        return reply("*❗️ Can't download this movie! ❗️*")
-    }
+    if(!q) {
     await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
@@ -1116,6 +1113,7 @@ try{
     let desc = `${filename}\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
+    }
     }
 
 }catch(e){
