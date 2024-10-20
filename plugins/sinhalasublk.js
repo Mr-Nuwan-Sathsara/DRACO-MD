@@ -185,15 +185,20 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -206,7 +211,9 @@ let desc = `
 
 *2️⃣ 720P(${ms2720}${gbormb720})*
 
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+*3️⃣ 480P(${ms2480}${gbormb480})*
+
+*4⃣ 360P(${ms2360}${gbormb360})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
