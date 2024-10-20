@@ -1091,7 +1091,9 @@ try{
     const cq = omsg.search("3⃣")
     if(cq == -1) return
     const url = urls[0]
-    if(!q) {
+    if(q) {
+        return reply("test done :)")
+    }else if(!q) {
     await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
