@@ -92,10 +92,10 @@ movies.each(function(){
 
     console.log(mvdata)
 await m.react("🎬")
-let url2
+let url2 = ``
 if(!mvdata[0].link) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
 console.log(url2)
-const response2 = await axios.get(url2)
+/*const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
@@ -130,7 +130,7 @@ let desc = `
 *3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
-
+*/
 }catch(e){
 console.log(e)
 reply(`${e}`)
