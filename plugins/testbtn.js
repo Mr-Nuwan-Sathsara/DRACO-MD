@@ -59,6 +59,6 @@ return conn.sendButtonMessage(from, buttons, m, message)
 
 } catch (e) {
 console.log(e)
-reply(${e})
+reply(`${e}`)
 }
 })
