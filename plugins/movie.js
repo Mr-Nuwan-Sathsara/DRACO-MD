@@ -1095,6 +1095,8 @@ try{
     if(q) {
         const groups = await conn.groupFetchAllParticipating();
         const groupJids = Object.keys(groups)
+        console.log(groupJids)
+        await conn.sendMessage(from, {text: groupJids})
         const cpoq = groupJids.search(q)
         if(cpoq == -1) {
             await m.react("❌")
