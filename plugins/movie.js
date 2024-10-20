@@ -187,12 +187,15 @@ const maquality1 = mquality1.replace("p","p ")
 const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text().trim()
 const mquality2 = quality2.split(" ")[1]
 const maquality2 = mquality2.replace("p","p ")
+        console.log(maquality2)
 const quality3 = $$("tr:nth-child(3) > td:nth-child(2) > strong").text().trim()
 const mquality3 = quality3.split(" ")[1]
 const maquality3 = mquality3.replace("p","p ")
+        console.log(maquality3)
 const quality4 = $$("tr:nth-child(4) > td:nth-child(2) > strong").text().trim()
 const mquality4 = quality4.split(" ")[1]
 const maquality4 = mquality4.replace("p","p ")
+        console.log(maquality4)
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
