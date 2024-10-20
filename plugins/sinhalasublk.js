@@ -927,7 +927,8 @@ try{
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    const sendmv = await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    if(!sendmv) return reply("test done")
     await m.react("✅")
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
