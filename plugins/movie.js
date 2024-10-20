@@ -181,21 +181,25 @@ const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const quality1 = $$("tr:nth-child(1) > td:nth-child(2) > strong").text().trim()
-const mquality1 = quality1.split(" ")[1]
-const maquality1 = mquality1.replace("p","p ")
-    console.log(maquality1)
+    if(quality1) {
+        const mquality1 = quality1.split(" ")[1]
+        const maquality1 = mquality1.replace("p","p ")
+    }
 const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text().trim()
-const mquality2 = quality2.split(" ")[1]
-const maquality2 = mquality2.replace("p","p ")
-        console.log(maquality2)
+if(quality2) {
+        const mquality2 = quality2.split(" ")[1]
+        const maquality2 = mquality2.replace("p","p ")
+    }
 const quality3 = $$("tr:nth-child(3) > td:nth-child(2) > strong").text().trim()
-const mquality3 = quality3.split(" ")[1]
-const maquality3 = mquality3.replace("p","p ")
-        console.log(maquality3)
+if(quality3) {
+        const mquality3 = quality3.split(" ")[1]
+        const maquality3 = mquality3.replace("p","p ")
+    }
 const quality4 = $$("tr:nth-child(4) > td:nth-child(2) > strong").text().trim()
-const mquality4 = quality4.split(" ")[1]
-const maquality4 = mquality4.replace("p","p ")
-        console.log(maquality4)
+if(quality4) {
+        const mquality4 = quality4.split(" ")[1]
+        const maquality4 = mquality4.replace("p","p ")
+    }
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
@@ -221,10 +225,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -834,7 +838,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("1️⃣ 1080P")
+    const cq = omsg.search("1️⃣ 1080p")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
@@ -879,7 +883,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("2️⃣ 720P")
+    const cq = omsg.search("2️⃣ 720p")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
@@ -924,7 +928,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("3️⃣ 480P")
+    const cq = omsg.search("3️⃣ 480p")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
@@ -969,7 +973,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("4⃣ 360P")
+    const cq = omsg.search("4⃣ 360p")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
