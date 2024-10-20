@@ -125,7 +125,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -207,7 +208,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -289,7 +291,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -371,7 +374,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -453,7 +457,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -535,7 +540,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -617,7 +623,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -699,7 +706,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
@@ -780,7 +788,8 @@ let aqualitys = ``
     if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
     if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
-let desc = `
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
 *📝 Title :* ${mvdata[0].title}
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
