@@ -13,24 +13,18 @@ cmd({
 },
 async(conn, mek, m,{from, l, prefix, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-  
-  
-  if (!q) return await reply('TEXT') 
-      if (!q.includes('tiktok')) return await reply('valid_url') 
 
-
-const mov = await fetchJson(https://dark-yasiya-api-new.vercel.app/download/twitter?url=${q})
     
 let mala = `乂 X - D O W N L O A D E R
 
-    ◦ Title: ${mov.result.desc}
+    ◦ Title: HI Lamai
 `
                 let buttons = [{
                     name: "cta_url",
                     buttonParamsJson: JSON.stringify({
-                        display_text: config.BTN,
-                        url: config.BTNURL,
-                        merchant_url: config.BTNURL
+                        display_text: "HI DISPLAY TEXT",
+                        url: `https://wa.me/94742737742`,
+                        merchant_url: `https://google.com/`
                     }),
                 },
                 { name: 'single_select',
@@ -38,17 +32,17 @@ let mala = `乂 X - D O W N L O A D E R
                title: 'Tap Here!',
                sections: [{
                   rows: [{
-                     title: 'DOWNLOAD VIDEO SD QUALITY',
+                     title: 'PING',
                      // description: X,
-                     id: prefix + xdl ${mov.result.video_sd}
+                     id: .ping
                   }, {
-                     title: 'DOWNLOAD VIDEO HD QUALITY',
+                     title: 'FACT',
                      // description: X,
-                     id: prefix + xdl ${mov.result.video_hd}
+                     id: .fact
                   }, {
-                     title: 'DOWNLOAD AUDIO',
+                     title: 'CAT',
                      // description: X,
-                     id: prefix + xmp3 ${mov.result.audio}
+                     id: .cat
 		  }]
                }]
             })
@@ -62,41 +56,9 @@ let mala = `乂 X - D O W N L O A D E R
             body: mala
         }   
 return conn.sendButtonMessage(from, buttons, m, message) 
+
 } catch (e) {
 console.log(e)
 reply(${e})
-}
-})
-//===========================================================================
-cmd({
-    pattern: "xdl",
-    dontAddCommandList: true,
-    filename: __filename
-},
-async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-if (!q) return await  reply(needus)
-let wm = config.FOOTER
-await conn.sendMessage(from, { video: { url: q }, caption: wm}, { quoted: mek })
-await conn.sendMessage(from, { react: { text: '✅', key: mek.key }})
-} catch (e) {
-reply('Error !!')
-console.log(e)
-}
-})
-//==============================================================================
-
-cmd({
-    pattern: "xmp3",
-    dontAddCommandList: true,
-    filename: __filename
-},
-async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-if (!q) return await  reply(needus)
-conn.sendMessage(from , { audio : { url : q  } ,mimetype: 'audio/mpeg' } , { quoted: mek })
-} catch (e) {
-reply('Error !!')
-console.log(e)
 }
 })
