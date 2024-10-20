@@ -181,25 +181,17 @@ const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const quality1 = $$("tr:nth-child(1) > td:nth-child(2) > strong").text().trim()
-    if(quality1) {
-        const mquality1 = quality1.split(" ")[1]
-        const maquality1 = mquality1.replace("p","p ")
-    }
+    if(quality1) const mquality1 = quality1.split(" ")[1]
+    if(quality1) const maquality1 = mquality1.replace("p","p ")
 const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text().trim()
-if(quality2) {
-        const mquality2 = quality2.split(" ")[1]
-        const maquality2 = mquality2.replace("p","p ")
-    }
+    if(quality2) const mquality2 = quality2.split(" ")[1]
+    if(quality2) const maquality2 = mquality2.replace("p","p ")
 const quality3 = $$("tr:nth-child(3) > td:nth-child(2) > strong").text().trim()
-if(quality3) {
-        const mquality3 = quality3.split(" ")[1]
-        const maquality3 = mquality3.replace("p","p ")
-    }
+    if(quality3) const mquality3 = quality3.split(" ")[1]
+    if(quality3) const maquality3 = mquality3.replace("p","p ")
 const quality4 = $$("tr:nth-child(4) > td:nth-child(2) > strong").text().trim()
-if(quality4) {
-        const mquality4 = quality4.split(" ")[1]
-        const maquality4 = mquality4.replace("p","p ")
-    }
+    if(quality4) const mquality4 = quality4.split(" ")[1]
+    if(quality4) const maquality4 = mquality4.replace("p","p ")
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
