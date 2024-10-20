@@ -80,9 +80,9 @@ const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const mvdata = []
-const cmv = omsg.search("2. ")
+const cmv2 = omsg.search("2. ")
 let url2;
-if(cmv == -1) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
+if(cmv2 == -1) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
 console.log(url2)
 /*const movies = $("article")
 movies.each(function(){
