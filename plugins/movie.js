@@ -1092,7 +1092,28 @@ try{
     if(cq == -1) return
     const url = urls[0]
     if(q) {
-        return reply("test done :)")
+        await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    const sendmv = await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    }
     }else if(!q) {
     await m.react("🔄")
     const response = await axios.get(url)
