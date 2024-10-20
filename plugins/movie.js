@@ -184,10 +184,10 @@ const quality1 = $$("tr:nth-child(1) > td:nth-child(2) > strong").text()
 const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text()
 const quality3 = $$("tr:nth-child(3) > td:nth-child(2) > strong").text()
 const quality4 = $$("tr:nth-child(4) > td:nth-child(2) > strong").text()
-console.log(quality1, 
-            quality2, 
-            quality3, 
-            quality4)
+    console.log(quality1)
+    console.log(quality2)
+    console.log(quality3)
+    console.log(quality4)
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
