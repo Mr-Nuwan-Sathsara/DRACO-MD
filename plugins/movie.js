@@ -1088,7 +1088,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("3️⃣")
+    const cq = omsg.search("3⃣")
     if(cq == -1) return
     const url = urls[0]
     if(!url) {
