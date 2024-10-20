@@ -89,10 +89,10 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
-    
+
+    console.log(mvdata)
 await m.react("🎬")
-let url2 = mvdata[0].link
-if(!mvdata[1]) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
+const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
