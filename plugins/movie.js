@@ -1,1 +1,991 @@
-function _0xa224(){const _0x169f87=['\x0a\x0a\x0a','[🐲\x20D.M.W.B\x20🐲]','imageMessage','*9.','#contenedor\x20>\x20div.module\x20>\x20div.content.rigth.csearch\x20>\x20div\x20>\x20div.no-result.animation-2\x20>\x20h2','*5.','*6.','*8.\x20','sendMessage','data','*⭐️\x20Rating\x20:*','*❗️\x20Can\x27t\x20download\x20this\x20movie!\x20❗️*','rating','\x0a*⭐️\x20Rating\x20:*\x20','link','1523atAqIx','tr:nth-child(3)\x20>\x20td:nth-child(3)','split','../command','2️⃣\x20720P','*4.','find','\x0a\x0a\x0a\x0a\x0a','*8.','search','*9.\x20','video/mp4','\x0a\x0a*7.\x20','load','cheerio','replaceAll','3688875aijvko','tr:nth-child(1)\x20>\x20td:nth-child(3)','*1️⃣\x201080P(','year','https://sinhalasub.lk/?s=','each','\x0a\x0a*5.\x20','56260alPtTg','1.\x20','8MhtGfn','axios','\x0a\x0a*8.\x20','tr:nth-child(4)\x20>\x20td:nth-child(1)\x20>\x20a','caption','text','358TCSQzp','8CHPULP','tr:nth-child(1)\x20>\x20td:nth-child(1)\x20>\x20a','attr','.title\x20a','3️⃣\x20480P','tr:nth-child(2)\x20>\x20td:nth-child(3)','https://sinhalasub.lk/wp-content/uploads/2023/08/icon.png','\x0a\x0a*2.\x20','8.\x20','tr:nth-child(4)\x20>\x20td:nth-child(3)','.mp4','\x0a*4⃣\x20360P(','src','react','3679990cAtcZJ','href','\x0a*🔗\x20Url\x20:*\x20','*2.','push','tr:nth-child(3)\x20>\x20td:nth-child(1)\x20>\x20a','\x0a\x0a*9.\x20','7.\x20','*📝\x20Title\x20:*\x20','https://pixeldrain.com/api/file/','5.\x20','27642gDFVTx','*7.','*2.\x20','\x0a*3️⃣\x20480P(','../botwatermark','#link','2.\x20','\x0a*2️⃣\x20720P(','title','.year','*6.\x20','Download\x20movies\x20from\x20sinhalasub.lk.','\x0a\x0a*📥\x20Available\x20Qualitys\x20📥*\x0a\x0a','3.\x20','get','1️⃣\x201080P','📥\x20Available\x20Qualitys\x20📥','startsWith','tr:nth-child(2)\x20>\x20td:nth-child(1)\x20>\x20a','*5.\x20','https://pixeldrain.com','article','*1.\x20','*🗃️\x20Database\x20:*\x20Sinhalasub.lk','2347235BdHAIa','*「\u00a0🐲\x20𝗗𝗥𝗔𝗖𝗢-𝗠𝗗\x20𝗠𝗢𝗩𝗜𝗘\x20𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥\u00a0🐲\x20」*\x0a\x0a*📝\x20Title\x20:*\x20','204MDPshi','\x0a\x0a*4.\x20','#single\x20>\x20div.content.right\x20>\x20div.sheader\x20>\x20div.poster\x20>\x20img','\x0a\x0a*6.\x20','4.\x20','log','quoted','.rating','3336452lZOmoZ','9.\x20','\x0a*📆\x20Year\x20:*\x20'];_0xa224=function(){return _0x169f87;};return _0xa224();}const _0x7290cd=_0x171c;(function(_0x4509ce,_0x5abf03){const _0x2938f8=_0x171c,_0x389581=_0x4509ce();while(!![]){try{const _0x11745f=-parseInt(_0x2938f8(0x17d))/0x1*(-parseInt(_0x2938f8(0x19c))/0x2)+parseInt(_0x2938f8(0x1b6))/0x3*(-parseInt(_0x2938f8(0x196))/0x4)+-parseInt(_0x2938f8(0x194))/0x5*(-parseInt(_0x2938f8(0x1d0))/0x6)+-parseInt(_0x2938f8(0x16b))/0x7*(parseInt(_0x2938f8(0x19d))/0x8)+-parseInt(_0x2938f8(0x18d))/0x9+parseInt(_0x2938f8(0x1ab))/0xa+parseInt(_0x2938f8(0x1ce))/0xb;if(_0x11745f===_0x5abf03)break;else _0x389581['push'](_0x389581['shift']());}catch(_0x473e53){_0x389581['push'](_0x389581['shift']());}}}(_0xa224,0x50f6e));const {cmd,commands}=require(_0x7290cd(0x180)),{botwatermark}=require(_0x7290cd(0x1ba)),cheerio=require(_0x7290cd(0x18b)),axios=require(_0x7290cd(0x197));function _0x171c(_0x51a260,_0x3eff32){const _0xa224e2=_0xa224();return _0x171c=function(_0x171c85,_0x1074f4){_0x171c85=_0x171c85-0x16a;let _0x3a62a5=_0xa224e2[_0x171c85];return _0x3a62a5;},_0x171c(_0x51a260,_0x3eff32);}cmd({'pattern':'movie','alias':['mv'],'desc':_0x7290cd(0x1c1),'category':_0x7290cd(0x186),'filename':__filename},async(_0x2bb7e2,_0x42d329,_0x315d3f,{from:_0x12ff39,quoted:_0x4ebf5c,body:_0x59c2fe,isCmd:_0x3a5267,command:_0x25a347,args:_0x3de5d1,q:_0x4395d6,isGroup:_0xf5b1ff,sender:_0x38a5c1,senderNumber:_0x49b02e,botNumber2:_0x1a0edc,botNumber:_0x5204e7,pushname:_0x2b21c7,isMe:_0x2f7d47,isOwner:_0x27b6c3,groupMetadata:_0xcfd350,groupName:_0x28b774,participants:_0x4b5042,groupAdmins:_0x340141,isBotAdmins:_0x30818b,isAdmins:_0x5b49c2,reply:_0x2c4f13})=>{const _0x5eceda=_0x7290cd;try{const _0xab1dba=_0x5eceda(0x191)+_0x4395d6,_0x4eaa52=await axios['get'](_0xab1dba),_0xf76d43=cheerio[_0x5eceda(0x18a)](_0x4eaa52[_0x5eceda(0x177)]),_0x274af5=_0xf76d43('#contenedor\x20>\x20div.module\x20>\x20div.content.rigth.csearch\x20>\x20div\x20>\x20div.no-result.animation-2\x20>\x20h2')['text']();if(!_0x4395d6)return await _0x315d3f['react']('❌'),_0x2c4f13('*❗️\x20Give\x20movie\x20name.\x20❗️*');else{if(_0x274af5=='No\x20results\x20to\x20show\x20with\x20'+_0x4395d6)return await _0x315d3f['react']('❌'),_0x2c4f13('*❗️\x20Movie\x20not\x20found!\x20❗️*');}await _0x315d3f['react']('🎬');const _0x58327a=[],_0x40a4ba=_0xf76d43('article');_0x40a4ba[_0x5eceda(0x192)](function(){const _0x778ef1=_0x5eceda,_0x374a2b=_0xf76d43(this)[_0x778ef1(0x183)]('.title\x20a')['text'](),_0xd26a3e=_0xf76d43(this)['find'](_0x778ef1(0x16a))[_0x778ef1(0x19b)](),_0x6b5fbe=_0xf76d43(this)['find']('.year')[_0x778ef1(0x19b)](),_0x3648ed=_0xf76d43(this)['find'](_0x778ef1(0x1a0))[_0x778ef1(0x19f)](_0x778ef1(0x1ac));_0x58327a[_0x778ef1(0x1af)]({'title':_0x374a2b,'rating':_0xd26a3e,'year':_0x6b5fbe,'link':_0x3648ed});});let _0x31f03f=_0x5eceda(0x1cc)+_0x58327a[0x0][_0x5eceda(0x1be)]+'*';if(_0x58327a[0x1])_0x31f03f+=_0x5eceda(0x1a4)+_0x58327a[0x1][_0x5eceda(0x1be)]+'*';if(_0x58327a[0x2])_0x31f03f+='\x0a\x0a*3.\x20'+_0x58327a[0x2][_0x5eceda(0x1be)]+'*';if(_0x58327a[0x3])_0x31f03f+=_0x5eceda(0x1d1)+_0x58327a[0x3]['title']+'*';if(_0x58327a[0x4])_0x31f03f+=_0x5eceda(0x193)+_0x58327a[0x4][_0x5eceda(0x1be)]+'*';if(_0x58327a[0x5])_0x31f03f+=_0x5eceda(0x1d3)+_0x58327a[0x5][_0x5eceda(0x1be)]+'*';if(_0x58327a[0x6])_0x31f03f+=_0x5eceda(0x189)+_0x58327a[0x6]['title']+'*';if(_0x58327a[0x7])_0x31f03f+=_0x5eceda(0x198)+_0x58327a[0x7][_0x5eceda(0x1be)]+'*';if(_0x58327a[0x8])_0x31f03f+=_0x5eceda(0x1b1)+_0x58327a[0x8][_0x5eceda(0x1be)]+'*';let _0x2d6886='*「\u00a0🐲\x20𝗗𝗥𝗔𝗖𝗢-𝗠𝗗\x20𝗠𝗢𝗩𝗜𝗘\x20𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥\u00a0🐲\x20」*\x0a\x0a*🗃️\x20Database\x20:*\x20Sinhalasub.lk\x0a*🔎\x20Search\x20:*\x20'+_0x4395d6+'\x0a\x0a'+_0x31f03f+_0x5eceda(0x184)+botwatermark;await _0x2bb7e2['sendMessage'](_0x12ff39,{'image':{'url':_0x5eceda(0x1a3)},'caption':_0x2d6886},{'quoted':_0x42d329});}catch(_0x291d89){console[_0x5eceda(0x1d5)](_0x291d89),_0x2c4f13(''+_0x291d89);}}),cmd({'reply_pattern':'1','quoted_includes':_0x7290cd(0x1cd),'filename':__filename},async(_0xdf86af,_0x1e5b6d,_0x4b027d,{from:_0x330347,quoted:_0x3d8aa1,body:_0x2768f7,isCmd:_0x674ef5,command:_0x4fd2e3,args:_0x1024e4,q:_0x34c2b,isGroup:_0x153ff9,sender:_0x1c5543,senderNumber:_0x1f7b8a,botNumber2:_0x2583e0,botNumber:_0x28c8b3,pushname:_0x16fcc6,isMe:_0x4f5a44,isOwner:_0x2571e7,groupMetadata:_0x3b31fa,groupName:_0x491cd0,participants:_0x207252,groupAdmins:_0x5639d1,isBotAdmins:_0x375fee,isAdmins:_0x186728,reply:_0xfca5f7,urls:_0x5f45d2})=>{const _0x3bd14e=_0x7290cd;try{const _0x177448=_0x4b027d[_0x3bd14e(0x1d6)][_0x3bd14e(0x170)]['caption'],_0x19b8bf=_0x177448[_0x3bd14e(0x186)](_0x3bd14e(0x195));if(_0x19b8bf==-0x1)return;const _0x55d1e4=_0x177448[_0x3bd14e(0x17f)]('*1.\x20')[0x1],_0x3c7695=_0x55d1e4[_0x3bd14e(0x17f)](_0x3bd14e(0x1ae))[0x0],_0x8836ff=_0x3c7695[_0x3bd14e(0x18c)]('*',''),_0xc4950a='https://sinhalasub.lk/?s='+_0x8836ff,_0x2e97dc=await axios['get'](_0xc4950a),_0x9963f5=cheerio['load'](_0x2e97dc[_0x3bd14e(0x177)]),_0xb2bb99=[],_0x4e1598=_0x9963f5(_0x3bd14e(0x1cb));_0x4e1598[_0x3bd14e(0x192)](function(){const _0x22b3c5=_0x3bd14e,_0xb2179=_0x9963f5(this)[_0x22b3c5(0x183)](_0x22b3c5(0x1a0))['text'](),_0x563e98=_0x9963f5(this)[_0x22b3c5(0x183)](_0x22b3c5(0x16a))[_0x22b3c5(0x19b)](),_0x466aee=_0x9963f5(this)[_0x22b3c5(0x183)]('.year')['text'](),_0x2fc3bb=_0x9963f5(this)[_0x22b3c5(0x183)]('.title\x20a')[_0x22b3c5(0x19f)]('href');_0xb2bb99[_0x22b3c5(0x1af)]({'title':_0xb2179,'rating':_0x563e98,'year':_0x466aee,'link':_0x2fc3bb});}),await _0x4b027d[_0x3bd14e(0x1aa)]('🎬');const _0x5e4682=_0xb2bb99[0x0][_0x3bd14e(0x17c)],_0x31bd68=await axios[_0x3bd14e(0x1c4)](_0x5e4682),_0x4dfb9c=cheerio[_0x3bd14e(0x18a)](_0x31bd68[_0x3bd14e(0x177)]),_0x541f83=_0x4dfb9c(_0x3bd14e(0x18e))[_0x3bd14e(0x19b)](),_0x5d5e5a=_0x541f83[_0x3bd14e(0x17f)]('\x20')[0x0],_0x1691cf=_0x541f83[_0x3bd14e(0x186)]('MB'),_0x173324=_0x4dfb9c(_0x3bd14e(0x1a2))[_0x3bd14e(0x19b)](),_0x23bf05=_0x173324[_0x3bd14e(0x17f)]('\x20')[0x0],_0x3fc48c=_0x173324[_0x3bd14e(0x186)]('MB'),_0x57b78b=_0x4dfb9c(_0x3bd14e(0x17e))['text'](),_0x416cce=_0x57b78b[_0x3bd14e(0x17f)]('\x20')[0x0],_0x3fac34=_0x57b78b['search']('MB'),_0x3de5ae=_0x4dfb9c(_0x3bd14e(0x1a6))[_0x3bd14e(0x19b)](),_0x39836f=_0x3de5ae[_0x3bd14e(0x17f)]('\x20')[0x0],_0x14d873=_0x3de5ae['search']('MB'),_0x30f5e8=_0x4dfb9c(_0x3bd14e(0x1d2))[_0x3bd14e(0x19f)](_0x3bd14e(0x1a9));let _0x52f7a4='MB',_0x1a2b09='MB',_0x26135e='MB',_0x3d90e5='MB';if(_0x1691cf==-0x1)_0x52f7a4='GB';if(_0x3fc48c==-0x1)_0x1a2b09='GB';if(_0x3fac34==-0x1)_0x26135e='GB';if(_0x14d873==-0x1)_0x3d90e5='GB';let _0x1ab339='';if(_0x541f83)_0x1ab339+=_0x3bd14e(0x18f)+_0x5d5e5a+_0x52f7a4+')*';if(_0x173324)_0x1ab339+=_0x3bd14e(0x1bd)+_0x23bf05+_0x1a2b09+')*';if(_0x57b78b)_0x1ab339+='\x0a*3️⃣\x20480P('+_0x416cce+_0x26135e+')*';if(_0x3de5ae)_0x1ab339+='\x0a*4⃣\x20360P('+_0x39836f+_0x3d90e5+')*';let _0x95ca77=_0x3bd14e(0x1cf)+_0xb2bb99[0x0][_0x3bd14e(0x1be)]+_0x3bd14e(0x17b)+_0xb2bb99[0x0][_0x3bd14e(0x17a)]+_0x3bd14e(0x16d)+_0xb2bb99[0x0][_0x3bd14e(0x190)]+_0x3bd14e(0x1ad)+_0xb2bb99[0x0][_0x3bd14e(0x17c)]+'\x0a\x0a*📥\x20Available\x20Qualitys\x20📥*\x0a\x0a'+_0x1ab339+_0x3bd14e(0x16e)+botwatermark;await _0xdf86af[_0x3bd14e(0x176)](_0x330347,{'image':{'url':_0x30f5e8},'caption':_0x95ca77},{'quoted':_0x1e5b6d});}catch(_0x19b52e){console[_0x3bd14e(0x1d5)](_0x19b52e),_0xfca5f7(''+_0x19b52e);}}),cmd({'reply_pattern':'2','quoted_includes':_0x7290cd(0x1cd),'filename':__filename},async(_0x32fa8a,_0x2d1daf,_0x47c8e5,{from:_0x2f5d5b,quoted:_0xef5669,body:_0x1e3427,isCmd:_0x10ceea,command:_0x1cbd06,args:_0x534d66,q:_0xa179d8,isGroup:_0x1d89c0,sender:_0x33d478,senderNumber:_0xbd05e8,botNumber2:_0x1220e4,botNumber:_0x1f7b2d,pushname:_0x2979c3,isMe:_0xc7e76c,isOwner:_0x419030,groupMetadata:_0x3f5d5b,groupName:_0x389a42,participants:_0x304e49,groupAdmins:_0xb5730f,isBotAdmins:_0x507cdb,isAdmins:_0x1be990,reply:_0x3ca822,urls:_0x578739})=>{const _0x3c7d3b=_0x7290cd;try{const _0x51dce2=_0x47c8e5[_0x3c7d3b(0x1d6)][_0x3c7d3b(0x170)][_0x3c7d3b(0x19a)],_0x1b8b43=_0x51dce2[_0x3c7d3b(0x186)](_0x3c7d3b(0x1bc));if(_0x1b8b43==-0x1)return;const _0x3ec4e0=_0x51dce2['split'](_0x3c7d3b(0x1b8))[0x1],_0x474daa=_0x3ec4e0[_0x3c7d3b(0x17f)]('*3.')[0x0],_0x588f64=_0x474daa['replaceAll']('*',''),_0x3d7813=_0x3c7d3b(0x191)+_0x588f64,_0x51db37=await axios[_0x3c7d3b(0x1c4)](_0x3d7813),_0xb697b7=cheerio[_0x3c7d3b(0x18a)](_0x51db37['data']),_0x3d3892=_0xb697b7(_0x3c7d3b(0x172))[_0x3c7d3b(0x19b)](),_0x30f064=[],_0x4d10aa=_0xb697b7('article');_0x4d10aa[_0x3c7d3b(0x192)](function(){const _0x30e3be=_0x3c7d3b,_0x5c2bbb=_0xb697b7(this)[_0x30e3be(0x183)](_0x30e3be(0x1a0))[_0x30e3be(0x19b)](),_0x4d2f82=_0xb697b7(this)['find']('.rating')['text'](),_0x5081f1=_0xb697b7(this)[_0x30e3be(0x183)](_0x30e3be(0x1bf))[_0x30e3be(0x19b)](),_0x518a80=_0xb697b7(this)['find']('.title\x20a')[_0x30e3be(0x19f)]('href');_0x30f064[_0x30e3be(0x1af)]({'title':_0x5c2bbb,'rating':_0x4d2f82,'year':_0x5081f1,'link':_0x518a80});}),await _0x47c8e5[_0x3c7d3b(0x1aa)]('🎬');const _0x3c082e=_0x30f064[0x0][_0x3c7d3b(0x17c)],_0x628376=await axios[_0x3c7d3b(0x1c4)](_0x3c082e),_0x5ea078=cheerio['load'](_0x628376[_0x3c7d3b(0x177)]),_0x232937=_0x5ea078(_0x3c7d3b(0x18e))[_0x3c7d3b(0x19b)](),_0x19b685=_0x232937[_0x3c7d3b(0x17f)]('\x20')[0x0],_0x5cbf98=_0x232937[_0x3c7d3b(0x186)]('MB'),_0x1bc6d3=_0x5ea078(_0x3c7d3b(0x1a2))['text'](),_0x570c6a=_0x1bc6d3[_0x3c7d3b(0x17f)]('\x20')[0x0],_0x2bd143=_0x1bc6d3[_0x3c7d3b(0x186)]('MB'),_0x266c05=_0x5ea078(_0x3c7d3b(0x17e))[_0x3c7d3b(0x19b)](),_0x4e3d1a=_0x266c05[_0x3c7d3b(0x17f)]('\x20')[0x0],_0x2ac721=_0x266c05[_0x3c7d3b(0x186)]('MB'),_0x35970f=_0x5ea078(_0x3c7d3b(0x1a6))[_0x3c7d3b(0x19b)](),_0x330724=_0x35970f[_0x3c7d3b(0x17f)]('\x20')[0x0],_0x1fcaaf=_0x35970f[_0x3c7d3b(0x186)]('MB'),_0x4ff169=_0x5ea078(_0x3c7d3b(0x1d2))[_0x3c7d3b(0x19f)]('src');let _0x4bac48='MB',_0x5d4efa='MB',_0x643fff='MB',_0x1509c3='MB';if(_0x5cbf98==-0x1)_0x4bac48='GB';if(_0x2bd143==-0x1)_0x5d4efa='GB';if(_0x2ac721==-0x1)_0x643fff='GB';if(_0x1fcaaf==-0x1)_0x1509c3='GB';let _0x46479f='';if(_0x232937)_0x46479f+='*1️⃣\x201080P('+_0x19b685+_0x4bac48+')*';if(_0x1bc6d3)_0x46479f+='\x0a*2️⃣\x20720P('+_0x570c6a+_0x5d4efa+')*';if(_0x266c05)_0x46479f+='\x0a*3️⃣\x20480P('+_0x4e3d1a+_0x643fff+')*';if(_0x35970f)_0x46479f+=_0x3c7d3b(0x1a8)+_0x330724+_0x1509c3+')*';let _0x146da4=_0x3c7d3b(0x1cf)+_0x30f064[0x0][_0x3c7d3b(0x1be)]+_0x3c7d3b(0x17b)+_0x30f064[0x0][_0x3c7d3b(0x17a)]+_0x3c7d3b(0x16d)+_0x30f064[0x0][_0x3c7d3b(0x190)]+'\x0a*🔗\x20Url\x20:*\x20'+_0x30f064[0x0][_0x3c7d3b(0x17c)]+'\x0a\x0a*📥\x20Available\x20Qualitys\x20📥*\x0a\x0a'+_0x46479f+_0x3c7d3b(0x16e)+botwatermark;await _0x32fa8a['sendMessage'](_0x2f5d5b,{'image':{'url':_0x4ff169},'caption':_0x146da4},{'quoted':_0x2d1daf});}catch(_0x27702b){console['log'](_0x27702b),_0x3ca822(''+_0x27702b);}}),cmd({'reply_pattern':'3','quoted_includes':_0x7290cd(0x1cd),'filename':__filename},async(_0x5c47d8,_0x5e0734,_0x23c18a,{from:_0x591bb6,quoted:_0x222bfb,body:_0xf4cfd7,isCmd:_0x3a8b0b,command:_0x4c11f6,args:_0x5d4e99,q:_0x20634e,isGroup:_0x46a9b0,sender:_0x32027b,senderNumber:_0x1f7167,botNumber2:_0x4922b7,botNumber:_0x235a47,pushname:_0x29fb2e,isMe:_0x21be16,isOwner:_0x5d0b59,groupMetadata:_0x5d8ecd,groupName:_0x375c4c,participants:_0x10b8e0,groupAdmins:_0x1b9f0b,isBotAdmins:_0x4e27f5,isAdmins:_0x1225c9,reply:_0xe35707,urls:_0x41e627})=>{const _0x751818=_0x7290cd;try{const _0x1499da=_0x23c18a[_0x751818(0x1d6)][_0x751818(0x170)]['caption'],_0x5c8a15=_0x1499da[_0x751818(0x186)](_0x751818(0x1c3));if(_0x5c8a15==-0x1)return;const _0x485b45=_0x1499da[_0x751818(0x17f)]('*3.\x20')[0x1],_0x5f3a3a=_0x485b45[_0x751818(0x17f)](_0x751818(0x182))[0x0],_0x55cdd2=_0x5f3a3a[_0x751818(0x18c)]('*',''),_0x451643=_0x751818(0x191)+_0x55cdd2,_0x2be14d=await axios['get'](_0x451643),_0xcf8cd5=cheerio['load'](_0x2be14d[_0x751818(0x177)]),_0x3c257f=_0xcf8cd5('#contenedor\x20>\x20div.module\x20>\x20div.content.rigth.csearch\x20>\x20div\x20>\x20div.no-result.animation-2\x20>\x20h2')['text'](),_0x105ac0=[],_0x3111c8=_0xcf8cd5('article');_0x3111c8[_0x751818(0x192)](function(){const _0x79d7c2=_0x751818,_0x136bf0=_0xcf8cd5(this)[_0x79d7c2(0x183)](_0x79d7c2(0x1a0))[_0x79d7c2(0x19b)](),_0x407f83=_0xcf8cd5(this)['find'](_0x79d7c2(0x16a))[_0x79d7c2(0x19b)](),_0x569cfe=_0xcf8cd5(this)['find'](_0x79d7c2(0x1bf))['text'](),_0x4874a9=_0xcf8cd5(this)[_0x79d7c2(0x183)](_0x79d7c2(0x1a0))[_0x79d7c2(0x19f)](_0x79d7c2(0x1ac));_0x105ac0[_0x79d7c2(0x1af)]({'title':_0x136bf0,'rating':_0x407f83,'year':_0x569cfe,'link':_0x4874a9});}),await _0x23c18a['react']('🎬');const _0x5cebe6=_0x105ac0[0x0][_0x751818(0x17c)],_0x43436b=await axios[_0x751818(0x1c4)](_0x5cebe6),_0x259cdf=cheerio[_0x751818(0x18a)](_0x43436b[_0x751818(0x177)]),_0x156515=_0x259cdf(_0x751818(0x18e))['text'](),_0x1aa089=_0x156515[_0x751818(0x17f)]('\x20')[0x0],_0x3bb71e=_0x156515['search']('MB'),_0x389ecd=_0x259cdf(_0x751818(0x1a2))['text'](),_0x5bf997=_0x389ecd['split']('\x20')[0x0],_0x1fd0a6=_0x389ecd[_0x751818(0x186)]('MB'),_0x209bfd=_0x259cdf(_0x751818(0x17e))['text'](),_0x119d11=_0x209bfd[_0x751818(0x17f)]('\x20')[0x0],_0x4b8f6f=_0x209bfd['search']('MB'),_0x2fc983=_0x259cdf('tr:nth-child(4)\x20>\x20td:nth-child(3)')['text'](),_0x314db8=_0x2fc983['split']('\x20')[0x0],_0x5ab001=_0x2fc983[_0x751818(0x186)]('MB'),_0x5698fb=_0x259cdf(_0x751818(0x1d2))[_0x751818(0x19f)](_0x751818(0x1a9));let _0x429fbc='MB',_0x566ddf='MB',_0x4d88c4='MB',_0x4ac054='MB';if(_0x3bb71e==-0x1)_0x429fbc='GB';if(_0x1fd0a6==-0x1)_0x566ddf='GB';if(_0x4b8f6f==-0x1)_0x4d88c4='GB';if(_0x5ab001==-0x1)_0x4ac054='GB';let _0x45b187='';if(_0x156515)_0x45b187+='*1️⃣\x201080P('+_0x1aa089+_0x429fbc+')*';if(_0x389ecd)_0x45b187+='\x0a*2️⃣\x20720P('+_0x5bf997+_0x566ddf+')*';if(_0x209bfd)_0x45b187+=_0x751818(0x1b9)+_0x119d11+_0x4d88c4+')*';if(_0x2fc983)_0x45b187+=_0x751818(0x1a8)+_0x314db8+_0x4ac054+')*';let _0x1405b3=_0x751818(0x1cf)+_0x105ac0[0x0][_0x751818(0x1be)]+_0x751818(0x17b)+_0x105ac0[0x0]['rating']+_0x751818(0x16d)+_0x105ac0[0x0]['year']+'\x0a*🔗\x20Url\x20:*\x20'+_0x105ac0[0x0][_0x751818(0x17c)]+'\x0a\x0a*📥\x20Available\x20Qualitys\x20📥*\x0a\x0a'+_0x45b187+_0x751818(0x16e)+botwatermark;await _0x5c47d8[_0x751818(0x176)](_0x591bb6,{'image':{'url':_0x5698fb},'caption':_0x1405b3},{'quoted':_0x5e0734});}catch(_0x541ecd){console['log'](_0x541ecd),_0xe35707(''+_0x541ecd);}}),cmd({'reply_pattern':'4','quoted_includes':'*🗃️\x20Database\x20:*\x20Sinhalasub.lk','filename':__filename},async(_0x423480,_0x488dfa,_0x48e5f2,{from:_0x4faefe,quoted:_0x2e4921,body:_0x1d43b9,isCmd:_0x47c52c,command:_0x47093e,args:_0x2e7e89,q:_0x4bf102,isGroup:_0x452431,sender:_0x5469f8,senderNumber:_0x2bb743,botNumber2:_0x1da4d3,botNumber:_0x498ef9,pushname:_0x3c40a3,isMe:_0x47555e,isOwner:_0x157568,groupMetadata:_0x4d7252,groupName:_0x1dc0fa,participants:_0x55ae44,groupAdmins:_0x13e57b,isBotAdmins:_0x345512,isAdmins:_0xcb13e6,reply:_0x300716,urls:_0x41a05b})=>{const _0xb87c67=_0x7290cd;try{const _0x1ce1f1=_0x48e5f2[_0xb87c67(0x1d6)]['imageMessage']['caption'],_0x4c2755=_0x1ce1f1[_0xb87c67(0x186)](_0xb87c67(0x1d4));if(_0x4c2755==-0x1)return;const _0x510ab3=_0x1ce1f1['split']('*4.\x20')[0x1],_0x2f7bed=_0x510ab3[_0xb87c67(0x17f)](_0xb87c67(0x173))[0x0],_0x4dad50=_0x2f7bed[_0xb87c67(0x18c)]('*',''),_0x11c3b0='https://sinhalasub.lk/?s='+_0x4dad50,_0xb39235=await axios[_0xb87c67(0x1c4)](_0x11c3b0),_0x4559a1=cheerio[_0xb87c67(0x18a)](_0xb39235[_0xb87c67(0x177)]),_0x2a6ab9=_0x4559a1('#contenedor\x20>\x20div.module\x20>\x20div.content.rigth.csearch\x20>\x20div\x20>\x20div.no-result.animation-2\x20>\x20h2')['text'](),_0x18c397=[],_0x3f5b95=_0x4559a1(_0xb87c67(0x1cb));_0x3f5b95['each'](function(){const _0x185d9b=_0xb87c67,_0x2e655f=_0x4559a1(this)[_0x185d9b(0x183)](_0x185d9b(0x1a0))[_0x185d9b(0x19b)](),_0x16355b=_0x4559a1(this)[_0x185d9b(0x183)](_0x185d9b(0x16a))[_0x185d9b(0x19b)](),_0x4b1b84=_0x4559a1(this)['find'](_0x185d9b(0x1bf))[_0x185d9b(0x19b)](),_0x166f7a=_0x4559a1(this)[_0x185d9b(0x183)](_0x185d9b(0x1a0))[_0x185d9b(0x19f)](_0x185d9b(0x1ac));_0x18c397[_0x185d9b(0x1af)]({'title':_0x2e655f,'rating':_0x16355b,'year':_0x4b1b84,'link':_0x166f7a});}),await _0x48e5f2[_0xb87c67(0x1aa)]('🎬');const _0x5ae807=_0x18c397[0x0][_0xb87c67(0x17c)],_0x55be9d=await axios[_0xb87c67(0x1c4)](_0x5ae807),_0x159fec=cheerio[_0xb87c67(0x18a)](_0x55be9d[_0xb87c67(0x177)]),_0x4f4096=_0x159fec(_0xb87c67(0x18e))[_0xb87c67(0x19b)](),_0x3a3ed1=_0x4f4096[_0xb87c67(0x17f)]('\x20')[0x0],_0x330804=_0x4f4096[_0xb87c67(0x186)]('MB'),_0x5004ee=_0x159fec(_0xb87c67(0x1a2))[_0xb87c67(0x19b)](),_0xc515c2=_0x5004ee[_0xb87c67(0x17f)]('\x20')[0x0],_0x1703f7=_0x5004ee[_0xb87c67(0x186)]('MB'),_0x4d49b0=_0x159fec(_0xb87c67(0x17e))[_0xb87c67(0x19b)](),_0x31e426=_0x4d49b0['split']('\x20')[0x0],_0x1f45cf=_0x4d49b0[_0xb87c67(0x186)]('MB'),_0x21ecfc=_0x159fec(_0xb87c67(0x1a6))[_0xb87c67(0x19b)](),_0x24179b=_0x21ecfc[_0xb87c67(0x17f)]('\x20')[0x0],_0x368a84=_0x21ecfc[_0xb87c67(0x186)]('MB'),_0xf88e88=_0x159fec(_0xb87c67(0x1d2))['attr']('src');let _0x4d06d0='MB',_0x2db3ac='MB',_0x2ece00='MB',_0x70ea2c='MB';if(_0x330804==-0x1)_0x4d06d0='GB';if(_0x1703f7==-0x1)_0x2db3ac='GB';if(_0x1f45cf==-0x1)_0x2ece00='GB';if(_0x368a84==-0x1)_0x70ea2c='GB';let _0x5e49d0='';if(_0x4f4096)_0x5e49d0+=_0xb87c67(0x18f)+_0x3a3ed1+_0x4d06d0+')*';if(_0x5004ee)_0x5e49d0+=_0xb87c67(0x1bd)+_0xc515c2+_0x2db3ac+')*';if(_0x4d49b0)_0x5e49d0+=_0xb87c67(0x1b9)+_0x31e426+_0x2ece00+')*';if(_0x21ecfc)_0x5e49d0+=_0xb87c67(0x1a8)+_0x24179b+_0x70ea2c+')*';let _0x32b193=_0xb87c67(0x1cf)+_0x18c397[0x0][_0xb87c67(0x1be)]+_0xb87c67(0x17b)+_0x18c397[0x0]['rating']+_0xb87c67(0x16d)+_0x18c397[0x0][_0xb87c67(0x190)]+'\x0a*🔗\x20Url\x20:*\x20'+_0x18c397[0x0][_0xb87c67(0x17c)]+'\x0a\x0a*📥\x20Available\x20Qualitys\x20📥*\x0a\x0a'+_0x5e49d0+_0xb87c67(0x16e)+botwatermark;await _0x423480['sendMessage'](_0x4faefe,{'image':{'url':_0xf88e88},'caption':_0x32b193},{'quoted':_0x488dfa});}catch(_0x10373f){console[_0xb87c67(0x1d5)](_0x10373f),_0x300716(''+_0x10373f);}}),cmd({'reply_pattern':'5','quoted_includes':_0x7290cd(0x1cd),'filename':__filename},async(_0x3e6a24,_0x36059d,_0x45b24f,{from:_0x11f6a3,quoted:_0x1e882c,body:_0x12eee1,isCmd:_0x1eab16,command:_0x461e09,args:_0x2c3d19,q:_0xf2cf26,isGroup:_0x53c7b4,sender:_0x55ea9b,senderNumber:_0x1690fe,botNumber2:_0x5e346f,botNumber:_0x4bdd19,pushname:_0x3c11cf,isMe:_0x892580,isOwner:_0x449303,groupMetadata:_0x269a10,groupName:_0x2e19bc,participants:_0x986309,groupAdmins:_0x29152f,isBotAdmins:_0x3bc447,isAdmins:_0x17271f,reply:_0x19c691,urls:_0x3b2847})=>{const _0x5022ae=_0x7290cd;try{const _0x37d9c0=_0x45b24f[_0x5022ae(0x1d6)]['imageMessage'][_0x5022ae(0x19a)],_0x2090c8=_0x37d9c0[_0x5022ae(0x186)](_0x5022ae(0x1b5));if(_0x2090c8==-0x1)return;const _0x54fa46=_0x37d9c0[_0x5022ae(0x17f)](_0x5022ae(0x1c9))[0x1],_0xbcee8=_0x54fa46[_0x5022ae(0x17f)](_0x5022ae(0x174))[0x0],_0x460c18=_0xbcee8[_0x5022ae(0x18c)]('*',''),_0x3a3941=_0x5022ae(0x191)+_0x460c18,_0x153a7d=await axios[_0x5022ae(0x1c4)](_0x3a3941),_0x4433b7=cheerio[_0x5022ae(0x18a)](_0x153a7d[_0x5022ae(0x177)]),_0x5bbe68=_0x4433b7(_0x5022ae(0x172))[_0x5022ae(0x19b)](),_0x351a8d=[],_0x187514=_0x4433b7(_0x5022ae(0x1cb));_0x187514[_0x5022ae(0x192)](function(){const _0x4e0425=_0x5022ae,_0x2de558=_0x4433b7(this)[_0x4e0425(0x183)](_0x4e0425(0x1a0))['text'](),_0x562cc4=_0x4433b7(this)[_0x4e0425(0x183)](_0x4e0425(0x16a))[_0x4e0425(0x19b)](),_0x25f690=_0x4433b7(this)[_0x4e0425(0x183)](_0x4e0425(0x1bf))['text'](),_0x489897=_0x4433b7(this)[_0x4e0425(0x183)](_0x4e0425(0x1a0))[_0x4e0425(0x19f)](_0x4e0425(0x1ac));_0x351a8d[_0x4e0425(0x1af)]({'title':_0x2de558,'rating':_0x562cc4,'year':_0x25f690,'link':_0x489897});}),await _0x45b24f[_0x5022ae(0x1aa)]('🎬');const _0x5bd781=_0x351a8d[0x0][_0x5022ae(0x17c)],_0x148d39=await axios[_0x5022ae(0x1c4)](_0x5bd781),_0x2fd2da=cheerio[_0x5022ae(0x18a)](_0x148d39[_0x5022ae(0x177)]),_0x5ede8b=_0x2fd2da('tr:nth-child(1)\x20>\x20td:nth-child(3)')[_0x5022ae(0x19b)](),_0x4ca3e0=_0x5ede8b['split']('\x20')[0x0],_0x54d8eb=_0x5ede8b[_0x5022ae(0x186)]('MB'),_0x568dc9=_0x2fd2da(_0x5022ae(0x1a2))[_0x5022ae(0x19b)](),_0x5b7ca3=_0x568dc9[_0x5022ae(0x17f)]('\x20')[0x0],_0x352851=_0x568dc9['search']('MB'),_0x17c117=_0x2fd2da(_0x5022ae(0x17e))[_0x5022ae(0x19b)](),_0x218b84=_0x17c117['split']('\x20')[0x0],_0x1cc637=_0x17c117['search']('MB'),_0xcaddb=_0x2fd2da('tr:nth-child(4)\x20>\x20td:nth-child(3)')[_0x5022ae(0x19b)](),_0x37afcd=_0xcaddb['split']('\x20')[0x0],_0x3dc768=_0xcaddb[_0x5022ae(0x186)]('MB'),_0x29c367=_0x2fd2da(_0x5022ae(0x1d2))['attr'](_0x5022ae(0x1a9));let _0x34dd8b='MB',_0x52ec04='MB',_0x33206a='MB',_0x255dfc='MB';if(_0x54d8eb==-0x1)_0x34dd8b='GB';if(_0x352851==-0x1)_0x52ec04='GB';if(_0x1cc637==-0x1)_0x33206a='GB';if(_0x3dc768==-0x1)_0x255dfc='GB';let _0x1e00da='';if(_0x5ede8b)_0x1e00da+=_0x5022ae(0x18f)+_0x4ca3e0+_0x34dd8b+')*';if(_0x568dc9)_0x1e00da+=_0x5022ae(0x1bd)+_0x5b7ca3+_0x52ec04+')*';if(_0x17c117)_0x1e00da+='\x0a*3️⃣\x20480P('+_0x218b84+_0x33206a+')*';if(_0xcaddb)_0x1e00da+=_0x5022ae(0x1a8)+_0x37afcd+_0x255dfc+')*';let _0x2c1f07=_0x5022ae(0x1cf)+_0x351a8d[0x0][_0x5022ae(0x1be)]+_0x5022ae(0x17b)+_0x351a8d[0x0][_0x5022ae(0x17a)]+_0x5022ae(0x16d)+_0x351a8d[0x0][_0x5022ae(0x190)]+'\x0a*🔗\x20Url\x20:*\x20'+_0x351a8d[0x0][_0x5022ae(0x17c)]+'\x0a\x0a*📥\x20Available\x20Qualitys\x20📥*\x0a\x0a'+_0x1e00da+_0x5022ae(0x16e)+botwatermark;await _0x3e6a24[_0x5022ae(0x176)](_0x11f6a3,{'image':{'url':_0x29c367},'caption':_0x2c1f07},{'quoted':_0x36059d});}catch(_0x5647a2){console['log'](_0x5647a2),_0x19c691(''+_0x5647a2);}}),cmd({'reply_pattern':'6','quoted_includes':'*🗃️\x20Database\x20:*\x20Sinhalasub.lk','filename':__filename},async(_0x1c7a87,_0xc8255b,_0x42180d,{from:_0xe2d91f,quoted:_0x462a5a,body:_0x5b88c0,isCmd:_0x394033,command:_0x26792c,args:_0x36558d,q:_0x36d57a,isGroup:_0x387f21,sender:_0x451800,senderNumber:_0x36769c,botNumber2:_0x545205,botNumber:_0x214ad7,pushname:_0xf9a5f5,isMe:_0x2aab87,isOwner:_0x468069,groupMetadata:_0x12a70c,groupName:_0x46eea8,participants:_0x4b7e41,groupAdmins:_0x219cf0,isBotAdmins:_0x48f1b7,isAdmins:_0xced6ff,reply:_0x3225c4,urls:_0x325441})=>{const _0x192c47=_0x7290cd;try{const _0x4bb60e=_0x42180d[_0x192c47(0x1d6)][_0x192c47(0x170)]['caption'],_0x217c05=_0x4bb60e['search']('6.\x20');if(_0x217c05==-0x1)return;const _0x4298e2=_0x4bb60e[_0x192c47(0x17f)](_0x192c47(0x1c0))[0x1],_0x2dfe8f=_0x4298e2['split'](_0x192c47(0x1b7))[0x0],_0x341ced=_0x2dfe8f[_0x192c47(0x18c)]('*',''),_0x5307df=_0x192c47(0x191)+_0x341ced,_0x4c9e93=await axios[_0x192c47(0x1c4)](_0x5307df),_0x4fabd0=cheerio[_0x192c47(0x18a)](_0x4c9e93[_0x192c47(0x177)]),_0x1b61f1=_0x4fabd0(_0x192c47(0x172))[_0x192c47(0x19b)](),_0x57f683=[],_0x33aed0=_0x4fabd0(_0x192c47(0x1cb));_0x33aed0['each'](function(){const _0x174ff3=_0x192c47,_0x172512=_0x4fabd0(this)[_0x174ff3(0x183)](_0x174ff3(0x1a0))['text'](),_0x55635b=_0x4fabd0(this)['find'](_0x174ff3(0x16a))[_0x174ff3(0x19b)](),_0x28953c=_0x4fabd0(this)[_0x174ff3(0x183)](_0x174ff3(0x1bf))[_0x174ff3(0x19b)](),_0x5797ae=_0x4fabd0(this)['find'](_0x174ff3(0x1a0))[_0x174ff3(0x19f)](_0x174ff3(0x1ac));_0x57f683[_0x174ff3(0x1af)]({'title':_0x172512,'rating':_0x55635b,'year':_0x28953c,'link':_0x5797ae});}),await _0x42180d[_0x192c47(0x1aa)]('🎬');const _0x10e578=_0x57f683[0x0][_0x192c47(0x17c)],_0x250e04=await axios[_0x192c47(0x1c4)](_0x10e578),_0x95ca73=cheerio['load'](_0x250e04['data']),_0x461c6f=_0x95ca73(_0x192c47(0x18e))['text'](),_0x1f447b=_0x461c6f[_0x192c47(0x17f)]('\x20')[0x0],_0x23abdd=_0x461c6f[_0x192c47(0x186)]('MB'),_0x51b867=_0x95ca73(_0x192c47(0x1a2))[_0x192c47(0x19b)](),_0x509424=_0x51b867[_0x192c47(0x17f)]('\x20')[0x0],_0x203cf1=_0x51b867[_0x192c47(0x186)]('MB'),_0x3ee3ca=_0x95ca73('tr:nth-child(3)\x20>\x20td:nth-child(3)')[_0x192c47(0x19b)](),_0xc0a7c2=_0x3ee3ca[_0x192c47(0x17f)]('\x20')[0x0],_0x498f58=_0x3ee3ca['search']('MB'),_0x515acd=_0x95ca73(_0x192c47(0x1a6))[_0x192c47(0x19b)](),_0x5b561d=_0x515acd['split']('\x20')[0x0],_0x216150=_0x515acd[_0x192c47(0x186)]('MB'),_0x34b7b7=_0x95ca73(_0x192c47(0x1d2))[_0x192c47(0x19f)](_0x192c47(0x1a9));let _0x3ef4f8='MB',_0x67d311='MB',_0x58bd5e='MB',_0x3ec063='MB';if(_0x23abdd==-0x1)_0x3ef4f8='GB';if(_0x203cf1==-0x1)_0x67d311='GB';if(_0x498f58==-0x1)_0x58bd5e='GB';if(_0x216150==-0x1)_0x3ec063='GB';let _0xeac328='';if(_0x461c6f)_0xeac328+=_0x192c47(0x18f)+_0x1f447b+_0x3ef4f8+')*';if(_0x51b867)_0xeac328+=_0x192c47(0x1bd)+_0x509424+_0x67d311+')*';if(_0x3ee3ca)_0xeac328+='\x0a*3️⃣\x20480P('+_0xc0a7c2+_0x58bd5e+')*';if(_0x515acd)_0xeac328+=_0x192c47(0x1a8)+_0x5b561d+_0x3ec063+')*';let _0x4e445c='*「\u00a0🐲\x20𝗗𝗥𝗔𝗖𝗢-𝗠𝗗\x20𝗠𝗢𝗩𝗜𝗘\x20𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥\u00a0🐲\x20」*\x0a\x0a*📝\x20Title\x20:*\x20'+_0x57f683[0x0][_0x192c47(0x1be)]+'\x0a*⭐️\x20Rating\x20:*\x20'+_0x57f683[0x0][_0x192c47(0x17a)]+'\x0a*📆\x20Year\x20:*\x20'+_0x57f683[0x0]['year']+'\x0a*🔗\x20Url\x20:*\x20'+_0x57f683[0x0]['link']+_0x192c47(0x1c2)+_0xeac328+_0x192c47(0x16e)+botwatermark;await _0x1c7a87[_0x192c47(0x176)](_0xe2d91f,{'image':{'url':_0x34b7b7},'caption':_0x4e445c},{'quoted':_0xc8255b});}catch(_0x3f9638){console[_0x192c47(0x1d5)](_0x3f9638),_0x3225c4(''+_0x3f9638);}}),cmd({'reply_pattern':'7','quoted_includes':_0x7290cd(0x1cd),'filename':__filename},async(_0x2c16ca,_0x291715,_0x57a7a7,{from:_0x3283e7,quoted:_0x2d0501,body:_0x535eee,isCmd:_0x18f6de,command:_0x36b77f,args:_0x569747,q:_0x207cac,isGroup:_0xb1cde2,sender:_0x1f4fdb,senderNumber:_0x298d04,botNumber2:_0x2844f2,botNumber:_0x1f08ea,pushname:_0xc29560,isMe:_0x37dfc4,isOwner:_0x587cae,groupMetadata:_0x2c21ef,groupName:_0x5717c2,participants:_0x2840d2,groupAdmins:_0x57e91a,isBotAdmins:_0x28932e,isAdmins:_0x4f25e1,reply:_0x1d6fab,urls:_0xfa5ea7})=>{const _0x102c97=_0x7290cd;try{const _0x8d31cb=_0x57a7a7[_0x102c97(0x1d6)][_0x102c97(0x170)]['caption'],_0x982442=_0x8d31cb[_0x102c97(0x186)](_0x102c97(0x1b2));if(_0x982442==-0x1)return;const _0x7ef98a=_0x8d31cb[_0x102c97(0x17f)]('*7.\x20')[0x1],_0x5c9e46=_0x7ef98a[_0x102c97(0x17f)](_0x102c97(0x185))[0x0],_0x5e5820=_0x5c9e46[_0x102c97(0x18c)]('*',''),_0x180b97=_0x102c97(0x191)+_0x5e5820,_0x42d038=await axios['get'](_0x180b97),_0x5247f5=cheerio[_0x102c97(0x18a)](_0x42d038[_0x102c97(0x177)]),_0x46f8fd=_0x5247f5(_0x102c97(0x172))[_0x102c97(0x19b)](),_0x2b3004=[],_0x2c6b7c=_0x5247f5(_0x102c97(0x1cb));_0x2c6b7c[_0x102c97(0x192)](function(){const _0x53e2fc=_0x102c97,_0x1a713e=_0x5247f5(this)[_0x53e2fc(0x183)](_0x53e2fc(0x1a0))[_0x53e2fc(0x19b)](),_0x4b76cd=_0x5247f5(this)[_0x53e2fc(0x183)](_0x53e2fc(0x16a))['text'](),_0xecb66d=_0x5247f5(this)[_0x53e2fc(0x183)](_0x53e2fc(0x1bf))[_0x53e2fc(0x19b)](),_0x3c7812=_0x5247f5(this)[_0x53e2fc(0x183)](_0x53e2fc(0x1a0))[_0x53e2fc(0x19f)](_0x53e2fc(0x1ac));_0x2b3004[_0x53e2fc(0x1af)]({'title':_0x1a713e,'rating':_0x4b76cd,'year':_0xecb66d,'link':_0x3c7812});}),await _0x57a7a7[_0x102c97(0x1aa)]('🎬');const _0x415d8f=_0x2b3004[0x0][_0x102c97(0x17c)],_0x354e17=await axios[_0x102c97(0x1c4)](_0x415d8f),_0x528779=cheerio['load'](_0x354e17[_0x102c97(0x177)]),_0x251085=_0x528779(_0x102c97(0x18e))['text'](),_0x827c44=_0x251085[_0x102c97(0x17f)]('\x20')[0x0],_0x4255b1=_0x251085[_0x102c97(0x186)]('MB'),_0xef0443=_0x528779('tr:nth-child(2)\x20>\x20td:nth-child(3)')[_0x102c97(0x19b)](),_0x586c96=_0xef0443[_0x102c97(0x17f)]('\x20')[0x0],_0x22f698=_0xef0443[_0x102c97(0x186)]('MB'),_0x273f82=_0x528779('tr:nth-child(3)\x20>\x20td:nth-child(3)')[_0x102c97(0x19b)](),_0x97951d=_0x273f82[_0x102c97(0x17f)]('\x20')[0x0],_0x150008=_0x273f82[_0x102c97(0x186)]('MB'),_0x139709=_0x528779(_0x102c97(0x1a6))[_0x102c97(0x19b)](),_0x20458d=_0x139709[_0x102c97(0x17f)]('\x20')[0x0],_0x23f322=_0x139709[_0x102c97(0x186)]('MB'),_0x4bd04a=_0x528779(_0x102c97(0x1d2))[_0x102c97(0x19f)](_0x102c97(0x1a9));let _0x156cb7='MB',_0x24156b='MB',_0x559952='MB',_0xe3e39='MB';if(_0x4255b1==-0x1)_0x156cb7='GB';if(_0x22f698==-0x1)_0x24156b='GB';if(_0x150008==-0x1)_0x559952='GB';if(_0x23f322==-0x1)_0xe3e39='GB';let _0x32ffff='';if(_0x251085)_0x32ffff+=_0x102c97(0x18f)+_0x827c44+_0x156cb7+')*';if(_0xef0443)_0x32ffff+=_0x102c97(0x1bd)+_0x586c96+_0x24156b+')*';if(_0x273f82)_0x32ffff+=_0x102c97(0x1b9)+_0x97951d+_0x559952+')*';if(_0x139709)_0x32ffff+=_0x102c97(0x1a8)+_0x20458d+_0xe3e39+')*';let _0x3b6663=_0x102c97(0x1cf)+_0x2b3004[0x0]['title']+_0x102c97(0x17b)+_0x2b3004[0x0][_0x102c97(0x17a)]+_0x102c97(0x16d)+_0x2b3004[0x0][_0x102c97(0x190)]+'\x0a*🔗\x20Url\x20:*\x20'+_0x2b3004[0x0][_0x102c97(0x17c)]+_0x102c97(0x1c2)+_0x32ffff+_0x102c97(0x16e)+botwatermark;await _0x2c16ca[_0x102c97(0x176)](_0x3283e7,{'image':{'url':_0x4bd04a},'caption':_0x3b6663},{'quoted':_0x291715});}catch(_0x197444){console[_0x102c97(0x1d5)](_0x197444),_0x1d6fab(''+_0x197444);}}),cmd({'reply_pattern':'8','quoted_includes':_0x7290cd(0x1cd),'filename':__filename},async(_0x56cac2,_0x5a3b11,_0x579b3a,{from:_0x96800,quoted:_0x3f41bd,body:_0x2a1370,isCmd:_0x3cdbbf,command:_0x978880,args:_0x32fe30,q:_0x5f9b4f,isGroup:_0x4e14cc,sender:_0x325dd2,senderNumber:_0x3c87c8,botNumber2:_0x551750,botNumber:_0x47200c,pushname:_0x5df954,isMe:_0x3c5335,isOwner:_0x4f1cd5,groupMetadata:_0x1036ee,groupName:_0x388387,participants:_0x43e468,groupAdmins:_0xa07b64,isBotAdmins:_0x399163,isAdmins:_0x494452,reply:_0x267d41,urls:_0x36c1d6})=>{const _0x3d1608=_0x7290cd;try{const _0xa65261=_0x579b3a[_0x3d1608(0x1d6)]['imageMessage']['caption'],_0x22b0d0=_0xa65261[_0x3d1608(0x186)](_0x3d1608(0x1a5));if(_0x22b0d0==-0x1)return;const _0xd6f682=_0xa65261[_0x3d1608(0x17f)](_0x3d1608(0x175))[0x1],_0x3b542b=_0xd6f682['split'](_0x3d1608(0x171))[0x0],_0x48fb88=_0x3b542b['replaceAll']('*',''),_0x336c5b=_0x3d1608(0x191)+_0x48fb88,_0x24ef98=await axios[_0x3d1608(0x1c4)](_0x336c5b),_0x466fc1=cheerio[_0x3d1608(0x18a)](_0x24ef98[_0x3d1608(0x177)]),_0x3d12c6=_0x466fc1('#contenedor\x20>\x20div.module\x20>\x20div.content.rigth.csearch\x20>\x20div\x20>\x20div.no-result.animation-2\x20>\x20h2')[_0x3d1608(0x19b)](),_0x2f2fcf=[],_0x3df4ce=_0x466fc1('article');_0x3df4ce[_0x3d1608(0x192)](function(){const _0x3107e9=_0x3d1608,_0x1cf9a1=_0x466fc1(this)['find'](_0x3107e9(0x1a0))['text'](),_0x375fb3=_0x466fc1(this)[_0x3107e9(0x183)](_0x3107e9(0x16a))['text'](),_0x34f972=_0x466fc1(this)['find'](_0x3107e9(0x1bf))[_0x3107e9(0x19b)](),_0x43f683=_0x466fc1(this)[_0x3107e9(0x183)](_0x3107e9(0x1a0))[_0x3107e9(0x19f)](_0x3107e9(0x1ac));_0x2f2fcf[_0x3107e9(0x1af)]({'title':_0x1cf9a1,'rating':_0x375fb3,'year':_0x34f972,'link':_0x43f683});}),await _0x579b3a[_0x3d1608(0x1aa)]('🎬');const _0x4f6565=_0x2f2fcf[0x0][_0x3d1608(0x17c)],_0x1e7b68=await axios['get'](_0x4f6565),_0x4b1051=cheerio[_0x3d1608(0x18a)](_0x1e7b68[_0x3d1608(0x177)]),_0x52f591=_0x4b1051(_0x3d1608(0x18e))[_0x3d1608(0x19b)](),_0x530329=_0x52f591[_0x3d1608(0x17f)]('\x20')[0x0],_0x2cab38=_0x52f591[_0x3d1608(0x186)]('MB'),_0x1910e9=_0x4b1051(_0x3d1608(0x1a2))['text'](),_0xecfc61=_0x1910e9['split']('\x20')[0x0],_0x32629b=_0x1910e9[_0x3d1608(0x186)]('MB'),_0x2ab80c=_0x4b1051('tr:nth-child(3)\x20>\x20td:nth-child(3)')[_0x3d1608(0x19b)](),_0x397f04=_0x2ab80c[_0x3d1608(0x17f)]('\x20')[0x0],_0x124a48=_0x2ab80c[_0x3d1608(0x186)]('MB'),_0x21b82a=_0x4b1051(_0x3d1608(0x1a6))[_0x3d1608(0x19b)](),_0x2383a2=_0x21b82a[_0x3d1608(0x17f)]('\x20')[0x0],_0x23db81=_0x21b82a[_0x3d1608(0x186)]('MB'),_0x19e885=_0x4b1051('#single\x20>\x20div.content.right\x20>\x20div.sheader\x20>\x20div.poster\x20>\x20img')[_0x3d1608(0x19f)]('src');let _0x23ba3f='MB',_0x2aa827='MB',_0x5cc67d='MB',_0x4b7f6c='MB';if(_0x2cab38==-0x1)_0x23ba3f='GB';if(_0x32629b==-0x1)_0x2aa827='GB';if(_0x124a48==-0x1)_0x5cc67d='GB';if(_0x23db81==-0x1)_0x4b7f6c='GB';let _0x4eab32='';if(_0x52f591)_0x4eab32+=_0x3d1608(0x18f)+_0x530329+_0x23ba3f+')*';if(_0x1910e9)_0x4eab32+='\x0a*2️⃣\x20720P('+_0xecfc61+_0x2aa827+')*';if(_0x2ab80c)_0x4eab32+='\x0a*3️⃣\x20480P('+_0x397f04+_0x5cc67d+')*';if(_0x21b82a)_0x4eab32+=_0x3d1608(0x1a8)+_0x2383a2+_0x4b7f6c+')*';let _0x3e5864='*「\u00a0🐲\x20𝗗𝗥𝗔𝗖𝗢-𝗠𝗗\x20𝗠𝗢𝗩𝗜𝗘\x20𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥\u00a0🐲\x20」*\x0a\x0a*📝\x20Title\x20:*\x20'+_0x2f2fcf[0x0][_0x3d1608(0x1be)]+_0x3d1608(0x17b)+_0x2f2fcf[0x0][_0x3d1608(0x17a)]+_0x3d1608(0x16d)+_0x2f2fcf[0x0][_0x3d1608(0x190)]+_0x3d1608(0x1ad)+_0x2f2fcf[0x0]['link']+_0x3d1608(0x1c2)+_0x4eab32+_0x3d1608(0x16e)+botwatermark;await _0x56cac2[_0x3d1608(0x176)](_0x96800,{'image':{'url':_0x19e885},'caption':_0x3e5864},{'quoted':_0x5a3b11});}catch(_0x5655e0){console[_0x3d1608(0x1d5)](_0x5655e0),_0x267d41(''+_0x5655e0);}}),cmd({'reply_pattern':'9','quoted_includes':'*🗃️\x20Database\x20:*\x20Sinhalasub.lk','filename':__filename},async(_0x1bcf4c,_0x2407a7,_0xa06162,{from:_0xd32198,quoted:_0x5a526c,body:_0x390f5b,isCmd:_0x128191,command:_0x37e1d,args:_0x371cbd,q:_0x22452f,isGroup:_0x292bd0,sender:_0x2d2123,senderNumber:_0x78542b,botNumber2:_0x204add,botNumber:_0x25ea5e,pushname:_0xa5a31,isMe:_0x844764,isOwner:_0x422b1c,groupMetadata:_0x101042,groupName:_0x3afae5,participants:_0x373ea2,groupAdmins:_0x2b30b3,isBotAdmins:_0x8c17e2,isAdmins:_0x700e2e,reply:_0x24480c,urls:_0x537594})=>{const _0x5705f1=_0x7290cd;try{const _0x6da77d=_0xa06162[_0x5705f1(0x1d6)][_0x5705f1(0x170)][_0x5705f1(0x19a)],_0x36ad0f=_0x6da77d[_0x5705f1(0x186)](_0x5705f1(0x16c));if(_0x36ad0f==-0x1)return;const _0x4ea95f=_0x6da77d[_0x5705f1(0x17f)](_0x5705f1(0x187))[0x1],_0x231ed4=_0x4ea95f[_0x5705f1(0x17f)](botwatermark)[0x0],_0xe32427=_0x5705f1(0x191)+sq3,_0xc6bb45=await axios[_0x5705f1(0x1c4)](_0xe32427),_0x299828=cheerio[_0x5705f1(0x18a)](_0xc6bb45[_0x5705f1(0x177)]),_0x209c8b=_0x299828('#contenedor\x20>\x20div.module\x20>\x20div.content.rigth.csearch\x20>\x20div\x20>\x20div.no-result.animation-2\x20>\x20h2')[_0x5705f1(0x19b)](),_0x3a404f=[],_0x58e87b=_0x299828(_0x5705f1(0x1cb));_0x58e87b[_0x5705f1(0x192)](function(){const _0x4a6d4c=_0x5705f1,_0x1c2c55=_0x299828(this)['find'](_0x4a6d4c(0x1a0))['text'](),_0x5bb6fd=_0x299828(this)['find'](_0x4a6d4c(0x16a))[_0x4a6d4c(0x19b)](),_0xa38bab=_0x299828(this)[_0x4a6d4c(0x183)]('.year')[_0x4a6d4c(0x19b)](),_0x429fed=_0x299828(this)[_0x4a6d4c(0x183)](_0x4a6d4c(0x1a0))[_0x4a6d4c(0x19f)](_0x4a6d4c(0x1ac));_0x3a404f[_0x4a6d4c(0x1af)]({'title':_0x1c2c55,'rating':_0x5bb6fd,'year':_0xa38bab,'link':_0x429fed});}),await _0xa06162[_0x5705f1(0x1aa)]('🎬');const _0x1920db=_0x3a404f[0x0][_0x5705f1(0x17c)],_0x5bdb48=await axios[_0x5705f1(0x1c4)](_0x1920db),_0x135649=cheerio['load'](_0x5bdb48[_0x5705f1(0x177)]),_0x47d10e=_0x135649(_0x5705f1(0x18e))[_0x5705f1(0x19b)](),_0x6f3783=_0x47d10e['split']('\x20')[0x0],_0x4400d2=_0x47d10e[_0x5705f1(0x186)]('MB'),_0x4b69b4=_0x135649(_0x5705f1(0x1a2))[_0x5705f1(0x19b)](),_0x194b68=_0x4b69b4[_0x5705f1(0x17f)]('\x20')[0x0],_0x4c34cd=_0x4b69b4[_0x5705f1(0x186)]('MB'),_0x2b742a=_0x135649(_0x5705f1(0x17e))[_0x5705f1(0x19b)](),_0x5227c0=_0x2b742a[_0x5705f1(0x17f)]('\x20')[0x0],_0x46635d=_0x2b742a[_0x5705f1(0x186)]('MB'),_0x50442a=_0x135649(_0x5705f1(0x1a6))['text'](),_0x256307=_0x50442a[_0x5705f1(0x17f)]('\x20')[0x0],_0x37939f=_0x50442a[_0x5705f1(0x186)]('MB'),_0x346510=_0x135649('#single\x20>\x20div.content.right\x20>\x20div.sheader\x20>\x20div.poster\x20>\x20img')[_0x5705f1(0x19f)]('src');let _0x3778c0='MB',_0xa5087b='MB',_0x570585='MB',_0x1bc308='MB';if(_0x4400d2==-0x1)_0x3778c0='GB';if(_0x4c34cd==-0x1)_0xa5087b='GB';if(_0x46635d==-0x1)_0x570585='GB';if(_0x37939f==-0x1)_0x1bc308='GB';let _0x41e04b='';if(_0x47d10e)_0x41e04b+=_0x5705f1(0x18f)+_0x6f3783+_0x3778c0+')*';if(_0x4b69b4)_0x41e04b+=_0x5705f1(0x1bd)+_0x194b68+_0xa5087b+')*';if(_0x2b742a)_0x41e04b+=_0x5705f1(0x1b9)+_0x5227c0+_0x570585+')*';if(_0x50442a)_0x41e04b+=_0x5705f1(0x1a8)+_0x256307+_0x1bc308+')*';let _0x18ee25='*「\u00a0🐲\x20𝗗𝗥𝗔𝗖𝗢-𝗠𝗗\x20𝗠𝗢𝗩𝗜𝗘\x20𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥\u00a0🐲\x20」*\x0a\x0a*📝\x20Title\x20:*\x20'+_0x3a404f[0x0][_0x5705f1(0x1be)]+'\x0a*⭐️\x20Rating\x20:*\x20'+_0x3a404f[0x0][_0x5705f1(0x17a)]+_0x5705f1(0x16d)+_0x3a404f[0x0]['year']+_0x5705f1(0x1ad)+_0x3a404f[0x0]['link']+_0x5705f1(0x1c2)+_0x41e04b+_0x5705f1(0x16e)+botwatermark;await _0x1bcf4c[_0x5705f1(0x176)](_0xd32198,{'image':{'url':_0x346510},'caption':_0x18ee25},{'quoted':_0x2407a7});}catch(_0x52edc8){console[_0x5705f1(0x1d5)](_0x52edc8),_0x24480c(''+_0x52edc8);}}),cmd({'reply_pattern':'1','quoted_includes':_0x7290cd(0x1c6),'filename':__filename},async(_0x2a5b9b,_0x2d5d13,_0x3b88c3,{from:_0x1eab88,quoted:_0x3e8bba,body:_0x4d47ca,isCmd:_0x589b21,command:_0x2b60d2,args:_0x3aa5aa,q:_0x15e652,isGroup:_0x104c12,sender:_0x53fec0,senderNumber:_0x51b9ce,botNumber2:_0x38f9e8,botNumber:_0x44e3a2,pushname:_0x381196,isMe:_0x422640,isOwner:_0x42f24c,groupMetadata:_0xbd8844,groupName:_0x1d384b,participants:_0x1bc4d9,groupAdmins:_0x38494e,isBotAdmins:_0x1a3192,isAdmins:_0x15cc38,reply:_0x569188,urls:_0x16fc55})=>{const _0x573b85=_0x7290cd;try{const _0x3aa160=_0x3b88c3['quoted'][_0x573b85(0x170)][_0x573b85(0x19a)],_0x446082=_0x3aa160[_0x573b85(0x186)](_0x573b85(0x1c5));if(_0x446082==-0x1)return;const _0x247d62=_0x16fc55[0x0];if(!_0x247d62)return await _0x3b88c3[_0x573b85(0x1aa)]('❌'),_0x569188(_0x573b85(0x179));await _0x3b88c3[_0x573b85(0x1aa)]('🔄');const _0x590712=await axios[_0x573b85(0x1c4)](_0x247d62),_0x5e54ed=cheerio[_0x573b85(0x18a)](_0x590712[_0x573b85(0x177)]),_0x306968=_0x5e54ed(_0x573b85(0x19e))[_0x573b85(0x19f)](_0x573b85(0x1ac)),_0x13f925=await axios[_0x573b85(0x1c4)](p480),_0x11a3df=cheerio[_0x573b85(0x18a)](_0x13f925[_0x573b85(0x177)]),_0xdd0032=_0x11a3df(_0x573b85(0x1bb))[_0x573b85(0x19f)](_0x573b85(0x1ac));if(_0xdd0032[_0x573b85(0x1c7)](_0x573b85(0x1ca))){const _0x423a5b=_0xdd0032[_0x573b85(0x17f)]('u/')[0x1],_0x51ec73=_0x573b85(0x1b4)+_0x423a5b,_0x1e4ad0=_0x3aa160['split'](_0x573b85(0x1b3))[0x1],_0x1dd5d4=_0x1e4ad0[_0x573b85(0x17f)](_0x573b85(0x178))[0x0];let _0x1810ab=_0x1dd5d4+'\x0a'+botwatermark;await _0x2a5b9b['sendMessage'](_0x1eab88,{'document':{'url':_0x51ec73},'mimetype':'video/mp4','caption':_0x1810ab,'fileName':'[🐲\x20D.M.W.B\x20🐲]'+_0x1dd5d4+_0x573b85(0x1a7)},{'quoted':_0x2d5d13}),await _0x3b88c3['react']('✅');}else{const _0x12e7fa=_0x3aa160[_0x573b85(0x17f)](_0x573b85(0x1b3))[0x1],_0x4d7d70=_0x12e7fa[_0x573b85(0x17f)]('*⭐️\x20Rating\x20:*')[0x0];let _0x3d59c1=_0x4d7d70+'\x0a'+botwatermark;await _0x2a5b9b[_0x573b85(0x176)](_0x1eab88,{'document':{'url':_0xdd0032},'mimetype':_0x573b85(0x188),'caption':_0x3d59c1,'fileName':_0x573b85(0x16f)+_0x4d7d70+_0x573b85(0x1a7)},{'quoted':_0x2d5d13}),await _0x3b88c3[_0x573b85(0x1aa)]('✅');}}catch(_0x1a75bc){console[_0x573b85(0x1d5)](_0x1a75bc),_0x569188(''+_0x1a75bc);}}),cmd({'reply_pattern':'2','quoted_includes':_0x7290cd(0x1c6),'filename':__filename},async(_0x5c42a5,_0x37cd9b,_0x5aaf1b,{from:_0x4bea09,quoted:_0x51704a,body:_0xd81181,isCmd:_0x2e5c43,command:_0x32cd58,args:_0x517e4f,q:_0x3fad02,isGroup:_0x2badb9,sender:_0x5094a4,senderNumber:_0x1d4964,botNumber2:_0x1c7d39,botNumber:_0x2ccef1,pushname:_0x28d76f,isMe:_0x45654d,isOwner:_0x191168,groupMetadata:_0x5a088d,groupName:_0x24b1dc,participants:_0x226b4c,groupAdmins:_0x2a287d,isBotAdmins:_0x236f38,isAdmins:_0x303e53,reply:_0x1661f1,urls:_0x59e668})=>{const _0x222b58=_0x7290cd;try{const _0x2f0c2c=_0x5aaf1b[_0x222b58(0x1d6)][_0x222b58(0x170)][_0x222b58(0x19a)],_0x4e44da=_0x2f0c2c['search'](_0x222b58(0x181));if(_0x4e44da==-0x1)return;const _0x4adfce=_0x59e668[0x0];if(!_0x4adfce)return await _0x5aaf1b[_0x222b58(0x1aa)]('❌'),_0x1661f1(_0x222b58(0x179));await _0x5aaf1b['react']('🔄');const _0x3c92f6=await axios['get'](_0x4adfce),_0x355cb0=cheerio[_0x222b58(0x18a)](_0x3c92f6[_0x222b58(0x177)]),_0x31f087=_0x355cb0(_0x222b58(0x1c8))[_0x222b58(0x19f)](_0x222b58(0x1ac)),_0x3804d7=await axios[_0x222b58(0x1c4)](_0x31f087),_0x3e2788=cheerio[_0x222b58(0x18a)](_0x3804d7[_0x222b58(0x177)]),_0x152e49=_0x3e2788(_0x222b58(0x1bb))[_0x222b58(0x19f)](_0x222b58(0x1ac));if(_0x152e49[_0x222b58(0x1c7)]('https://pixeldrain.com')){const _0x53de57=_0x152e49[_0x222b58(0x17f)]('u/')[0x1],_0x2e3fb0='https://pixeldrain.com/api/file/'+_0x53de57,_0x2b1b30=_0x2f0c2c[_0x222b58(0x17f)](_0x222b58(0x1b3))[0x1],_0x2d27c0=_0x2b1b30[_0x222b58(0x17f)](_0x222b58(0x178))[0x0];let _0x138266=_0x2d27c0+'\x0a'+botwatermark;await _0x5c42a5[_0x222b58(0x176)](_0x4bea09,{'document':{'url':_0x2e3fb0},'mimetype':_0x222b58(0x188),'caption':_0x138266,'fileName':'[🐲\x20D.M.W.B\x20🐲]'+_0x2d27c0+_0x222b58(0x1a7)},{'quoted':_0x37cd9b}),await _0x5aaf1b[_0x222b58(0x1aa)]('✅');}else{const _0x307857=_0x2f0c2c[_0x222b58(0x17f)](_0x222b58(0x1b3))[0x1],_0x24b85d=_0x307857[_0x222b58(0x17f)](_0x222b58(0x178))[0x0];let _0x5a2627=_0x24b85d+'\x0a'+botwatermark;await _0x5c42a5[_0x222b58(0x176)](_0x4bea09,{'document':{'url':_0x152e49},'mimetype':_0x222b58(0x188),'caption':_0x5a2627,'fileName':_0x222b58(0x16f)+_0x24b85d+'.mp4'},{'quoted':_0x37cd9b}),await _0x5aaf1b[_0x222b58(0x1aa)]('✅');}}catch(_0x207b51){console['log'](_0x207b51),_0x1661f1(''+_0x207b51);}}),cmd({'reply_pattern':'3','quoted_includes':_0x7290cd(0x1c6),'filename':__filename},async(_0x23d8b8,_0x454e01,_0x409bd1,{from:_0x27fa20,quoted:_0x59b87f,body:_0x1ad7f6,isCmd:_0x3bedc1,command:_0x14e934,args:_0x3be809,q:_0x338f3d,isGroup:_0x27aa94,sender:_0x25cd13,senderNumber:_0x3bc321,botNumber2:_0x38f084,botNumber:_0x516856,pushname:_0x5014dc,isMe:_0x38b7bb,isOwner:_0x44b29a,groupMetadata:_0x2fd910,groupName:_0x122136,participants:_0x3d9670,groupAdmins:_0x252d6c,isBotAdmins:_0x428ed5,isAdmins:_0x42816f,reply:_0x111594,urls:_0x3314c0})=>{const _0x74ac27=_0x7290cd;try{const _0x4f613b=_0x409bd1[_0x74ac27(0x1d6)][_0x74ac27(0x170)]['caption'],_0x164bc4=_0x4f613b[_0x74ac27(0x186)](_0x74ac27(0x1a1));if(_0x164bc4==-0x1)return;const _0x528c4=_0x3314c0[0x0];if(!_0x528c4)return await _0x409bd1[_0x74ac27(0x1aa)]('❌'),_0x111594(_0x74ac27(0x179));await _0x409bd1['react']('🔄');const _0x5b7363=await axios[_0x74ac27(0x1c4)](_0x528c4),_0x444f1b=cheerio[_0x74ac27(0x18a)](_0x5b7363[_0x74ac27(0x177)]),_0x8f6d6f=_0x444f1b(_0x74ac27(0x1b0))[_0x74ac27(0x19f)](_0x74ac27(0x1ac)),_0x5537a3=await axios[_0x74ac27(0x1c4)](_0x8f6d6f),_0x3094be=cheerio[_0x74ac27(0x18a)](_0x5537a3['data']),_0x2b8b95=_0x3094be(_0x74ac27(0x1bb))['attr'](_0x74ac27(0x1ac));if(_0x2b8b95[_0x74ac27(0x1c7)](_0x74ac27(0x1ca))){const _0xcd2852=_0x2b8b95[_0x74ac27(0x17f)]('u/')[0x1],_0x5bb55c='https://pixeldrain.com/api/file/'+_0xcd2852,_0x1ca27f=_0x4f613b[_0x74ac27(0x17f)](_0x74ac27(0x1b3))[0x1],_0x100836=_0x1ca27f['split'](_0x74ac27(0x178))[0x0];let _0xa7a14=_0x100836+'\x0a'+botwatermark;const _0x45c106=await _0x23d8b8[_0x74ac27(0x176)](_0x27fa20,{'document':{'url':_0x5bb55c},'mimetype':'video/mp4','caption':_0xa7a14,'fileName':'[🐲\x20D.M.W.B\x20🐲]'+_0x100836+_0x74ac27(0x1a7)},{'quoted':_0x454e01});await _0x409bd1[_0x74ac27(0x1aa)]('✅');}else{const _0x24539a=_0x4f613b[_0x74ac27(0x17f)](_0x74ac27(0x1b3))[0x1],_0x33831c=_0x24539a[_0x74ac27(0x17f)](_0x74ac27(0x178))[0x0];let _0x4a168b=_0x33831c+'\x0a'+botwatermark;await _0x23d8b8[_0x74ac27(0x176)](_0x27fa20,{'document':{'url':_0x2b8b95},'mimetype':_0x74ac27(0x188),'caption':_0x4a168b,'fileName':_0x74ac27(0x16f)+_0x33831c+_0x74ac27(0x1a7)},{'quoted':_0x454e01}),await _0x409bd1['react']('✅');}}catch(_0x274f7a){console[_0x74ac27(0x1d5)](_0x274f7a),_0x111594(''+_0x274f7a);}}),cmd({'reply_pattern':'4','quoted_includes':_0x7290cd(0x1c6),'filename':__filename},async(_0x214a45,_0x13853f,_0xae0f1c,{from:_0x1a1849,quoted:_0x23a8ae,body:_0x556c97,isCmd:_0x4c657b,command:_0x1f6bc6,args:_0x48bc5f,q:_0x438ec9,isGroup:_0x2aa81c,sender:_0x3703b2,senderNumber:_0x14f326,botNumber2:_0x1603a9,botNumber:_0x37bdba,pushname:_0x1e5048,isMe:_0x1fc878,isOwner:_0x136035,groupMetadata:_0x5ba68a,groupName:_0x105154,participants:_0x30b609,groupAdmins:_0x3dc9ba,isBotAdmins:_0x184e33,isAdmins:_0x58a2f6,reply:_0xae391b,urls:_0x2d26fa})=>{const _0x5b726b=_0x7290cd;try{const _0x56e3aa=_0xae0f1c[_0x5b726b(0x1d6)][_0x5b726b(0x170)][_0x5b726b(0x19a)],_0x2f05fa=_0x56e3aa[_0x5b726b(0x186)]('4⃣\x20360P');if(_0x2f05fa==-0x1)return;const _0x458d4c=_0x2d26fa[0x0];if(!_0x458d4c)return await _0xae0f1c[_0x5b726b(0x1aa)]('❌'),_0xae391b('*❗️\x20Can\x27t\x20download\x20this\x20movie!\x20❗️*');await _0xae0f1c[_0x5b726b(0x1aa)]('🔄');const _0x152208=await axios[_0x5b726b(0x1c4)](_0x458d4c),_0x9dd8=cheerio[_0x5b726b(0x18a)](_0x152208[_0x5b726b(0x177)]),_0x6df0aa=_0x9dd8(_0x5b726b(0x199))[_0x5b726b(0x19f)]('href'),_0x2bcf8b=await axios[_0x5b726b(0x1c4)](_0x6df0aa),_0x2ceed1=cheerio[_0x5b726b(0x18a)](_0x2bcf8b[_0x5b726b(0x177)]),_0x1e38ff=_0x2ceed1('#link')['attr']('href');if(_0x1e38ff[_0x5b726b(0x1c7)](_0x5b726b(0x1ca))){const _0x249287=_0x1e38ff[_0x5b726b(0x17f)]('u/')[0x1],_0x28e3e9=_0x5b726b(0x1b4)+_0x249287,_0x26da8d=_0x56e3aa[_0x5b726b(0x17f)]('*📝\x20Title\x20:*\x20')[0x1],_0x4e7350=_0x26da8d[_0x5b726b(0x17f)](_0x5b726b(0x178))[0x0];let _0x1a60b5=_0x4e7350+'\x0a'+botwatermark;await _0x214a45['sendMessage'](_0x1a1849,{'document':{'url':_0x28e3e9},'mimetype':'video/mp4','caption':_0x1a60b5,'fileName':'[🐲\x20D.M.W.B\x20🐲]'+_0x4e7350+_0x5b726b(0x1a7)},{'quoted':_0x13853f}),await _0xae0f1c[_0x5b726b(0x1aa)]('✅');}else{const _0x39084d=_0x56e3aa[_0x5b726b(0x17f)](_0x5b726b(0x1b3))[0x1],_0x1cf6ab=_0x39084d[_0x5b726b(0x17f)](_0x5b726b(0x178))[0x0];let _0xdea58=_0x1cf6ab+'\x0a'+botwatermark;await _0x214a45[_0x5b726b(0x176)](_0x1a1849,{'document':{'url':_0x1e38ff},'mimetype':_0x5b726b(0x188),'caption':_0xdea58,'fileName':_0x5b726b(0x16f)+_0x1cf6ab+'.mp4'},{'quoted':_0x13853f}),await _0xae0f1c['react']('✅');}}catch(_0x45f416){console['log'](_0x45f416),_0xae391b(''+_0x45f416);}});
+const {cmd , commands} = require('../command')
+const { botwatermark } = require('../botwatermark')
+const cheerio = require('cheerio')
+const axios = require('axios')
+
+cmd({
+    pattern: "movie",
+    alias: ["mv"],
+    desc: "Download movies from sinhalasub.lk.",
+    category: "search",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+
+const url = `https://sinhalasub.lk/?s=${q}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+
+    if(!q) {
+        await m.react("❌")
+        return reply("*❗️ Give movie name. ❗️*")
+    }else if(resulterror == `No results to show with ${q}`) {
+        await m.react("❌")
+        return reply("*❗️ Movie not found! ❗️*")
+    }
+await m.react("🎬")
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+let movielist = `*1. ${mvdata[0].title}*`
+if(mvdata[1]) movielist += `\n\n*2. ${mvdata[1].title}*`
+if(mvdata[2]) movielist += `\n\n*3. ${mvdata[2].title}*`
+if(mvdata[3]) movielist += `\n\n*4. ${mvdata[3].title}*`
+if(mvdata[4]) movielist += `\n\n*5. ${mvdata[4].title}*`
+if(mvdata[5]) movielist += `\n\n*6. ${mvdata[5].title}*`
+if(mvdata[6]) movielist += `\n\n*7. ${mvdata[6].title}*`
+if(mvdata[7]) movielist += `\n\n*8. ${mvdata[7].title}*`
+if(mvdata[8]) movielist += `\n\n*9. ${mvdata[8].title}*`
+    
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*🗃️ Database :* Sinhalasub.lk
+*🔎 Search :* ${q}
+
+${movielist}
+
+\n\n\n${botwatermark}`
+
+await conn.sendMessage(from, {image: {url: `https://sinhalasub.lk/wp-content/uploads/2023/08/icon.png`},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "1",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("1. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*1. ")[1]
+const sq2 = sq1.split("*2.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "2",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("2. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*2. ")[1]
+const sq2 = sq1.split("*3.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "3",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("3. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*3. ")[1]
+const sq2 = sq1.split("*4.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "4",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("4. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*4. ")[1]
+const sq2 = sq1.split("*5.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "5",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("5. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*5. ")[1]
+const sq2 = sq1.split("*6.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "6",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("6. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*6. ")[1]
+const sq2 = sq1.split("*7.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "7",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("7. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*7. ")[1]
+const sq2 = sq1.split("*8.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "8",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("8. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*8. ")[1]
+const sq2 = sq1.split("*9.")[0]
+const sq3 = sq2.replaceAll("*","")
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "9",
+    quoted_includes: "*🗃️ Database :* Sinhalasub.lk",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+const omsg = m.quoted.imageMessage.caption
+const cmv = omsg.search("9. ")
+if(cmv == -1) return
+const sq1 = omsg.split("*9. ")[1]
+const sq2 = sq1.split(botwatermark)[0]
+const url = `https://sinhalasub.lk/?s=${sq3}`
+const response = await axios.get(url)
+const $ = cheerio.load(response.data)
+const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const mvdata = []
+const movies = $("article")
+movies.each(function(){
+    const title = $(this).find(".title a").text()
+    const rating = $(this).find(".rating").text()
+    const year = $(this).find(".year").text()
+    const link = $(this).find(".title a").attr('href')
+
+    mvdata.push({title,rating,year,link})
+})
+
+await m.react("🎬")
+
+const url2 = mvdata[0].link
+const response2 = await axios.get(url2)
+const $$ = cheerio.load(response2.data)
+const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
+const ms21080 = ms1080.split(" ")[0]
+const ms31080 = ms1080.search("MB")
+const ms720 = $$("tr:nth-child(2) > td:nth-child(3)").text()
+const ms2720 = ms720.split(" ")[0]
+const ms3720 = ms720.search("MB")
+const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
+const ms2480 = ms480.split(" ")[0]
+const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
+const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+
+let gbormb1080 = `MB`
+let gbormb720 = `MB`
+let gbormb480 = `MB`
+let gbormb360 = `MB`
+
+if(ms31080 == -1) gbormb1080 = `GB`
+if(ms3720 == -1) gbormb720 = `GB`
+if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
+
+let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${mvdata[0].title}
+*⭐️ Rating :* ${mvdata[0].rating}
+*📆 Year :* ${mvdata[0].year}
+*🔗 Url :* ${mvdata[0].link}
+
+*📥 Available Qualitys 📥*
+
+${aqualitys}\n\n\n${botwatermark}`
+
+await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "1",
+    quoted_includes: "📥 Available Qualitys 📥",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("1️⃣ 1080P")
+    if(cq == -1) return
+    const url = urls[0]
+    if(!url) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie! ❗️*")
+    }
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    }
+    
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "2",
+    quoted_includes: "📥 Available Qualitys 📥",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("2️⃣ 720P")
+    if(cq == -1) return
+    const url = urls[0]
+    if(!url) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie! ❗️*")
+    }
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p720 = $("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p720)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    }
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "3",
+    quoted_includes: "📥 Available Qualitys 📥",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("3️⃣ 480P")
+    if(cq == -1) return
+    const url = urls[0]
+    if(!url) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie! ❗️*")
+    }
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    const sendmv = await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    }
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "4",
+    quoted_includes: "📥 Available Qualitys 📥",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("4⃣ 360P")
+    if(cq == -1) return
+    const url = urls[0]
+    if(!url) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie! ❗️*")
+    }
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p480 = $("tr:nth-child(4) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    }
+    
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
