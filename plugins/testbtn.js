@@ -34,15 +34,15 @@ let mala = `乂 X - D O W N L O A D E R
                   rows: [{
                      title: 'PING',
                      // description: X,
-                     id: .ping
+                     id: `.ping`
                   }, {
                      title: 'FACT',
                      // description: X,
-                     id: .fact
+                     id: `.fact`
                   }, {
                      title: 'CAT',
                      // description: X,
-                     id: .cat
+                     id: `.cat`
 		  }]
                }]
             })
@@ -52,7 +52,7 @@ let mala = `乂 X - D O W N L O A D E R
         let message = {
             image: mov.result.thumb,
             header: '',
-            footer: config.FOOTER,
+            footer: `Footer ekah`,
             body: mala
         }   
 return conn.sendButtonMessage(from, buttons, m, message) 
