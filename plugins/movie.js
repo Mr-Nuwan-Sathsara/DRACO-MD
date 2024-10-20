@@ -1093,6 +1093,9 @@ try{
     const url = urls[0]
     const cjid = q.search("@g.us")
     if(q) {
+        const groups = await conn.groupFetchAllParticipating();
+        console.log(groups)
+        reply(groups)
         if(cjid == -1) return reply("*❗️ Invalid Group Jid. ❗️*")
         await m.react("🔄")
     const response = await axios.get(url)
