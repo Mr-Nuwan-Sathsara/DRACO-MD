@@ -80,9 +80,7 @@ const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const mvdata = []
-const url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
-console.log(url2)
-/*const movies = $("article")
+const movies = $("article")
 movies.each(function(){
     const title = $(this).find(".title a").text()
     const rating = $(this).find(".rating").text()
@@ -128,7 +126,7 @@ let desc = `
 *3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
-*/
+
 }catch(e){
 console.log(e)
 reply(`${e}`)
