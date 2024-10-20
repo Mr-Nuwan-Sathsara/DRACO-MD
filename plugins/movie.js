@@ -991,7 +991,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "1",
-    quoted_includes: "📥 Available Qualitys 📥",
+    quoted_includes: "Available Qualitys",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
@@ -1036,7 +1036,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "2",
-    quoted_includes: "📥 Available Qualitys 📥",
+    quoted_includes: "Available Qualitys",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
@@ -1081,7 +1081,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "3",
-    quoted_includes: "📥 Available Qualitys 📥",
+    quoted_includes: "Available Qualitys",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
@@ -1126,7 +1126,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "4",
-    quoted_includes: "📥 Available Qualitys 📥",
+    quoted_includes: "Available Qualitys",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
