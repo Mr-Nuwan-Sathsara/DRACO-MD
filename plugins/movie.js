@@ -1094,9 +1094,16 @@ try{
     const cjid = q.search("@g.us")
     if(q) {
         const groups = await conn.groupFetchAllParticipating();
-        console.log(groups)
-        reply(groups)
-        if(cjid == -1) return reply("*❗️ Invalid Group Jid. ❗️*")
+        const groupJids = Object.keys(groups)
+        const cpoq = groupJids.search(q)
+        if(cpoq == -1) {
+            await m.react("❌")
+            return reply("*❗️ First join the group. ❗️*")
+        }
+        if(cjid == -1) {
+            await m.react("❌")
+            return reply("*❗️ Invalid Group Jid. ❗️*")
+        }
         await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
