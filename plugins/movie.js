@@ -164,6 +164,11 @@ const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
+const quality1 = $("tr:nth-child(1) > td:nth-child(2) > strong").text().trim()
+const quality2 = $("tr:nth-child(2) > td:nth-child(2) > strong").text().trim()
+const quality3 = $("tr:nth-child(3) > td:nth-child(2) > strong").text().trim()
+const quality4 = $("tr:nth-child(4) > td:nth-child(2) > strong").text().trim()
+console.log(quality1, quality2, quality3, quality4)
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
