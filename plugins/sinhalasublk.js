@@ -89,7 +89,7 @@ movies.each(function(){
 
     mvdata.push({title,rating,year,link})
 })
-
+if(!mvdata[0]) return reply("test done")
 await m.react("🎬")
 
 const url2 = mvdata[0].link
