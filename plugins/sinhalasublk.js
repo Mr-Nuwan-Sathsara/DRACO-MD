@@ -92,9 +92,8 @@ movies.each(function(){
 
     console.log(mvdata)
 await m.react("🎬")
-let url2 = mvdata[0].link
-console.log(url2)
-if(!mvdata[0]) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
+let url2
+if(!mvdata[0].link) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
 console.log(url2)
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
