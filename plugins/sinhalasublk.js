@@ -806,6 +806,9 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("1️⃣ 1080P")
+    if(cq == -1) return
     const url = urls[0]
     if(!url) {
         await m.react("❌")
@@ -820,7 +823,6 @@ try{
     const url1 = $$("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    const omsg = m.quoted.imageMessage.caption
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
@@ -841,6 +843,9 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("2️⃣ 720P")
+    if(cq == -1) return
     const url = urls[0]
     if(!url) {
         await m.react("❌")
@@ -855,7 +860,6 @@ try{
     const url1 = $$("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    const omsg = m.quoted.imageMessage.caption
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
@@ -876,6 +880,9 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("3️⃣ 480P")
+    if(cq == -1) return
     const url = urls[0]
     if(!url) {
         await m.react("❌")
@@ -890,7 +897,6 @@ try{
     const url1 = $$("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    const omsg = m.quoted.imageMessage.caption
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
@@ -911,6 +917,9 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
 try{
 
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("4⃣ 360P")
+    if(cq == -1) return
     const url = urls[0]
     if(!url) {
         await m.react("❌")
@@ -925,7 +934,6 @@ try{
     const url1 = $$("#link").attr('href')
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    const omsg = m.quoted.imageMessage.caption
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
