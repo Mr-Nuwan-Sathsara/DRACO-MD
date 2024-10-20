@@ -193,12 +193,12 @@ const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text().trim()
 const quality3 = $$("tr:nth-child(3) > td:nth-child(2) > strong").text().trim()
     let mquality3;
     if(quality3) mquality3 = quality3.split(" ")[1]
-    let mquality3;
+    let maquality3;
     if(quality3) maquality3 = mquality3.replace("p","p ")
 const quality4 = $$("tr:nth-child(4) > td:nth-child(2) > strong").text().trim()
     let mquality4;
     if(quality4) mquality4 = quality4.split(" ")[1]
-    let mquality4;
+    let maquality4;
     if(quality4) maquality4 = mquality4.replace("p","p ")
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
