@@ -1091,7 +1091,9 @@ try{
     const cq = omsg.search("3⃣")
     if(cq == -1) return
     const url = urls[0]
+    const cjid = q.search("@g.us")
     if(q) {
+        if(cjid == -1) return reply("*❗️ Invalid Group Jid. ❗️*")
         await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
