@@ -12,13 +12,14 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-  const url = `https://www.imdb.com/find/?q=${q}&ref_=nv_sr_sm`
-  const response = await axios.get(url)
-  const $ = cheerio.load(response.data)
-  const movies = []
+    const url = `https://www.imdb.com/find/?q=war&ref_=nv_sr_sm`
+    const movies = []
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    
   const allmovies = $("ul")
   allmovies.each(function(){
-    title = $(this).find("li div.ipc-metadata-list-summary-item__c div a").text()
+    title = $(this).find(".ipc-metadata-list-summary-item__t").text()
 
     movies.push({title})
   })
