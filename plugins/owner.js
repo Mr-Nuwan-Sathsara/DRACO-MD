@@ -225,26 +225,3 @@ console.log(e)
 reply(`${e}`)
 }
 })
-
-cmd({
-    pattern: "getjidpp",
-    desc: "Get any group picture or person picture using number.",
-    category: "owner",
-    filename: __filename
-},
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-try {
-
-if(!isOwner) return reply("*❗ Yᴏᴜʀ Nᴏᴛ Tʜᴇ Bᴏᴛ Oᴡɴᴇʀ. ❗*")
-if(!q) return reply("*❗ Gɪᴠᴇ Nᴜᴍʙᴇʀ Tᴏ Gᴇᴛ Pʀᴏꜰɪʟᴇ Pɪᴄᴛᴜʀᴇ. ❗*")
-if(q.length < 7) return reply("*❗ Iɴᴄᴏʀʀᴇᴄᴛ Nᴜᴍʙᴇʀ. Gɪᴠᴇ Cᴏʀʀᴇᴄᴛ Nᴜᴍʙᴇʀ. ❗*")
-await m.react("🔄")
-const ppUrl = await conn.profilePictureUrl(q + "@s.whatsapp.net", 'image')
-await conn.sendMessage(from,{image: {url: ppUrl},caption: botwatermark},{quoted: mek})
-await m.react("✅")
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
