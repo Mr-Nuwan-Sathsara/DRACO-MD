@@ -942,6 +942,7 @@ try{
     const response2 = await axios.get(p480)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
     const url2 = url1.split("u/")[1]
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const makefilename = omsg.split("*📝 Title :* ")[1]
@@ -949,6 +950,14 @@ try{
     let desc = `${filename}\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    }
+    
 
 }catch(e){
 console.log(e)
