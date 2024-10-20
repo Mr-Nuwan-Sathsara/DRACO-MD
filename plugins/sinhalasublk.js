@@ -80,7 +80,11 @@ const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const mvdata = []
-const movies = $("article")
+const cmv = omsg.search("2. ")
+let url2;
+if(cmv == -1) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
+console.log(url2)
+/*const movies = $("article")
 movies.each(function(){
     const title = $(this).find(".title a").text()
     const rating = $(this).find(".rating").text()
@@ -90,12 +94,8 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-    console.log(mvdata)
 await m.react("🎬")
-let url2 = ``
-if(!mvdata[0].link) url2 = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
-console.log(url2)
-/*const response2 = await axios.get(url2)
+const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
