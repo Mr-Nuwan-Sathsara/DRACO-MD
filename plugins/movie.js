@@ -164,11 +164,6 @@ const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const resulterror = $("#contenedor > div.module > div.content.rigth.csearch > div > div.no-result.animation-2 > h2").text()
-const quality1 = $("tr:nth-child(1) > td:nth-child(2) > strong").text()
-const quality2 = $("tr:nth-child(2) > td:nth-child(2) > strong").text()
-const quality3 = $("tr:nth-child(3) > td:nth-child(2) > strong").text()
-const quality4 = $("tr:nth-child(4) > td:nth-child(2) > strong").text()
-console.log(quality1, quality2, quality3, quality4)
 const mvdata = []
 const movies = $("article")
 movies.each(function(){
@@ -185,6 +180,11 @@ await m.react("🎬")
 const url2 = mvdata[0].link
 const response2 = await axios.get(url2)
 const $$ = cheerio.load(response2.data)
+const quality1 = $$("tr:nth-child(1) > td:nth-child(2) > strong").text()
+const quality2 = $$("tr:nth-child(2) > td:nth-child(2) > strong").text()
+const quality3 = $$("tr:nth-child(3) > td:nth-child(2) > strong").text()
+const quality4 = $$("tr:nth-child(4) > td:nth-child(2) > strong").text()
+console.log(quality1, quality2, quality3, quality4)
 const ms1080 = $$("tr:nth-child(1) > td:nth-child(3)").text()
 const ms21080 = ms1080.split(" ")[0]
 const ms31080 = ms1080.search("MB")
