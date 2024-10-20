@@ -267,15 +267,26 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -284,11 +295,8 @@ let desc = `
 *🔗 Url :* ${mvdata[0].link}
 
 *📥 Available Qualitys 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720})*
-
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+${aqualitys}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -341,15 +349,26 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -358,11 +377,8 @@ let desc = `
 *🔗 Url :* ${mvdata[0].link}
 
 *📥 Available Qualitys 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720})*
-
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+${aqualitys}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -415,15 +431,26 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -432,11 +459,8 @@ let desc = `
 *🔗 Url :* ${mvdata[0].link}
 
 *📥 Available Qualitys 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720})*
-
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+${aqualitys}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -489,15 +513,26 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -506,11 +541,8 @@ let desc = `
 *🔗 Url :* ${mvdata[0].link}
 
 *📥 Available Qualitys 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720})*
-
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+${aqualitys}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -563,15 +595,26 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -580,11 +623,8 @@ let desc = `
 *🔗 Url :* ${mvdata[0].link}
 
 *📥 Available Qualitys 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720})*
-
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+${aqualitys}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -637,15 +677,26 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -654,11 +705,8 @@ let desc = `
 *🔗 Url :* ${mvdata[0].link}
 
 *📥 Available Qualitys 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720})*
-
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+${aqualitys}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -710,15 +758,26 @@ const ms3720 = ms720.search("MB")
 const ms480 = $$("tr:nth-child(3) > td:nth-child(3)").text()
 const ms2480 = ms480.split(" ")[0]
 const ms3480 = ms480.search("MB")
+const ms360 = $$("tr:nth-child(4) > td:nth-child(3)").text()
+const ms2360 = ms360.split(" ")[0]
+const ms3360 = ms360.search("MB")
 const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
 
 let gbormb1080 = `MB`
 let gbormb720 = `MB`
 let gbormb480 = `MB`
+let gbormb360 = `MB`
 
 if(ms31080 == -1) gbormb1080 = `GB`
 if(ms3720 == -1) gbormb720 = `GB`
 if(ms3480 == -1) gbormb480 = `GB`
+if(ms3360 == -1) gbormb360 = `GB`
+
+let aqualitys = ``
+    if(ms1080) aqualitys += `*1️⃣ 1080P(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*2️⃣ 720P(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*3️⃣ 480P(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*4⃣ 360P(${ms2360}${gbormb360})*`
 
 let desc = `
 *📝 Title :* ${mvdata[0].title}
@@ -727,11 +786,8 @@ let desc = `
 *🔗 Url :* ${mvdata[0].link}
 
 *📥 Available Qualitys 📥*
-*1️⃣ 1080P(${ms21080}${gbormb1080})*
 
-*2️⃣ 720P(${ms2720}${gbormb720})*
-
-*3️⃣ 480P(${ms2480}${gbormb480})*\n\n\n${botwatermark}`
+${aqualitys}\n\n\n${botwatermark}`
 
 await conn.sendMessage(from,{image: {url: img},caption: desc},{quoted: mek})
 
@@ -828,6 +884,41 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const omsg = m.quoted.imageMessage.caption
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "4",
+    quoted_includes: "📥 Available Qualitys 📥",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const url = urls[0]
+    if(!url) {
+        await m.react("❌")
+        return reply("*❗️ Can't download this movie! ❗️*")
+    }
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p480 = $("tr:nth-child(4) > td:nth-child(1) > a").attr('href')
     const response2 = await axios.get(p480)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
