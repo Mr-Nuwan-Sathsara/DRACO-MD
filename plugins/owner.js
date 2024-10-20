@@ -176,7 +176,7 @@ if(!isOwner) return reply("*❗ Tʜɪꜱ Iꜱ Oᴡɴᴇʀ Cᴏᴍᴍᴀɴᴅ. �
 
 await m.react("🔄")
 const groups = await conn.groupFetchAllParticipating();
-const groupJids = Object.keys(groups).join('\n');
+const groupJids = Object.keys(groups)
 let desc = `📝 *Group JIDs:*\n\n${groupJids}`
 await conn.sendMessage(from, {text: desc},{quoted: mek})
 await m.react("✅")
