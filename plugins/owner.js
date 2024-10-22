@@ -212,6 +212,29 @@ reply(`${e}`)
 })
 
 cmd({
+    pattern: "getinvite",
+    desc: "Get group invite code.",
+    category: "owner",
+    filename: __filename
+},
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+try {
+
+if(!isOwner) return reply("*❗ Your not the bot owner. ❗*")
+if(!q) return reply("*❗ Give group jid to join. ❗*")
+
+await m.react("🔄")
+const code = await sock.groupInviteCode(from)
+await m.react("✅")
+await conn.sendMessage(from,{text: `*✅ Invite Code:* ${code}\n\n\n${botwatermark}`},{quoted: mek})
+  
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
     pattern: "leave",
     desc: "leave group.",
     category: "owner",
