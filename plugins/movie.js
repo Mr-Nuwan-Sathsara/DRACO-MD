@@ -1019,7 +1019,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p1080 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const response2 = await axios.get(p1080)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1042,7 +1042,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p1080 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const response2 = await axios.get(p1080)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1098,7 +1098,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p720 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const response2 = await axios.get(p720)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1121,7 +1121,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p720 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const response2 = await axios.get(p720)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1256,7 +1256,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p360 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const response2 = await axios.get(p360)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1279,7 +1279,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const p360 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const response2 = await axios.get(p360)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
