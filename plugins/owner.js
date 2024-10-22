@@ -200,7 +200,8 @@ if(!isOwner) return reply("*❗ Your not the bot owner. ❗*")
 if(!q) return reply("*❗ Give group jid to join. ❗*")
 
 await m.react("🔄")
-await conn.groupAcceptInvite("120363333452153743@g.us")
+const response = await conn.groupAcceptInvite(q)
+    if(!response.ok) return reply("test done")
 await m.react("✅")
 await conn.sendMessage(from,{text: `*✅ Joined.*\n\n\n${botwatermark}`},{quoted: mek})
   
