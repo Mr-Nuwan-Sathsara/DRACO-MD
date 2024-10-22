@@ -28,11 +28,31 @@ const data = await GOOGLE_IMG_SCRAP({
   limit: 10,
 });
 
-await conn.sendMessage(from,{image: {url: data.result[0].url},caption: botwatermark},{quoted: mek})
-await conn.sendMessage(from,{image: {url: data.result[1].url},caption: botwatermark},{quoted: mek})
-await conn.sendMessage(from,{image: {url: data.result[2].url},caption: botwatermark},{quoted: mek})
-await conn.sendMessage(from,{image: {url: data.result[3].url},caption: botwatermark},{quoted: mek})
-await conn.sendMessage(from,{image: {url: data.result[4].url},caption: botwatermark},{quoted: mek})
+  if(data.result[0] || !data.result[1] ) { 
+  return await conn.sendMessage(from,{image: {url: data.result[0].url},caption: botwatermark},{quoted: mek})
+}
+  if(data.result[1] || !data.result[2] ) { 
+    await conn.sendMessage(from,{image: {url: data.result[0].url},caption: botwatermark},{quoted: mek})
+  return await conn.sendMessage(from,{image: {url: data.result[1].url},caption: botwatermark},{quoted: mek})
+}
+  if(data.result[2] || !data.result[3] ) { 
+    await conn.sendMessage(from,{image: {url: data.result[0].url},caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from,{image: {url: data.result[1].url},caption: botwatermark},{quoted: mek})
+  return await conn.sendMessage(from,{image: {url: data.result[2].url},caption: botwatermark},{quoted: mek})
+}
+  if(data.result[3] || !data.result[4] ) { 
+    await conn.sendMessage(from,{image: {url: data.result[0].url},caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from,{image: {url: data.result[1].url},caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from,{image: {url: data.result[2].url},caption: botwatermark},{quoted: mek})
+  return await conn.sendMessage(from,{image: {url: data.result[3].url},caption: botwatermark},{quoted: mek})
+}
+  if(data.result[4]) { 
+    await conn.sendMessage(from,{image: {url: data.result[0].url},caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from,{image: {url: data.result[1].url},caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from,{image: {url: data.result[2].url},caption: botwatermark},{quoted: mek})
+    await conn.sendMessage(from,{image: {url: data.result[3].url},caption: botwatermark},{quoted: mek})
+  return await conn.sendMessage(from,{image: {url: data.result[4].url},caption: botwatermark},{quoted: mek})
+}
 
 }catch(e){
 console.log(e)
