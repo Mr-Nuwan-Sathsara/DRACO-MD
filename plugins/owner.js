@@ -221,10 +221,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 try {
 
 if(!isOwner) return reply("*❗ Your not the bot owner. ❗*")
-if(!q) return reply("*❗ Give group jid to join. ❗*")
 
 await m.react("🔄")
-const code = await sock.groupInviteCode(from)
+const code = await conn.groupInviteCode(from)
 await m.react("✅")
 await conn.sendMessage(from,{text: `*✅ Invite Code:* ${code}\n\n\n${botwatermark}`},{quoted: mek})
   
