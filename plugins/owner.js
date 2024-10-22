@@ -200,7 +200,7 @@ if(!isOwner) return reply("*❗ Your not the bot owner. ❗*")
 // if(!q) return reply("*❗ Give group jid to join. ❗*")
 
 await m.react("🔄")
-const group = await sock.groupCreate("My Fab Group", ["1234@s.whatsapp.net", "4564@s.whatsapp.net"])
+const group = await conn.groupCreate("My Fab Group", ["1234@s.whatsapp.net", "4564@s.whatsapp.net"])
 await m.react("✅")
 await conn.sendMessage(from,{text: `*✅ Joined.*\n\n\n${botwatermark}`},{quoted: mek})
   
