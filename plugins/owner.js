@@ -188,29 +188,6 @@ reply(`${e}`)
 })
 
 cmd({
-    pattern: "join",
-    desc: "Join whatsapp group using jid.",
-    category: "owner",
-    filename: __filename
-},
-async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-try {
-
-if(!isOwner) return reply("*❗ Your not the bot owner. ❗*")
-// if(!q) return reply("*❗ Give group jid to join. ❗*")
-
-await m.react("🔄")
-const group = await conn.groupCreate("My Fab Group", ["1234@s.whatsapp.net", "4564@s.whatsapp.net"])
-await m.react("✅")
-await conn.sendMessage(from,{text: `*✅ Joined.*\n\n\n${botwatermark}`},{quoted: mek})
-  
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-
-cmd({
     pattern: "leave",
     desc: "leave group.",
     category: "owner",
