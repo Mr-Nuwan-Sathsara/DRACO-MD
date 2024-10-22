@@ -28,6 +28,8 @@ const data = await GOOGLE_IMG_SCRAP({
   limit: 10,
 });
 
+  console.log(data)
+
   if(data.result[0] || !data.result[1] ) { 
   return await conn.sendMessage(from,{image: {url: data.result[0].url},caption: botwatermark},{quoted: mek})
 }
