@@ -998,18 +998,28 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("1️⃣")
+    const cq = omsg.search("1⃣")
     if(cq == -1) return
     const url = urls[0]
-    if(!url) {
-        await m.react("❌")
-        return reply("*❗️ Can't download this movie! ❗️*")
-    }
-    await m.react("🔄")
+    const cjid = q.search("@g.us")
+    if(q) {
+        const groups = await conn.groupFetchAllParticipating();
+        const groupJids = Object.keys(groups)
+        const sjids = `${groupJids}`
+        const cpoq = sjids.search(q)
+        if(cpoq == -1) {
+            await m.react("❌")
+            return reply("*❗️ First join the group. ❗️*")
+        }
+        if(cjid == -1) {
+            await m.react("❌")
+            return reply("*❗️ Invalid Group Jid. ❗️*")
+        }
+        await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p1080)
+    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1018,7 +1028,30 @@ try{
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    const sendmv = await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    }
+    }else if(!q) {
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p720 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    const sendmv = await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
@@ -1026,6 +1059,7 @@ try{
     let desc = `${filename}\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
+    }
     }
     
 }catch(e){
@@ -1043,18 +1077,28 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("2️⃣")
+    const cq = omsg.search("2⃣")
     if(cq == -1) return
     const url = urls[0]
-    if(!url) {
-        await m.react("❌")
-        return reply("*❗️ Can't download this movie! ❗️*")
-    }
-    await m.react("🔄")
+    const cjid = q.search("@g.us")
+    if(q) {
+        const groups = await conn.groupFetchAllParticipating();
+        const groupJids = Object.keys(groups)
+        const sjids = `${groupJids}`
+        const cpoq = sjids.search(q)
+        if(cpoq == -1) {
+            await m.react("❌")
+            return reply("*❗️ First join the group. ❗️*")
+        }
+        if(cjid == -1) {
+            await m.react("❌")
+            return reply("*❗️ Invalid Group Jid. ❗️*")
+        }
+        await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p720 = $("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p720)
+    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1063,7 +1107,30 @@ try{
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    const sendmv = await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    }
+    }else if(!q) {
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p720 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    const sendmv = await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
@@ -1071,6 +1138,7 @@ try{
     let desc = `${filename}\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
+    }
     }
 
 }catch(e){
@@ -1170,15 +1238,25 @@ try{
     const cq = omsg.search("4⃣")
     if(cq == -1) return
     const url = urls[0]
-    if(!url) {
-        await m.react("❌")
-        return reply("*❗️ Can't download this movie! ❗️*")
-    }
-    await m.react("🔄")
+    const cjid = q.search("@g.us")
+    if(q) {
+        const groups = await conn.groupFetchAllParticipating();
+        const groupJids = Object.keys(groups)
+        const sjids = `${groupJids}`
+        const cpoq = sjids.search(q)
+        if(cpoq == -1) {
+            await m.react("❌")
+            return reply("*❗️ First join the group. ❗️*")
+        }
+        if(cjid == -1) {
+            await m.react("❌")
+            return reply("*❗️ Invalid Group Jid. ❗️*")
+        }
+        await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p360 = $("tr:nth-child(4) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p360)
+    const p360 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1187,7 +1265,30 @@ try{
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
     let desc = `${filename}\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    const sendmv = await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    }
+    }else if(!q) {
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p360 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    let desc = `${filename}\n${botwatermark}`
+    const sendmv = await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
@@ -1195,6 +1296,7 @@ try{
     let desc = `${filename}\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
+    }
     }
     
 
