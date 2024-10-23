@@ -1050,7 +1050,6 @@ try{
         console.log(country)
     await m.react("✅")
     }
-    }
     
 }catch(e){
 console.log(e)
