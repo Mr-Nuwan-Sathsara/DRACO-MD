@@ -1025,7 +1025,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("1⃣")
+    const cq = omsg.search("1️⃣")
     if(cq == -1) return
     const url = urls[0]
     const response = await axios.get(url)
