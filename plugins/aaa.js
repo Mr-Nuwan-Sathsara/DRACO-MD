@@ -21,7 +21,7 @@ try{
     console.log(dlurl)
     const sl = dlurl.search("https://google.com/server4/1:/")
     console.log(sl)
-    if(!sl == -1) {
+    if(sl == 0) {
         const dlurl2 = dlurl.replace("https://google.com/server4/1:/","https://ima04.cskinglk.xyz/server4/")
         console.log(dlurl2)
     }
