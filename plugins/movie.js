@@ -1018,7 +1018,7 @@ reply(`${e}`)
 
 cmd({
     reply_pattern: "1",
-    quoted_includes: "𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥",
+    quoted_includes: "Available Qualitys",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
@@ -1053,28 +1053,26 @@ try{
             return reply("*❗️ First join the group. ❗️*")
         }
         await m.react("🔄")
-let mvinfo = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
-*📝 Title :* ${title}
+let mvinfo = `*📝 Title :* ${title}
 *🗓️Description :* ${desc}
 *⏰ Duration :* ${duration}
 *📆 Relesed Date :* ${rdate}
 *🌎 Country :* ${country}
 *⭐️ Imdb :* ${imdb}
 *⭐️ Tmdb :* ${tmdb}\n\n\n${botwatermark}`
+        
 await conn.sendMessage(from, {image: {url: img},caption: mvinfo},{quoted: mek})
         await m.react("✅")
     }else if(!q) {
     await m.react("🔄")
-let mvinfo = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
-
-*📝 Title :* ${title}
+let mvinfo = `*📝 Title :* ${title}
 *🗓️Description :* ${desc}
 *⏰ Duration :* ${duration}
 *📆 Relesed Date :* ${rdate}
 *🌎 Country :* ${country}
 *⭐️ Imdb :* ${imdb}
 *⭐️ Tmdb :* ${tmdb}\n\n\n${botwatermark}`
+        
 await conn.sendMessage(from, {image: {url: img},caption: mvinfo},{quoted: mek})
     await m.react("✅")
     }
