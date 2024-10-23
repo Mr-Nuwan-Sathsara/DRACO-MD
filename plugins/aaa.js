@@ -17,7 +17,13 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
 
-    const dlurl = $("#link3").attr('href')
+    let dlurl = $("#link").attr('href')
+    const sl = dlurl.search("https://google.com/server4/1:/")
+    if(!sl == -1) {
+        let dlurl = dlurl.replace("https://google.com/server4/1:/","https://ima04.cskinglk.xyz/server4/")
+        console.log(dlurl)
+    }
+    
     console.log(dlurl)
     
 }catch(e){
