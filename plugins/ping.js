@@ -13,18 +13,18 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         await m.react("📍")
         const startTime = Date.now()
-        const message = await conn.sendMessage(from, { text: '*🔄 Cʜᴇᴄᴋɪɴɢ Dʀᴀᴄᴏ-Mᴅ Bᴏᴛ Pɪɴɢ...*' }, {quoted:mek})
+        const message = await conn.sendMessage(from, { text: '*🔄 Checking Draco-MD bot ping...*' }, {quoted:mek})
         const endTime = Date.now()
         const ping = endTime - startTime
 
         let pinspeed = `clownmdpingspeed`
 
-        if(ping > 0) pinspeed = `*🚀 Yᴏᴜʀ Bᴏᴛ Sᴘᴇᴇᴅ Iꜱ Vᴇʀʏ Fᴀꜱᴛ 🚀*`
-        if(ping > 200) pinspeed = `*🛜 Yᴏᴜʀ Bᴏᴛ Sᴘᴇᴇᴅ Iꜱ Fᴀꜱᴛ 🛜*`
-        if(ping > 500) pinspeed = `*❗ Yᴏᴜʀ Bᴏᴛ Sᴘᴇᴇᴅ Iꜱ Sʟᴏᴡ ❗*`
-        if(ping > 1000) pinspeed = `*🚫 Yᴏᴜʀ Bᴏᴛ Sᴘᴇᴇᴅ Iꜱ Vᴇʀʏ Sʟᴏᴡ 🚫*`
+        if(ping > 0) pinspeed = `*🚀 Your bot speed is very fast 🚀*`
+        if(ping > 200) pinspeed = `*🛜 Your bot speed is fast 🛜*`
+        if(ping > 500) pinspeed = `*❗ Your bot speed is slow ❗*`
+        if(ping > 1000) pinspeed = `*🚫 Your bot speed is very slow 🚫*`
 
-        await conn.sendMessage(from, { text: `*📍 Dʀᴀᴄᴏ-Mᴅ Bᴏᴛ Pɪɴɢ: ${ping}ᴍꜱ*\n${pinspeed}` })
+        await conn.sendMessage(from, { text: `*📍 Draco-MD bot ping: ${ping}ms*\n${pinspeed}` })
         
     } catch (e) {
         console.log(e)
