@@ -1001,6 +1001,75 @@ try{
     const cq = omsg.search("1⃣")
     if(cq == -1) return
     const url = urls[0]
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p1080)
+    const $$ = cheerio.load(response2.data)
+    const img = $$("#single > div.content.right > div.sheader > div.poster > img").attr('src')
+    const title = $$("#single > div.content.right > div.sheader > div.data > div.head > h1").text()
+    const desc = $$("#single > div.content.right > div.sheader > div.data > div.extra > span.tagline").text()
+    const rdate = $$("#single > div.content.right > div.sheader > div.data > div.extra > span.date").text()
+    const country = $$("#single > div.content.right > div.sheader > div.data > div.extra > span.country").text()
+    const duration = $$("#single > div.content.right > div.sheader > div.data > div.extra > span.runtime").text()
+    const imdb = $$("#repimdb > strong").text().trim()
+    const tmdb = $$("#info > div:nth-child(5) > span > strong").text().trim()
+    const cjid = q.search("@g.us")
+    if(q) {
+        const groups = await conn.groupFetchAllParticipating();
+        const groupJids = Object.keys(groups)
+        const sjids = `${groupJids}`
+        const cpoq = sjids.search(q)
+        if(cpoq == -1) {
+            await m.react("❌")
+            return reply("*❗️ First join the group. ❗️*")
+        }
+        if(cjid == -1) {
+            await m.react("❌")
+            return reply("*❗️ Invalid Group Jid. ❗️*")
+        }
+        await m.react("🔄")
+        console.log(img)
+        console.log(title)
+        console.log(desc)
+        console.log(imdb)
+        console.log(tmdb)
+        console.log(duration)
+        console.log(rdate)
+        console.log(country)
+        await m.react("✅")
+    }else if(!q) {
+    await m.react("🔄")
+    console.log(img)
+        console.log(title)
+        console.log(desc)
+        console.log(imdb)
+        console.log(tmdb)
+        console.log(duration)
+        console.log(rdate)
+        console.log(country)
+    await m.react("✅")
+    }
+    }
+    
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "1",
+    quoted_includes: "Available Qualitys",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("1⃣")
+    if(cq == -1) return
+    const url = urls[0]
     const cjid = q.search("@g.us")
     if(q) {
         const groups = await conn.groupFetchAllParticipating();
