@@ -14,7 +14,7 @@ try{
 if(!isOwner) return
 await m.react("🔄")
 const {exec} = require("child_process")
-reply("*❬❬ 🔄 Dʀᴀᴄᴏ-Mᴅ Bᴏᴛ Rᴇꜱᴛᴀʀᴛɪɴɢ... ❭❭*\n\n\n" + botwatermark)
+reply("*🔄 Dʀᴀᴄᴏ-Mᴅ Bᴏᴛ Rᴇꜱᴛᴀʀᴛɪɴɢ... ❭❭*")
 await sleep(1500)
 exec("pm2 restart all")
 }catch(e){
