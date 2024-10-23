@@ -17,7 +17,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
 
-    const dlurl = $("#link").attr('href')
+    const dlurl = $("#link3").attr('href')
     console.log(dlurl)
     
 }catch(e){
