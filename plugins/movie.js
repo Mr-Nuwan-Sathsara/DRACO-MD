@@ -1061,7 +1061,7 @@ let mvinfo = `*📝 Title :* ${title}
 *⭐️ Imdb :* ${imdb}
 *⭐️ Tmdb :* ${tmdb}\n\n\n${botwatermark}`
         
-await conn.sendMessage(from, {image: {url: img},caption: mvinfo},{quoted: mek})
+await conn.sendMessage(q, {image: {url: img},caption: mvinfo},{quoted: mek})
         await m.react("✅")
     }else if(!q) {
     await m.react("🔄")
