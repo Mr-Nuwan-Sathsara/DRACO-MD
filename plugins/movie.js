@@ -142,10 +142,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -153,6 +153,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -245,10 +248,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -256,6 +259,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -348,10 +354,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -359,6 +365,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -451,10 +460,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -462,6 +471,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -554,10 +566,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -565,6 +577,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -657,10 +672,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -668,6 +683,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -760,10 +778,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -771,6 +789,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -863,10 +884,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -874,6 +895,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -965,10 +989,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*1⃣ ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*2⃣ ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*3⃣ ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*4⃣ ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -976,6 +1000,9 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *⭐️ Rating :* ${mvdata[0].rating}
 *📆 Year :* ${mvdata[0].year}
 *🔗 Url :* ${mvdata[0].link}
+
+*🎬 Movie Informations 🎬*
+*1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 
@@ -1017,122 +1044,39 @@ try{
         const groupJids = Object.keys(groups)
         const sjids = `${groupJids}`
         const cpoq = sjids.search(q)
-        if(cpoq == -1) {
-            await m.react("❌")
-            return reply("*❗️ First join the group. ❗️*")
-        }
         if(cjid == -1) {
             await m.react("❌")
             return reply("*❗️ Invalid Group Jid. ❗️*")
         }
+        if(cpoq == -1) {
+            await m.react("❌")
+            return reply("*❗️ First join the group. ❗️*")
+        }
         await m.react("🔄")
-        console.log(img)
-        console.log(title)
-        console.log(desc)
-        console.log(imdb)
-        console.log(tmdb)
-        console.log(duration)
-        console.log(rdate)
-        console.log(country)
+let mvinfo = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
+
+*📝 Title :* ${title}
+*🗓️Description :* ${desc}
+*⏰ Duration :* ${duration}
+*📆 Relesed Date :* ${rdate}
+*🌎 Country :* ${country}
+*⭐️ Imdb :* ${imdb}
+*⭐️ Tmdb :* ${tmdb}\n\n\n${botwatermark}`
+await conn.sendMessage(from, {image: {url: img},caption: mvinfo},{quoted: mek})
         await m.react("✅")
     }else if(!q) {
     await m.react("🔄")
-    console.log(img)
-        console.log(title)
-        console.log(desc)
-        console.log(imdb)
-        console.log(tmdb)
-        console.log(duration)
-        console.log(rdate)
-        console.log(country)
-    await m.react("✅")
-    }
-    
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-/*
-cmd({
-    reply_pattern: "1",
-    quoted_includes: "Available Qualitys",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
-try{
+let mvinfo = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
-    const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("1⃣")
-    if(cq == -1) return
-    const url = urls[0]
-    const cjid = q.search("@g.us")
-    if(q) {
-        const groups = await conn.groupFetchAllParticipating();
-        const groupJids = Object.keys(groups)
-        const sjids = `${groupJids}`
-        const cpoq = sjids.search(q)
-        if(cpoq == -1) {
-            await m.react("❌")
-            return reply("*❗️ First join the group. ❗️*")
-        }
-        if(cjid == -1) {
-            await m.react("❌")
-            return reply("*❗️ Invalid Group Jid. ❗️*")
-        }
-        await m.react("🔄")
-    const response = await axios.get(url)
-    const $ = cheerio.load(response.data)
-    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p1080)
-    const $$ = cheerio.load(response2.data)
-    const url1 = $$("#link").attr('href')
-    if(url1.startsWith("https://pixeldrain.com")) {
-    const url2 = url1.split("u/")[1]
-    const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    const makefilename = omsg.split("*📝 Title :* ")[1]
-    const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("1⃣")[1]
-    const mvquality = makequality.split("(")[0]
-    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
-    await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+*📝 Title :* ${title}
+*🗓️Description :* ${desc}
+*⏰ Duration :* ${duration}
+*📆 Relesed Date :* ${rdate}
+*🌎 Country :* ${country}
+*⭐️ Imdb :* ${imdb}
+*⭐️ Tmdb :* ${tmdb}\n\n\n${botwatermark}`
+await conn.sendMessage(from, {image: {url: img},caption: mvinfo},{quoted: mek})
     await m.react("✅")
-    } else {
-    const makefilename = omsg.split("*📝 Title :* ")[1]
-    const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("1⃣")[1]
-    const mvquality = makequality.split("(")[0]
-    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
-    await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
-    await m.react("✅")
-    }
-    }else if(!q) {
-    await m.react("🔄")
-    const response = await axios.get(url)
-    const $ = cheerio.load(response.data)
-    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p1080)
-    const $$ = cheerio.load(response2.data)
-    const url1 = $$("#link").attr('href')
-    if(url1.startsWith("https://pixeldrain.com")) {
-    const url2 = url1.split("u/")[1]
-    const dlurl = `https://pixeldrain.com/api/file/${url2}`
-    const makefilename = omsg.split("*📝 Title :* ")[1]
-    const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("1⃣")[1]
-    const mvquality = makequality.split("(")[0]
-    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
-    await m.react("✅")
-    } else {
-    const makefilename = omsg.split("*📝 Title :* ")[1]
-    const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("1⃣")[1]
-    const mvquality = makequality.split("(")[0]
-    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
-    await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
-    await m.react("✅")
-    }
     }
     
 }catch(e){
@@ -1150,7 +1094,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("2⃣")
+    const cq = omsg.search("2️⃣")
     if(cq == -1) return
     const url = urls[0]
     const cjid = q.search("@g.us")
@@ -1170,8 +1114,8 @@ try{
         await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p720 = $("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p720)
+    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p1080)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1179,7 +1123,7 @@ try{
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("2⃣")[1]
+    const makequality = omsg.split("1⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
@@ -1187,7 +1131,7 @@ try{
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("2⃣")[1]
+    const makequality = omsg.split("2️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
@@ -1197,8 +1141,8 @@ try{
     await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p720 = $("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p720)
+    const p1080 = $("tr:nth-child(1) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p1080)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1206,7 +1150,7 @@ try{
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("2⃣")[1]
+    const makequality = omsg.split("2️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
@@ -1214,14 +1158,14 @@ try{
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("2⃣")[1]
+    const makequality = omsg.split("2️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
     await m.react("✅")
     }
     }
-
+    
 }catch(e){
 console.log(e)
 reply(`${e}`)
@@ -1237,7 +1181,7 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("3⃣")
+    const cq = omsg.search("3️⃣")
     if(cq == -1) return
     const url = urls[0]
     const cjid = q.search("@g.us")
@@ -1257,8 +1201,8 @@ try{
         await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const p720 = $("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p720)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1266,7 +1210,7 @@ try{
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("3⃣")[1]
+    const makequality = omsg.split("3️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
@@ -1274,7 +1218,7 @@ try{
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("3⃣")[1]
+    const makequality = omsg.split("3️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
@@ -1284,8 +1228,8 @@ try{
     await m.react("🔄")
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
-    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
-    const response2 = await axios.get(p480)
+    const p720 = $("tr:nth-child(2) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p720)
     const $$ = cheerio.load(response2.data)
     const url1 = $$("#link").attr('href')
     if(url1.startsWith("https://pixeldrain.com")) {
@@ -1293,7 +1237,7 @@ try{
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("3⃣")[1]
+    const makequality = omsg.split("3️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
@@ -1301,7 +1245,7 @@ try{
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("3⃣")[1]
+    const makequality = omsg.split("3️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
@@ -1324,7 +1268,94 @@ async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender
 try{
 
     const omsg = m.quoted.imageMessage.caption
-    const cq = omsg.search("4⃣")
+    const cq = omsg.search("4️⃣")
+    if(cq == -1) return
+    const url = urls[0]
+    const cjid = q.search("@g.us")
+    if(q) {
+        const groups = await conn.groupFetchAllParticipating();
+        const groupJids = Object.keys(groups)
+        const sjids = `${groupJids}`
+        const cpoq = sjids.search(q)
+        if(cpoq == -1) {
+            await m.react("❌")
+            return reply("*❗️ First join the group. ❗️*")
+        }
+        if(cjid == -1) {
+            await m.react("❌")
+            return reply("*❗️ Invalid Group Jid. ❗️*")
+        }
+        await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    const makequality = omsg.split("4️⃣")[1]
+    const mvquality = makequality.split("(")[0]
+    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
+    await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    const makequality = omsg.split("4️⃣")[1]
+    const mvquality = makequality.split("(")[0]
+    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
+    await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
+    await m.react("✅")
+    }
+    }else if(!q) {
+    await m.react("🔄")
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const p480 = $("tr:nth-child(3) > td:nth-child(1) > a").attr('href')
+    const response2 = await axios.get(p480)
+    const $$ = cheerio.load(response2.data)
+    const url1 = $$("#link").attr('href')
+    if(url1.startsWith("https://pixeldrain.com")) {
+    const url2 = url1.split("u/")[1]
+    const dlurl = `https://pixeldrain.com/api/file/${url2}`
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    const makequality = omsg.split("4️⃣")[1]
+    const mvquality = makequality.split("(")[0]
+    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    } else {
+    const makefilename = omsg.split("*📝 Title :* ")[1]
+    const filename = makefilename.split("*⭐️ Rating :*")[0]
+    const makequality = omsg.split("4️⃣")[1]
+    const mvquality = makequality.split("(")[0]
+    let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
+    await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
+    await m.react("✅")
+    }
+    }
+
+}catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
+
+cmd({
+    reply_pattern: "5",
+    quoted_includes: "Available Qualitys",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply, urls}) => {
+try{
+
+    const omsg = m.quoted.imageMessage.caption
+    const cq = omsg.search("5️⃣")
     if(cq == -1) return
     const url = urls[0]
     const cjid = q.search("@g.us")
@@ -1353,7 +1384,7 @@ try{
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("1⃣")[1]
+    const makequality = omsg.split("5️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(q, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
@@ -1361,7 +1392,7 @@ try{
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("1⃣")[1]
+    const makequality = omsg.split("5️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(q, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"})
@@ -1380,7 +1411,7 @@ try{
     const dlurl = `https://pixeldrain.com/api/file/${url2}`
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("4⃣")[1]
+    const makequality = omsg.split("5️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: dlurl},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
@@ -1388,7 +1419,7 @@ try{
     } else {
     const makefilename = omsg.split("*📝 Title :* ")[1]
     const filename = makefilename.split("*⭐️ Rating :*")[0]
-    const makequality = omsg.split("4⃣")[1]
+    const makequality = omsg.split("5️⃣")[1]
     const mvquality = makequality.split("(")[0]
     let desc = `*Name :* ${filename} | ${mvquality}\n\n${botwatermark}`
     await conn.sendMessage(from, {document: {url: url1},mimetype: "video/mp4",caption: desc,fileName: "[🐲 D.M.W.B 🐲]" + filename + ".mp4"},{quoted: mek})
@@ -1402,4 +1433,3 @@ console.log(e)
 reply(`${e}`)
 }
 })
-*/
