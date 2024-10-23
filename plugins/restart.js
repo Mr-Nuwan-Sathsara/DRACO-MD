@@ -14,7 +14,7 @@ try{
 if(!isOwner) return
 await m.react("🔄")
 const {exec} = require("child_process")
-reply("*🔄 Dʀᴀᴄᴏ-Mᴅ Bᴏᴛ Rᴇꜱᴛᴀʀᴛɪɴɢ... ❭❭*")
+reply("*🔄 Draco-MD bot restarting...*")
 await sleep(1500)
 exec("pm2 restart all")
 }catch(e){
