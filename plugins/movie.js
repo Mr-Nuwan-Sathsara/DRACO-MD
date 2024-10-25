@@ -144,10 +144,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -157,7 +157,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -249,10 +249,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -262,7 +262,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -354,10 +354,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -367,7 +367,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -459,10 +459,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -472,7 +472,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -564,10 +564,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -577,7 +577,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -669,10 +669,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -682,7 +682,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -774,10 +774,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -787,7 +787,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -879,10 +879,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -892,7 +892,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
@@ -983,10 +983,10 @@ if(ms3480 == -1) gbormb480 = `GB`
 if(ms3360 == -1) gbormb360 = `GB`
 
 let aqualitys = ``
-    if(ms1080) aqualitys += `*2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
-    if(ms720) aqualitys += `\n*3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
-    if(ms480) aqualitys += `\n*4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
-    if(ms360) aqualitys += `\n*5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
+    if(ms1080) aqualitys += `> *2⃣ - ${maquality1}(${ms21080}${gbormb1080})*`
+    if(ms720) aqualitys += `\n> *3️⃣ - ${maquality2}(${ms2720}${gbormb720})*`
+    if(ms480) aqualitys += `\n> *4️⃣ - ${maquality3}(${ms2480}${gbormb480})*`
+    if(ms360) aqualitys += `\n> *5️⃣ - ${maquality4}(${ms2360}${gbormb360})*`
 
 let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 🐲 」*
 
@@ -996,7 +996,7 @@ let desc = `*「 🐲 𝗗𝗥𝗔𝗖𝗢-𝗠𝗗 𝗠𝗢𝗩𝗜𝗘 𝗗�
 *🔗 Url :* ${mvdata[0].link}
 
 *🎬 Movie Informations 🎬*
-*1️⃣ - Movie Informations*
+> *1️⃣ - Movie Informations*
 
 *📥 Available Qualitys 📥*
 ${aqualitys}\n\n\n${botwatermark}`
