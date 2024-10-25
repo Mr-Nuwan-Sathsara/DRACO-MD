@@ -79,7 +79,7 @@ if(cmv == -1) return
 const sq1 = omsg.split("*1. ")[1]
 const sq2 = sq1.split("*2.")[0]
 let sq3 = sq2.replaceAll("*","")
-if(cr2 === false) sq3 = sq1.split(`* + ${botwatermark}`)[0]
+if(cr2 === false) sq3 = sq1.split(" | ")[0]
 const url = `https://sinhalasub.lk/?s=${sq3}`
     console.log(cr2)
     console.log(url)
