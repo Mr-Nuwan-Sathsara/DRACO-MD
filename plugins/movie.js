@@ -81,8 +81,6 @@ const sq2 = sq1.split("*2.")[0]
 let sq3 = sq2.replaceAll("*","")
 if(cr2 === false) sq3 = sq1.split(" | ")[0]
 const url = `https://sinhalasub.lk/?s=${sq3}`
-    console.log(cr2)
-    console.log(url)
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const mvdata = []
