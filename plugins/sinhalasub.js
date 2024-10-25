@@ -19,7 +19,7 @@ try{
 
   const movies = $("body > div.container > div.col-lg-8.col-md-6 > div > div")
   movies.each(function(){
-    title = $(this).find(".mainShow-content bg-success a").text().trim()
+    title = $(this).find(".mainShow-content bg-success a").text()
 
     allmv.push({title})
   })
