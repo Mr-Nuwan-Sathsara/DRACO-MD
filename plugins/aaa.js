@@ -15,9 +15,16 @@ try{
 
     const url = `https://sinhalasub.lk/?s=strange+darling`
     const response = await axios.get(url)
+    const allmv = []
     const $ = cheerio.load(response.data)
-    const mvlink = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
-    console.log(mvlink)
+    const movies = $("article")
+    movies.each(function(){
+        link = $(this).find(".title a")
+
+        allmv.push({link})
+    })
+
+    console.log(allmv)
     
 }catch(e){
 console.log(e)
