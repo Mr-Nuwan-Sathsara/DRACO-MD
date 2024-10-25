@@ -17,7 +17,7 @@ try{
   const $ = cheerio.load(response.data)
   const allmv = []
 
-  const movies = $("body > div.container > div.col-lg-8.col-md-6 > div > div")
+  const movies = $("row")
   movies.each(function(){
     title = $(this).find(".mainShow-content bg-success a").text()
 
