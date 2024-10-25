@@ -37,6 +37,8 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
+console.log(mvdata)
+
 let movielist = `*1. ${mvdata[0].title}*`
 if(mvdata[1]) movielist += `\n\n*2. ${mvdata[1].title}*`
 if(mvdata[2]) movielist += `\n\n*3. ${mvdata[2].title}*`
