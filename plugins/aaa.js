@@ -13,13 +13,13 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-    const url = `https://sinhalasub.lk/?s=war`
+    const url = `https://sinhalasub.lk/?s=strange+darling`
     const response = await axios.get(url)
     const allmv = []
     const $ = cheerio.load(response.data)
     const movies = $("article")
     movies.each(function(){
-        link = $(this).find(".title a")
+        link = $(this).find(".title a").attr('href')
 
         allmv.push({link})
     })
