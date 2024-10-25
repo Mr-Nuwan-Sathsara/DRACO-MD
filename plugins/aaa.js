@@ -13,9 +13,11 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-await m.react("🔁")
-await conn.sendMessage(from, {document: {url: `https://mega.nz/embed/gv00kDrK#0KhJJQMAOHdrkN1zuVut2l2L72eYJosJGiCUS9Pr-Zk`},mimetype: "video/mp4",fileName: `movie ekah` + ".mp4",caption: `test done`},{quoted: mek})
-await m.react("✅")
+    const url = `https://sinhalasub.lk/?s=strange+darling`
+    const response = await axios.get(url)
+    const $ = cheerio.load(response.data)
+    const mvlink = $("#contenedor > div.module > div.content.rigth.csearch > div > div.result-item > article > div.details > div.title > a").attr('href')
+    console.log(mvlink)
     
 }catch(e){
 console.log(e)
