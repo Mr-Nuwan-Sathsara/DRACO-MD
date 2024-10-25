@@ -74,7 +74,7 @@ try{
 
 const omsg = m.quoted.imageMessage.caption
 const cmv = omsg.search("1. ")
-const cr2 = omsg.search("2.")
+const cr2 = omsg.includes("2.")
 if(cmv == -1) return
 const sq1 = omsg.split("*1. ")[1]
 const sq2 = sq1.split("*2.")[0]
