@@ -74,13 +74,15 @@ try{
 
 const omsg = m.quoted.imageMessage.caption
 const cmv = omsg.search("1. ")
-const cr2 = omsg.search("2.")
+const cr2 = omsg.search("*2.")
 if(cmv == -1) return
 const sq1 = omsg.split("*1. ")[1]
 const sq2 = sq1.split("*2.")[0]
-const sq3 = sq2.replaceAll("*","")
+let sq3 = sq2.replaceAll("*","")
 if(cr2 == -1) sq3 = sq1.split("|")[0]
 const url = `https://sinhalasub.lk/?s=${sq3}`
+    console.log(cr2)
+    console.log(url)
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
 const mvdata = []
