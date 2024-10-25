@@ -37,8 +37,6 @@ movies.each(function(){
     mvdata.push({title,rating,year,link})
 })
 
-console.log(mvdata)
-
 let movielist = `*1. ${mvdata[0].title}*`
 if(mvdata[1]) movielist += `\n\n*2. ${mvdata[1].title}*`
 if(mvdata[2]) movielist += `\n\n*3. ${mvdata[2].title}*`
@@ -76,10 +74,12 @@ try{
 
 const omsg = m.quoted.imageMessage.caption
 const cmv = omsg.search("1. ")
+const cr2 = omsg.search("2.")
 if(cmv == -1) return
 const sq1 = omsg.split("*1. ")[1]
 const sq2 = sq1.split("*2.")[0]
 const sq3 = sq2.replaceAll("*","")
+if(cr2 == -1) sq3 = sq1.split("|")[0]
 const url = `https://sinhalasub.lk/?s=${sq3}`
 const response = await axios.get(url)
 const $ = cheerio.load(response.data)
