@@ -28,23 +28,28 @@ try{
 
     let mvresult;
     if(allmv[0].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[1].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[2].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[3].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[4].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[5].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[6].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[7].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[8].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[9].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[10].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[11].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[12].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[13].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[14].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[15].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[16].tv) mvresult += `*Title :* ${allmv[0].title}`
-    if(allmv[17].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[1].tv) mvresult += `\n\n*Title :* ${allmv[1].title}`
+    if(allmv[2].tv) mvresult += `\n\n*Title :* ${allmv[2].title}`
+    if(allmv[3].tv) mvresult += `\n\n*Title :* ${allmv[3].title}`
+    if(allmv[4].tv) mvresult += `\n\n*Title :* ${allmv[4].title}`
+    if(allmv[5].tv) mvresult += `\n\n*Title :* ${allmv[5].title}`
+    if(allmv[6].tv) mvresult += `\n\n*Title :* ${allmv[6].title}`
+    if(allmv[7].tv) mvresult += `\n\n*Title :* ${allmv[7].title}`
+    if(allmv[8].tv) mvresult += `\n\n*Title :* ${allmv[8].title}`
+    if(allmv[9].tv) mvresult += `\n\n*Title :* ${allmv[9].title}`
+    if(allmv[10].tv) mvresult += `\n\n*Title :* ${allmv[10].title}`
+    if(allmv[11].tv) mvresult += `\n\n*Title :* ${allmv[11].title}`
+    if(allmv[12].tv) mvresult += `\n\n*Title :* ${allmv[12].title}`
+    if(allmv[13].tv) mvresult += `\n\n*Title :* ${allmv[13].title}`
+    if(allmv[14].tv) mvresult += `\n\n*Title :* ${allmv[14].title}`
+    if(allmv[15].tv) mvresult += `\n\n*Title :* ${allmv[15].title}`
+    if(allmv[16].tv) mvresult += `\n\n*Title :* ${allmv[16].title}`
+    if(allmv[17].tv) mvresult += `\n\n*Title :* ${allmv[17].title}`
+
+    let desc = `
+    ${mvresult}`
+    
+    await conn.sendMessage(from, {text: desc},{quoted: mek})
     
 }catch(e){
 console.log(e)
