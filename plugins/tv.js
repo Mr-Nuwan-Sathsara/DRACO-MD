@@ -26,8 +26,25 @@ try{
         allmv.push({title,link,mv,tv})
     })
 
-    const mvresult = ``
-    if(!allmv[0].tv) return reply("done")
+    let mvresult;
+    if(allmv[0].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[1].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[2].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[3].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[4].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[5].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[6].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[7].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[8].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[9].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[10].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[11].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[12].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[13].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[14].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[15].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[16].tv) mvresult += `*Title :* ${allmv[0].title}`
+    if(allmv[17].tv) mvresult += `*Title :* ${allmv[0].title}`
     
 }catch(e){
 console.log(e)
