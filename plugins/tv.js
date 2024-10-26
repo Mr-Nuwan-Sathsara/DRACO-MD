@@ -18,7 +18,7 @@ try{
     const $ = cheerio.load(response.data)
     const noresult = $("#contenedor > div.module > div.content.right > div > div > h2 > span").text()
     let cr = noresult.includes("404")
-    if(cr = true) {
+    if(cr === true) {
         await m.react("❌")
         return reply("*❗️ Can't find this tv show. ❗️*")
     }
