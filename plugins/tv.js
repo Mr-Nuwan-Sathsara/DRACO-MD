@@ -21,7 +21,7 @@ try{
       title = $(this).find(".title a").text()
       link = $(this).find(".title a").attr('href')
       mv = $(this).find(".movies").text()
-      tv = $(this).find("tvshows").text()
+      tv = $(this).find(".tvshows").text()
 
         allmv.push({title,link,mv,tv})
     })
