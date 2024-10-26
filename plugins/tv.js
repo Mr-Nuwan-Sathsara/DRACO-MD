@@ -17,7 +17,7 @@ try{
     const response = await axios.get(url)
     const $ = cheerio.load(response.data)
     const noresult = $("#contenedor > div.module > div.content.right > div > div > h2 > span").text()
-    const cr = noresult.includes("404")
+    let cr = noresult.includes("404")
     if(cr = true) {
         await m.react("❌")
         return reply("*❗️ Can't find this tv show. ❗️*")
