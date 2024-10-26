@@ -26,7 +26,8 @@ try{
         allmv.push({title,link,mv,tv})
     })
 
-    console.log(allmv)
+    const mvresult = ``
+    if(!allmv[0].tv) return reply("done")
     
 }catch(e){
 console.log(e)
